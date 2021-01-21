@@ -1,0 +1,14 @@
+Filesystem                          1K-blocks     Used Available Use% Mounted on
+rootfs                                2552976    11640   2541336   1% /
+tmpfs                                 2648116     1192   2646924   1% /dev
+tmpfs                                 2648116        0   2648116   0% /mnt
+tmpfs                                 2651444        0   2651444   0% /mnt/secure
+/dev/block/dm-0                       4988536  4858800    129736  98% /system
+/dev/block/bootdevice/by-name/dsp       12016     4552      7464  38% /system/vendor/dsp
+/dev/block/bootdevice/by-name/cache    596544    14024    582520   3% /cache
+/dev/block/bootdevice/by-name/efs       16048     1208     14840   8% /efs
+/dev/block/dm-1                      55456988 46286644   9034152  84% /data
+/data/knox/secure_fs/enc_user        55456988 46286644   9034152  84% /data/enc_user
+/data/knox/secure_fs/enc_media       55456988 46286644   9034152  84% /data/knox/secure_fs/enc_media
+/data/media                          55436508 46422836   9013672  84% /storage/emulated
+/mnt/media_rw/4932-72CF             524270720 10025856 514244864   2% /storage/4932-72CF

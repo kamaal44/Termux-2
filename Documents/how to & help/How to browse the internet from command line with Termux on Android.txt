@@ -1,0 +1,33 @@
+How to browse the internet from command line with Termux
+
+Note
+
+Android rooting not needed
+
+Follow The Below Steps
+
+1: Just as usual, Install and launch Termux. Type this command clear then press Enter from your keyboard to delete every initial text on the screen.
+
+2: type pkg update then press Enter from your keyboard.
+
+3: Now it's time to install w3m type pkg install w3m then press Enter
+
+4: After typing the above code, you would be requested to reply with Y/n which stands for yes/no. Simply reply with Y to successfully install w3m then press Enter.
+
+5: After successful installs, now its time to RUN w3m along side the url of our choice. Now type w3m url kindly replace the url with any website. For instance , If i want to access www.google.com , This is how the command entry'll look like w3m www.google.com then press Enter from your keyboard.
+
+6: As you can see, we've have successfully accessed www.google.com via the command line.
+
+NOTE The android keyboard automatically hides while browsing the net from the command line. Tap on the search space then press Enter from the keyboard. that code would you to type into google search engine.
+
+How to use the Keyboard while browsing via command line
+
+1: tap anywhere in the search space
+
+2: Simply slide from Left of your screen to Right, then tap on keyboard.
+
+3: Type anything into the search engine. In my case i searched for What is utopain.io Then double tap on [Google search]
+
+4: Now the search term result is displaying
+
+simply double tab on anyone of the results to open the source link.
