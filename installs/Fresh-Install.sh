@@ -2,21 +2,13 @@
 
 echo "Termux Fresh Install"
 echo "\nGrant Storage Permission"
-
 termux-setup-storage
-
 echo "\nUpdating Everything"
-
 apt update -y
-
 apt upgrade -y
-
 pkg update -y
-
 pkg upgrade -y
-
 clear
-
 echo "\nInstalling All Packages"
 pkg install -y x11-repo
 pkg install -y unstable-repo
@@ -280,17 +272,13 @@ apt-get install -y tightvncserver
 apt-get install -y xfe
 apt update > /dev/null 2>&1
 apt --assumees install wget > /dev/null 2>&1
+apt autoremove
 apt-get clean
-
 clear
-
 mkdir -p /data/data/com.termux/files/home/backups/
 mkdir -p /sdcard/github/
-
 cd /sdcard/github/
-
 git clone https://github.com/NateWeiler/Termux.git
-
 cp -R /sdcard/github/Termux/home/.bashrc /data/data/com.termux/files/home/
 cp -R /sdcard/github/Termux/home/.zshrc /data/data/com.termux/files/home/
 cp -R /sdcard/github/Termux/home/.profile /data/data/com.termux/files/home/
@@ -300,27 +288,16 @@ cp -R /sdcard/github/Termux/home/pad.txt /data/data/com.termux/files/home/
 cp -R /sdcard/github/Termux/home/.gitconfig /data/data/com.termux/files/home/
 cp -R /sdcard/github/Termux/home/etc /data/data/com.termux/files/home/
 cp -R /sdcard/github/Termux/home/bin /data/data/com.termux/files/home/
-
 clear
-
 source /data/data/com.termux/files/home/aliases
-
 cd /sdcard/github/Termux/installs/
-
 echo "\nUpdating Everything Again"
-
 apt update -y
-
 apt upgrade -y
-
 pkg update -y
-
 pkg upgrade -y
-
 python3 -m pip install --upgrade pip
-
 clear
-
 sh android.sh
 sh ansible.sh
 sh API.sh
@@ -399,21 +376,12 @@ sh ubuntu.sh
 sh xfce4.sh
 sh youtube-dl.sh
 sh Zip.sh
-
 unzip /sdcard/github/Termux/home/.ssh.zip /data/data/com.termux/files/home/.ssh
-
 cd /sdcard/github/Termux/
-
 mv -v .git DOTgit
-
 find . -depth -type d -name ".git" -exec rm -rf {} \; && find . -depth -type d -name ".github" -exec rm -rf {} \;
-
 cd /data/data/com.termux/files/home/
-
 mv -v DOTgit .git
-
 bash <(curl -fsSL https://git.io/JvMD6)
-
 bash <(curl -fsSL https://git.io/JTgsU)
-
 exit
