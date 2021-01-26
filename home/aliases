@@ -61,12 +61,12 @@ alias va='source venv/bin/activate'
 alias dea="deactivate"
 
 #		YouTube-dl & Facebook-dl
-alias yt='youtube-dl'
-alias ytdl="youtube-dl"
-alias mp3="yt -v -f 'bestaudio[ext=mp3]/best' -ciw -o "%(title)s.%(ext)s" --extract-audio --audio-quality 0 --audio-format mp3"
-alias mp31="yt -v -f 'bestaudio[ext=mp3]/best' -ciw -o "%(title)s.%(ext)s" --extract-audio --audio-quality 0 --audio-format mp3 --yes-playlist --playlist-start 1"
-alias mp4="yt 'ytsearch:mp4' -v -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' -ciw -o "%(title)s.%(ext)s" mp4"
-alias mp41="yt 'ytsearch:mp4' -v -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' -ciw -o "%(title)s.%(ext)s" mp4 --yes-playlist --playlist-start 1"
+alias yt='youtube-dl -v -f'
+alias ytdl="youtube-dl -v -f"
+alias mp3="yt 'bestaudio[ext=mp3]/best' -ciw -o '%(title)s.%(ext)s' --extract-audio --audio-quality 0 --audio-format mp3"
+alias mp31="yt 'bestaudio[ext=mp3]/best' -ciw -o '%(title)s.%(ext)s' --extract-audio --audio-quality 0 --audio-format mp3 --yes-playlist --playlist-start 1"
+alias mp4="yt 'ytsearch:mp4' 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' -ciw -o '%(title)s.%(ext)s' mp4"
+alias mp41="yt 'ytsearch:mp4' 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' -ciw -o '%(title)s.%(ext)s' mp4 --yes-playlist --playlist-start 1"
 alias fbdl="py /sdcard/github/Termux/python/Facebook-Video-Downloader/downloader.py"
 
 #		Update
