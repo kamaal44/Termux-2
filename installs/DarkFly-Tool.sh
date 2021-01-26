@@ -12,7 +12,7 @@ echo -e "\nNow we have to clone the project from the git hub repository using th
 
 cd /sdcard/github/Termux/python/
 
-git clone https://github.com/Ranginang67/DarkFly-Tool 
+git clone https://github.com/Ranginang67/DarkFly-Tool.git
 
 echo -e "\nChange the directory to the DarkFly folder if you don't know the cd command its highly recommended to check out this blog:[termux all basic command]."
 
@@ -33,5 +33,3 @@ echo -e "\nStep 2: Now you will see 5 options you can select any option but the 
 echo -e "\nType 1 and press ENTER."
 
 echo -e "\nNow you will see a list of 530 tools that are specially made for termux, Select any tool by typing its serial number and the tool will be Downloaded in your Termux."
-
-DarkFly
