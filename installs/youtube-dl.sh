@@ -2,7 +2,7 @@
 
 echo -e "\nInstall youtube-dl"
 
-echo -e "\nDownload Youtube videos on your Android device by using Termux.it"s very to install & download the youtube videos & audio From the Command Line with youtube-dl."
+echo -e "\nDownload Youtube videos on your Android device by using Termux.it's very to install & download the youtube videos & audio From the Command Line with youtube-dl."
 
 echo -e "\nStorage permission"
 
@@ -10,15 +10,15 @@ termux-setup-storage
 
 echo -e "\ncURL"
 
-pkg install curl
+pkg install -y curl
 
 echo -e "\nInstall Python"
 
-pkg install python
+pkg install -y python
 
 echo -e "\nffmpeg - For Audio Conversion"
 
-pkg install ffmpeg
+pkg install -y ffmpeg
 
 echo -e "\nInstall youtube-dl via cURL"
 
