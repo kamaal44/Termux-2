@@ -1,15 +1,15 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 echo "Termux Fresh Install"
-echo "\nGrant Storage Permission"
+echo "Grant Storage Permission"
 termux-setup-storage
-echo "\nUpdating Everything"
+echo "Updating Everything"
 apt update -y
 apt upgrade -y
 pkg update -y
 pkg upgrade -y
 clear
-echo "\nInstalling All Packages"
+echo "Installing All Packages"
 pkg install -y x11-repo
 pkg install -y unstable-repo
 pkg install -y root-repo
@@ -173,7 +173,7 @@ pkg install lxc-snapshot
 pkg install lxc-autostart
 pkg install init.lxc
 clear
-echo "\nInstalling All Applications"
+echo "Installing All Applications"
 apt install -y ruby
 apt install -y zip
 apt install -y unzip
@@ -266,7 +266,7 @@ cp -R /sdcard/github/Termux/home/bin /data/data/com.termux/files/home/
 clear
 source /data/data/com.termux/files/home/aliases
 cd /sdcard/github/Termux/installs/
-echo "\nUpdating Everything Again"
+echo "Updating Everything Again"
 apt update -y
 apt upgrade -y
 pkg update -y
