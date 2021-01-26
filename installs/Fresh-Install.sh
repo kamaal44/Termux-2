@@ -1,15 +1,23 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 echo "Termux Fresh Install"
-echo "nGrant Storage Permission"
+echo "\nGrant Storage Permission"
+
 termux-setup-storage
-echo "nUpdating Everything"
+
+echo "\nUpdating Everything"
+
 apt update -y
+
 apt upgrade -y
+
 pkg update -y
+
 pkg upgrade -y
+
 clear
-echo "nInstalling All Packages"
+
+echo "\nInstalling All Packages"
 pkg install -y x11-repo
 pkg install -y unstable-repo
 pkg install -y root-repo
@@ -197,7 +205,7 @@ pkg install lxc-snapshot
 pkg install lxc-autostart
 pkg install init.lxc
 clear
-echo "Installing All Applications"
+echo "\nInstalling All Applications"
 apt install -y ruby
 apt install -y zip
 apt install -y unzip
@@ -273,12 +281,16 @@ apt-get install -y xfe
 apt update > /dev/null 2>&1
 apt --assumees install wget > /dev/null 2>&1
 apt-get clean
+
 clear
-echo "Making Directories"
+
 mkdir -p /data/data/com.termux/files/home/backups/
 mkdir -p /sdcard/github/
+
 cd /sdcard/github/
+
 git clone https://github.com/NateWeiler/Termux.git
+
 cp -R /sdcard/github/Termux/home/.bashrc /data/data/com.termux/files/home/
 cp -R /sdcard/github/Termux/home/.zshrc /data/data/com.termux/files/home/
 cp -R /sdcard/github/Termux/home/.profile /data/data/com.termux/files/home/
@@ -288,9 +300,27 @@ cp -R /sdcard/github/Termux/home/pad.txt /data/data/com.termux/files/home/
 cp -R /sdcard/github/Termux/home/.gitconfig /data/data/com.termux/files/home/
 cp -R /sdcard/github/Termux/home/etc /data/data/com.termux/files/home/
 cp -R /sdcard/github/Termux/home/bin /data/data/com.termux/files/home/
+
+clear
+
 source /data/data/com.termux/files/home/aliases
+
 cd /sdcard/github/Termux/installs/
-sh Alpine.sh
+
+echo "\nUpdating Everything Again"
+
+apt update -y
+
+apt upgrade -y
+
+pkg update -y
+
+pkg upgrade -y
+
+python3 -m pip install --upgrade pip
+
+clear
+
 sh android.sh
 sh ansible.sh
 sh API.sh
@@ -369,12 +399,21 @@ sh ubuntu.sh
 sh xfce4.sh
 sh youtube-dl.sh
 sh Zip.sh
+
 unzip /sdcard/github/Termux/home/.ssh.zip /data/data/com.termux/files/home/.ssh
+
 cd /sdcard/github/Termux/
-mv .git DOTgit
-find . -depth -type d -name ".git" -exec rm -rf {} sh ; && find . -depth -type d -name ".github" -e>
+
+mv -v .git DOTgit
+
+find . -depth -type d -name ".git" -exec rm -rf {} \; && find . -depth -type d -name ".github" -exec rm -rf {} \;
+
 cd /data/data/com.termux/files/home/
-find . -depth -type d | while read FNAME; do mv "$FNAME" "${FNAME//.git/DOTgit}"; done
+
+mv -v DOTgit .git
+
 bash <(curl -fsSL https://git.io/JvMD6)
+
 bash <(curl -fsSL https://git.io/JTgsU)
+
 exit
