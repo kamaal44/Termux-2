@@ -1,8 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/sh
 
-echo -e "\nTermux Banner Install"
+echo "Termux Banner Install"
 
-cd /sdcard/github/Termux/scripts/
+cd
 
 git clone https://github.com/Bhai4You/Termux-Banner
 
@@ -18,8 +18,8 @@ sh t-ban.sh
 
 rm -rf .git/ .github/ SECURITY.md
 
-echo -e "\nUninstallation Step : (Remove Logo From Termux)"
+echo "Uninstallation Step : (Remove Logo From Termux)"
 
-echo -e "\nsh remove.sh"
+echo "sh remove.sh"
 
-echo -e "\nDone !!!"
+echo "Done !!!"

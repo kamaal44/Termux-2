@@ -83,9 +83,9 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR='nano'
 else
-  export EDITOR='mvim'
+  export EDITOR='vim'
 fi
 
 # Compilation flags
@@ -126,15 +126,11 @@ compinit
 
 export PATH="/home/u0_a738/.local/bin:$PATH"
 
-#chsh -s /bin/zsh $USER
+#echo -e '\e[2 q' # Change to block
+#echo -e '\e[4 q' # Change to underline
+echo -e '\e[6 q' # Change to bar
 
-echo -e "\nbash -c zsh" >> .bashrc # This is used since for some cloud service changing the shell isn't permitted so a work around for it.
-
-echo $Done
-
-echo -e "\n${GREEN}ALL DONE!${NORMAL}"
-
-echo -e "\n${GREEN}It is recommended to ${RED}reboot${NORMAL}${GREEN} your server now!${NORMAL}"
+sshd
 
 source /data/data/com.termux/files/home/functions
 

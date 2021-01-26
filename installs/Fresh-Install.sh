@@ -28,6 +28,7 @@ pkg install -y python2
 pkg install -y vim
 pkg install -y figlet
 pkg install -y vim-python
+pkg install -y openssh
 pkg install -y mc
 pkg install -y autoconf
 pkg install -y uucp
@@ -62,7 +63,6 @@ pkg install -y termux-tools
 pkg install -y proot
 pkg install -y util-linux
 pkg install -y net-tools
-pkg install -y openssh
 pkg install -y tigervnc
 pkg install -y openbox
 pkg install -y obconf
@@ -92,6 +92,7 @@ pkg install -y git-gitk
 pkg install -y termux-exec
 pkg install -y termux-fix-shebang
 pkg install -y game-repo
+pkg install -y busybox
 pkg install -y science-repo
 pkg install -y pacman4console
 pkg install -y ruby
@@ -273,90 +274,90 @@ pkg update -y
 pkg upgrade -y
 python3 -m pip install --upgrade pip
 clear
-sh /data/data/com.termux/files/installs/android.sh
-sh /data/data/com.termux/files/installs/ansible.sh
-sh /data/data/com.termux/files/installs/API.sh
-sh /data/data/com.termux/files/installs/AutoPixie-WPS-Scan-Tool.sh
-sh /data/data/com.termux/files/installs/busybox.sh
-sh /data/data/com.termux/files/installs/caddy.sh
-sh /data/data/com.termux/files/installs/CMSmap.sh
-sh /data/data/com.termux/files/installs/Codiad.sh
-sh /data/data/com.termux/files/installs/Compiling-and-setting-up-OCaml.sh
-sh /data/data/com.termux/files/installs/Crontab.sh
-sh /data/data/com.termux/files/installs/DarkFly-Tool.sh
-sh /data/data/com.termux/files/installs/debian_on_termux_10.sh
-sh /data/data/com.termux/files/installs/Debian-Install.sh
-sh /data/data/com.termux/files/installs/debian-on-termux.sh
-sh /data/data/com.termux/files/installs/desktop.sh
-sh /data/data/com.termux/files/installs/Docker.sh
-sh /data/data/com.termux/files/installs/Dorks-Eye.sh
-sh /data/data/com.termux/files/installs/Dropbear.sh
-sh /data/data/com.termux/files/installs/DVR.sh
-sh /data/data/com.termux/files/installs/EasY-HaCk.sh
-sh /data/data/com.termux/files/installs/emacs.sh
-sh /data/data/com.termux/files/installs/Fish.sh
-sh /data/data/com.termux/files/installs/FTP.sh
-sh /data/data/com.termux/files/installs/FZF.sh
-sh /data/data/com.termux/files/installs/Games.sh
-sh /data/data/com.termux/files/installs/Graphical-Environment.sh
-sh /data/data/com.termux/files/installs/gTTS.sh
-sh /data/data/com.termux/files/installs/Heroku.sh
-sh /data/data/com.termux/files/installs/Homebrew.sh
-sh /data/data/com.termux/files/installs/HPomb.sh
-sh /data/data/com.termux/files/installs/java.sh
-sh /data/data/com.termux/files/installs/Kali.sh
-sh /data/data/com.termux/files/installs/KickThemOut.sh
-sh /data/data/com.termux/files/installs/MariaDB.sh
-sh /data/data/com.termux/files/installs/Metasploit.sh
-sh /data/data/com.termux/files/installs/MOSH.sh
-sh /data/data/com.termux/files/installs/mpd.sh
-sh /data/data/com.termux/files/installs/myserver.sh
-sh /data/data/com.termux/files/installs/Neofetch.sh
-sh /data/data/com.termux/files/installs/oh-my-termux.sh
-sh /data/data/com.termux/files/installs/Oh-My-Zsh.sh
-sh /data/data/com.termux/files/installs/OpenSSH.sh
-sh /data/data/com.termux/files/installs/p10k-Font.sh
-sh /data/data/com.termux/files/installs/Postgresql.sh
-sh /data/data/com.termux/files/installs/PRoot.sh
-sh /data/data/com.termux/files/installs/pyter.sh
-sh /data/data/com.termux/files/installs/Python.sh
-sh /data/data/com.termux/files/installs/pyttsx3.sh
-sh /data/data/com.termux/files/installs/rbenv.sh
-sh /data/data/com.termux/files/installs/rclone.sh
-sh /data/data/com.termux/files/installs/Rsync.sh
-sh /data/data/com.termux/files/installs/Ruby.sh
-sh /data/data/com.termux/files/installs/RVM.sh
-sh /data/data/com.termux/files/installs/services.sh
-sh /data/data/com.termux/files/installs/Setting-up-HTTP-Server.sh
-sh /data/data/com.termux/files/installs/Setting-up-Public-Key-Authentication.sh
-sh /data/data/com.termux/files/installs/setup-pointless-repo.sh
-sh /data/data/com.termux/files/installs/shells.sh
-sh /data/data/com.termux/files/installs/Slack.sh
-sh /data/data/com.termux/files/installs/Snoop.sh
-sh /data/data/com.termux/files/installs/sms.sh
-sh /data/data/com.termux/files/installs/SocialFish.sh
-sh /data/data/com.termux/files/installs/Speak.sh
-sh /data/data/com.termux/files/installs/Speak-Engine.sh
-sh /data/data/com.termux/files/installs/sqlscan.sh
-sh /data/data/com.termux/files/installs/ssh-apt.sh
-sh /data/data/com.termux/files/installs/Sudo.sh
-sh /data/data/com.termux/files/installs/Tool-X.sh
-sh /data/data/com.termux/files/installs/TBomb.sh
-sh /data/data/com.termux/files/installs/Terminal-Look-Awesome-Color-Font-Style.sh
-sh /data/data/com.termux/files/installs/termux-fedora.sh
-sh /data/data/com.termux/files/installs/termux-sms.sh
-sh /data/data/com.termux/files/installs/tor.sh
-sh /data/data/com.termux/files/installs/transmission.sh
-sh /data/data/com.termux/files/installs/ubuntu.sh
-sh /data/data/com.termux/files/installs/xfce4.sh
-sh /data/data/com.termux/files/installs/youtube-dl.sh
-sh /data/data/com.termux/files/installs/Zip.sh
+sh /sdcard/github/Termux/installs/android.sh
+sh /sdcard/github/Termux/installs/ansible.sh
+sh /sdcard/github/Termux/installs/API.sh
+sh /sdcard/github/Termux/installs/AutoPixie-WPS-Scan-Tool.sh
+sh /sdcard/github/Termux/installs/busybox.sh
+sh /sdcard/github/Termux/installs/caddy.sh
+sh /sdcard/github/Termux/installs/CMSmap.sh
+sh /sdcard/github/Termux/installs/Codiad.sh
+sh /sdcard/github/Termux/installs/Compiling-and-setting-up-OCaml.sh
+sh /sdcard/github/Termux/installs/Crontab.sh
+sh /sdcard/github/Termux/installs/DarkFly-Tool.sh
+sh /sdcard/github/Termux/installs/debian_on_termux_10.sh
+sh /sdcard/github/Termux/installs/Debian-Install.sh
+sh /sdcard/github/Termux/installs/debian-on-termux.sh
+sh /sdcard/github/Termux/installs/desktop.sh
+sh /sdcard/github/Termux/installs/Docker.sh
+sh /sdcard/github/Termux/installs/Dorks-Eye.sh
+sh /sdcard/github/Termux/installs/Dropbear.sh
+sh /sdcard/github/Termux/installs/DVR.sh
+sh /sdcard/github/Termux/installs/EasY-HaCk.sh
+sh /sdcard/github/Termux/installs/emacs.sh
+sh /sdcard/github/Termux/installs/Fish.sh
+sh /sdcard/github/Termux/installs/FTP.sh
+sh /sdcard/github/Termux/installs/FZF.sh
+sh /sdcard/github/Termux/installs/Games.sh
+sh /sdcard/github/Termux/installs/Graphical-Environment.sh
+sh /sdcard/github/Termux/installs/gTTS.sh
+sh /sdcard/github/Termux/installs/Heroku.sh
+sh /sdcard/github/Termux/installs/Homebrew.sh
+sh /sdcard/github/Termux/installs/HPomb.sh
+sh /sdcard/github/Termux/installs/java.sh
+sh /sdcard/github/Termux/installs/Kali.sh
+sh /sdcard/github/Termux/installs/KickThemOut.sh
+sh /sdcard/github/Termux/installs/MariaDB.sh
+sh /sdcard/github/Termux/installs/Metasploit.sh
+sh /sdcard/github/Termux/installs/MOSH.sh
+sh /sdcard/github/Termux/installs/mpd.sh
+sh /sdcard/github/Termux/installs/myserver.sh
+sh /sdcard/github/Termux/installs/Neofetch.sh
+sh /sdcard/github/Termux/installs/oh-my-termux.sh
+sh /sdcard/github/Termux/installs/Oh-My-Zsh.sh
+sh /sdcard/github/Termux/installs/OpenSSH.sh
+sh /sdcard/github/Termux/installs/p10k-Font.sh
+sh /sdcard/github/Termux/installs/Postgresql.sh
+sh /sdcard/github/Termux/installs/PRoot.sh
+sh /sdcard/github/Termux/installs/pyter.sh
+sh /sdcard/github/Termux/installs/Python.sh
+sh /sdcard/github/Termux/installs/pyttsx3.sh
+sh /sdcard/github/Termux/installs/rbenv.sh
+sh /sdcard/github/Termux/installs/rclone.sh
+sh /sdcard/github/Termux/installs/Rsync.sh
+sh /sdcard/github/Termux/installs/Ruby.sh
+sh /sdcard/github/Termux/installs/RVM.sh
+sh /sdcard/github/Termux/installs/services.sh
+sh /sdcard/github/Termux/installs/Setting-up-HTTP-Server.sh
+sh /sdcard/github/Termux/installs/Setting-up-Public-Key-Authentication.sh
+sh /sdcard/github/Termux/installs/setup-pointless-repo.sh
+sh /sdcard/github/Termux/installs/shells.sh
+sh /sdcard/github/Termux/installs/Slack.sh
+sh /sdcard/github/Termux/installs/Snoop.sh
+sh /sdcard/github/Termux/installs/sms.sh
+sh /sdcard/github/Termux/installs/SocialFish.sh
+sh /sdcard/github/Termux/installs/Speak.sh
+sh /sdcard/github/Termux/installs/Speak-Engine.sh
+sh /sdcard/github/Termux/installs/sqlscan.sh
+sh /sdcard/github/Termux/installs/ssh-apt.sh
+sh /sdcard/github/Termux/installs/Sudo.sh
+sh /sdcard/github/Termux/installs/Tool-X.sh
+sh /sdcard/github/Termux/installs/TBomb.sh
+sh /sdcard/github/Termux/installs/Terminal-Look-Awesome-Color-Font-Style.sh
+sh /sdcard/github/Termux/installs/termux-fedora.sh
+sh /sdcard/github/Termux/installs/termux-sms.sh
+sh /sdcard/github/Termux/installs/tor.sh
+sh /sdcard/github/Termux/installs/transmission.sh
+sh /sdcard/github/Termux/installs/ubuntu.sh
+sh /sdcard/github/Termux/installs/xfce4.sh
+sh /sdcard/github/Termux/installs/youtube-dl.sh
+sh /sdcard/github/Termux/installs/Zip.sh
 unzip /sdcard/github/Termux/home/.ssh.zip /data/data/com.termux/files/home/.ssh
 cd /sdcard/github/Termux/
 mv -v .git DOTgit
 find . -depth -type d -name ".git" -exec rm -rf {} \; && find . -depth -type d -name ".github" -exec rm -rf {} \;
-cd /data/data/com.termux/files/home/
 mv -v DOTgit .git
+cd /data/data/com.termux/files/home/
 bash <(curl -fsSL https://git.io/JvMD6)
 bash <(curl -fsSL https://git.io/JTgsU)
 exit

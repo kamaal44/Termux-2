@@ -1,0 +1,55 @@
+rsync  version 3.2.3  protocol version 31
+
+Web site: https://rsync.samba.org/
+
+# Capabilities:
+
+    64-bit files, 64-bit inums, 64-bit timestamps, 64-bit long ints,
+    no socketpairs, hardlinks, no hardlink-specials, symlinks, no IPv6,
+    atimes, batchfiles, inplace, append, no ACLs, no xattrs,
+    optional protect-args, iconv, symtimes, prealloc, stop-at, no crtimes
+
+# Optimizations:
+
+    no SIMD, asm, openssl-crypto
+
+# Checksum list:
+
+    md5 md4 none
+
+# Compress list:
+
+    zstd lz4 zlibx zlib none
+
+# Usage: rsync --daemon [OPTION]...
+
+--daemon                 run as an rsync daemon
+
+--address=ADDRESS        bind to the specified address
+
+--bwlimit=RATE           limit socket I/O bandwidth
+
+--config=FILE            specify alternate rsyncd.conf file
+
+--dparam=OVERRIDE, -M    override global daemon config parameter
+
+--no-detach              do not detach from the parent
+
+--port=PORT              listen on alternate port number
+
+--log-file=FILE          override the "log file" setting
+
+--log-file-format=FMT    override the "log format" setting
+
+--sockopts=OPTIONS       specify custom TCP options
+
+--verbose, -v            increase verbosity
+
+--ipv4, -4               prefer IPv4
+
+--ipv6, -6               prefer IPv6
+
+--help, -h               show this help (when used with --daemon)
+
+If you were not trying to invoke rsync as a daemon, avoid using any of the
+daemon-specific rsync options.  See also the rsyncd.conf(5) man page.
