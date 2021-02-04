@@ -173,8 +173,41 @@ pkg install lxc-checkconfig
 pkg install lxc-snapshot
 pkg install lxc-autostart
 pkg install init.lxc
+pkg update -y && pkg upgrade -y
+apt update -y && apt upgrade -y
+pip install upgrade pip; npm install -g npm
+pkg install curl git wget python python2 nodejs jq libxml2-utils grep bc htop figlet httping dnsutils openssh ffmpeg
+curl -sL https://gist.githubusercontent.com/mskian/6ea9c2b32d5f41867e7cafc88d1b26d5/raw/youtube-dl.sh | bash
+pkg install php nano zsh
+curl -sS https://getcomposer.org/installer | php -- --install-dir=/data/data/com.termux/files/usr/bin --filename=composer
+pip install --upgrade pip setuptools
+pip install --upgrade httpie
+pip install -U requests[socks]
+pip install requests
+pkg install clang python-dev libffi-dev openssl-dev
+pip install ddgr
+pkg install screenfetch w3m termux-exec termux-api
+pkg update -y && pkg upgrade -y
+apt update -y && apt upgrade -y
+pip install upgrade pip; npm install -g npm
+termux-setup-storage
+cd .termux
+nano termux.properties
+=extra-keys = [ \
+ ['ESC','|','/','HOME','UP','END','PGUP','DEL'], \
+ ['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN','BKSP'] \
+]
+termux-upgrade-repo
+cd $HOME
+ls
+curl -sL https://gist.githubusercontent.com/mskian/4278fed4a206f4ec440f0dd512d4540b/raw/package.sh | bash
+pkg list-installed > /storage/emulated/0/Download/pkgs.txt
+hash -r
+
 clear
+
 echo "Installing All Applications"
+
 apt install -y ruby
 apt install -y zip
 apt install -y unzip

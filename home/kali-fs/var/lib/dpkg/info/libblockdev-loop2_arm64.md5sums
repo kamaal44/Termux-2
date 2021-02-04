@@ -1,0 +1,4 @@
+4cc850816d779f8f9f0019df8b86cf3d  usr/lib/aarch64-linux-gnu/libbd_loop.so.2.0.0
+cab73988410905c6398ca7ba2dd82ef6  usr/share/doc/libblockdev-loop2/changelog.Debian.gz
+922c155bcf341a506fc85204b120a511  usr/share/doc/libblockdev-loop2/copyright
+a2e9baae5b1175df689565300dc7469d  usr/share/lintian/overrides/libblockdev-loop2

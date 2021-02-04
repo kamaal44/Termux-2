@@ -1,0 +1,388 @@
+Package: fdisk
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libpolkit-gobject-1-0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: fuse
+Architecture: arm64
+Auto-Installed: 1
+
+Package: dosfstools
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libpopt0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libdbus-1-3
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libfdisk1
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gnupg-utils
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libsasl2-modules-db
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libgcr-base-3-1
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gpg-wks-client
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libldap-2.4-2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libblockdev-swap2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gnupg-l10n
+Architecture: arm64
+Auto-Installed: 1
+
+Package: dconf-service
+Architecture: arm64
+Auto-Installed: 1
+
+Package: ntfs-3g
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libbrotli1
+Architecture: arm64
+Auto-Installed: 1
+
+Package: xdg-user-dirs
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libparted2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libksba8
+Architecture: arm64
+Auto-Installed: 1
+
+Package: dbus
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libsecret-1-0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libsqlite3-0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libicu67
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libgpgme11
+Architecture: arm64
+Auto-Installed: 1
+
+Package: lsof
+Architecture: arm64
+Auto-Installed: 1
+
+Package: dconf-gsettings-backend
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gpg-wks-server
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gpg
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libblockdev-crypto2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libpolkit-agent-1-0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: udev
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libsecret-common
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gsettings-desktop-schemas
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libsasl2-2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: readline-common
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libblockdev-loop2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libblockdev-fs2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libassuan0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libntfs-3g883
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libbdplus0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libblockdev-part2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libncursesw6
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libgudev-1.0-0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: fontconfig-config
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libparted-fs-resize0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libexpat1
+Architecture: arm64
+Auto-Installed: 1
+
+Package: dirmngr
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gdisk
+Architecture: arm64
+Auto-Installed: 1
+
+Package: groff-base
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gvfs-libs
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libsasl2-modules
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libfuse2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: exfat-utils
+Architecture: arm64
+Auto-Installed: 1
+
+Package: systemd-sysv
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libblockdev2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libldap-common
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libaacs0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: fonts-dejavu-core
+Architecture: arm64
+Auto-Installed: 1
+
+Package: ucf
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libgck-1-0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libpam-systemd
+Architecture: arm64
+Auto-Installed: 1
+
+Package: parted
+Architecture: arm64
+Auto-Installed: 1
+
+Package: shared-mime-info
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libvolume-key1
+Architecture: arm64
+Auto-Installed: 1
+
+Package: eject
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libfontconfig1
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libblockdev-utils2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: exfat-fuse
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libreadline8
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libnss-systemd
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libblockdev-part-err2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libgpm2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libuchardet0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libglib2.0-data
+Architecture: arm64
+Auto-Installed: 1
+
+Package: policykit-1
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gvfs
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libxml2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libnss3
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libfreetype6
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libudisks2-0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gvfs-common
+Architecture: arm64
+Auto-Installed: 1
+
+Package: dbus-user-session
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gnupg
+Architecture: arm64
+Auto-Installed: 1
+
+Package: pinentry-curses
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libnpth0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: desktop-file-utils
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gpg-agent
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libglib2.0-0
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libdconf1
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libbluray2
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libatasmart4
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libnspr4
+Architecture: arm64
+Auto-Installed: 1
+
+Package: sensible-utils
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gpgconf
+Architecture: arm64
+Auto-Installed: 1
+
+Package: gpgsm
+Architecture: arm64
+Auto-Installed: 1
+
+Package: libpng16-16
+Architecture: arm64
+Auto-Installed: 1
+

@@ -1,0 +1,4 @@
+bf8dcdfae5daab01d616c54e4d6607bc  usr/lib/aarch64-linux-gnu/libapparmor.so.1.6.2
+53a7c6d03f8b87983d7a29aca5d6827b  usr/share/doc/libapparmor1/changelog.Debian.gz
+4e4447150fa549ca1cc840181ddb38b4  usr/share/doc/libapparmor1/copyright
+7d2ea372ce17541863d9da4f4e225aa1  usr/share/lintian/overrides/libapparmor1

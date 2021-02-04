@@ -1,0 +1,3 @@
+#!/bin/sh
+echo
+echo "Warning: Fake start-stop-daemon called, doing nothing"
