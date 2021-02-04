@@ -6,8 +6,8 @@ cache="$HOME"/.cache/matplotlib
 fold_start() {
     key=$1
     title=$2
-    echo -e "travis_fold:start:$key\e[2K"
-    echo -e "travis_time:start:$key\e[2K"
+    echo "travis_fold:start:$key\e[2K"
+    echo "travis_time:start:$key\e[2K"
     tick="$(date +%s)"
     echo "$title"
 }
@@ -16,8 +16,8 @@ fold_end() {
     key=$1
     tock="$(date +%s)"
     nano=000000000
-    echo -e "travis_time:end:$key:start=$tick$nano,finish=$tock$nano,duration=$((tock - tick))$nano\e[2K"
-    echo -e "travis_fold:end:$key\e[2K"
+    echo "travis_time:end:$key:start=$tick$nano,finish=$tock$nano,duration=$((tock - tick))$nano\e[2K"
+    echo "travis_fold:end:$key\e[2K"
 }
 
 cached_download() {

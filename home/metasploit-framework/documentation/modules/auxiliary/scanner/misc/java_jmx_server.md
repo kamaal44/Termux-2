@@ -14,7 +14,7 @@ While many implementations of JMX are available, the module was successfully tes
 docker run -p 1099:1099 antonw/activemq-jmx 
 docker exec -u=root -it `docker ps -q` /bin/bash
 
-# echo -e "monitorRole QED\ncontrolRole R&D" /etc/java-7-openjdk/management/jmxremote.password
+# echo "monitorRole QED\ncontrolRole R&D" /etc/java-7-openjdk/management/jmxremote.password
 # chown activemq /etc/java-7-openjdk/management/jmxremote.password
 # chmod 400 /etc/java-7-openjdk/management/jmxremote.password
 # sed 's/-Dcom.sun.management.jmxremote.authenticate=false/-Dcom.sun.management.jmxremote.authenticate=true/' /opt/apache-activemq-5.13.3/bin/env

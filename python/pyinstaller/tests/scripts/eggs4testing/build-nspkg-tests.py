@@ -24,7 +24,7 @@ for ep in $entrypoints ; do
     echo -n $(which $ep )
     $ep --help > /dev/null
     rc=$?
-    echo -e "\t--help result: $rc"
+    echo "\t--help result: $rc"
 done
 
 pyi-bindepend /usr/bin/sh

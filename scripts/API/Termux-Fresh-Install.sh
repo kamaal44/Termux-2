@@ -146,7 +146,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 chsh -s zsh
 
-echo -e "${INFO} Making Oh My Zsh BETTER..."
+echo "${INFO} Making Oh My Zsh BETTER..."
     git clone https://github.com/zsh-users/zsh-syntax-highlighting $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
     git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
     git clone https://github.com/zsh-users/zsh-completions $HOME/.oh-my-zsh/custom/plugins/zsh-completions
@@ -159,7 +159,7 @@ echo -e "${INFO} Making Oh My Zsh BETTER..."
         sed -i '/^plugins=/c\plugins=(git z zsh-syntax-highlighting zsh-autosuggestions zsh-completions)' $HOME/.zshrc
     fi
     [ $(uname -o) != Android ] && chsh -s $(which zsh) || chsh -s zsh
-    [ $? == 0 ] && echo -e "${INFO} Oh My Zsh is better now！"
+    [ $? == 0 ] && echo "${INFO} Oh My Zsh is better now！"
     zsh
 exit
 

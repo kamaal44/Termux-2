@@ -363,9 +363,9 @@ log_end_msg () {
     if [ $1 -eq 0 ]; then
         echo "." || true
     elif [ $1 -eq 255 ]; then
-        /bin/echo -e " ${YELLOW}(warning).${NORMAL}" || true
+        /bin/echo " ${YELLOW}(warning).${NORMAL}" || true
     else
-        /bin/echo -e " ${RED}failed!${NORMAL}" || true
+        /bin/echo " ${RED}failed!${NORMAL}" || true
     fi
     log_end_msg_post "$@"
     return $retval
@@ -402,7 +402,7 @@ log_action_end_msg () {
         if log_use_fancy_output; then
             RED=$( $TPUT setaf 1)
             NORMAL=$( $TPUT op)
-            /bin/echo -e "${RED}failed${end}${NORMAL}" || true
+            /bin/echo "${RED}failed${end}${NORMAL}" || true
         else
             echo "failed${end}" || true
         fi

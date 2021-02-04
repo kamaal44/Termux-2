@@ -9,11 +9,11 @@ USER_=u0_a738
 
 SCRIPTNAME=enter_deb
 show_usage () {
-    echo -e "\nUsage: $SCRIPTNAME [options] [command]"
-    echo -e "\n$SCRIPTNAME: enter the installed debian guest system"
-    echo -e "\n"
-    echo -e "\n  -0 - mimic root (default)"
-    echo -e "\n  -n - prefer regular termux uid ($USER_)"
+    echo "\nUsage: $SCRIPTNAME [options] [command]"
+    echo "\n$SCRIPTNAME: enter the installed debian guest system"
+    echo "\n"
+    echo "\n  -0 - mimic root (default)"
+    echo "\n  -n - prefer regular termux uid ($USER_)"
     exit 0
 }
 
@@ -23,7 +23,7 @@ do
         h) show_usage;;
         0) ;;
         n) ROOT_=0;;
-        ?) echo -e "\n$SCRIPTNAME: illegal option -$OPTARG"; exit 1;
+        ?) echo "\n$SCRIPTNAME: illegal option -$OPTARG"; exit 1;
     esac
 done
 shift $(($OPTIND-1))

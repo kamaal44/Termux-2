@@ -40,8 +40,8 @@ elif [[ $1 == "-d" ]] || [[ $1 == "--disable" ]];then
 	switch 0
 else
 	echo "Usage: $0 --enable/--disable."
-	echo -e "\nOptions:"
-	echo -e "\t-e/--enable  - enable ip forward."
-	echo -e "\t-d/--disable - disable ip forward."
+	echo "\nOptions:"
+	echo "\t-e/--enable  - enable ip forward."
+	echo "\t-d/--disable - disable ip forward."
 	exit 1
 fi

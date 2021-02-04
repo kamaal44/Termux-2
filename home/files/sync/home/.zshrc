@@ -112,13 +112,13 @@ export PATH="/home/u0_a738/.local/bin:$PATH"
 
 #chsh -s /bin/zsh $USER
 
-echo -e "\nbash -c zsh" >> .bashrc # This is used since for some cloud service changing the shell isn't permitted so a work around for it.
+echo "\nbash -c zsh" >> .bashrc # This is used since for some cloud service changing the shell isn't permitted so a work around for it.
 
 echo $Done
 
-echo -e "\n${GREEN}ALL DONE!${NORMAL}"
+echo "\n${GREEN}ALL DONE!${NORMAL}"
 
-echo -e "\n${GREEN}It is recommended to ${RED}reboot${NORMAL}${GREEN} your server now!${NORMAL}"
+echo "\n${GREEN}It is recommended to ${RED}reboot${NORMAL}${GREEN} your server now!${NORMAL}"
 
 autoload -U compinit
 
@@ -126,9 +126,9 @@ compinit
 
 export PATH="/home/u0_a738/.local/bin:$PATH"
 
-#echo -e '\e[2 q' # Change to block
-#echo -e '\e[4 q' # Change to underline
-echo -e '\e[6 q' # Change to bar
+#echo '\e[2 q' # Change to block
+#echo '\e[4 q' # Change to underline
+echo '\e[6 q' # Change to bar
 
 source /data/data/com.termux/files/home/functions
 

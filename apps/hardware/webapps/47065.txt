@@ -69,11 +69,11 @@ as the root user via the 'strInIP' and 'strInPort' parameters
 56:     system("date>>".TCP_PORT_TEST);
 57:     if (!$fp) {
 58:         $strOperationResult = getDisplay("TestTools.TCPPortTestFail")." $errstr ($errno)";
-59:         system("echo -e \"Unable to connect to $strInIP:$strInPort\">>".TCP_PORT_TEST);
+59:         system("echo \"Unable to connect to $strInIP:$strInPort\">>".TCP_PORT_TEST);
 60:     } else {
 61:         fclose($fp);
 62:         $strOperationResult = getDisplay("TestTools.TCPPortTestSucces");
-63:         system("echo -e \"Successfully connected to $strInIP:$strInPort\">>".TCP_PORT_TEST);
+63:         system("echo \"Successfully connected to $strInIP:$strInPort\">>".TCP_PORT_TEST);
 64:     }
 65: }
 ==============================================================

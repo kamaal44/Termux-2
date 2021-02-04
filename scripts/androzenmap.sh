@@ -44,7 +44,7 @@ nmap -T4 -A -v $target
 elif [ $mm = "2" ] || [ $mm = "02" ];
 then 
 echo
-echo -e $C "Please input IP target or host "
+echo $C "Please input IP target or host "
 echo -ne $R " IP Target or Host$B : " 
 read target
 nmap -sS -sU -T4 -A -v $target

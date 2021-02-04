@@ -166,8 +166,8 @@ func (result *Result) colorOffsets(matchOffsets []Offset, theme *tui.ColorTheme,
 					// If the original text already has background color, and the
 					// foreground color of colMatch is -1, we shouldn't only apply the
 					// background color of colMatch.
-					// e.g. echo -e "\x1b[32;7mfoo\x1b[mbar" | fzf --ansi --color bg+:1,hl+:-1:underline
-					//      echo -e "\x1b[42mfoo\x1b[mbar" | fzf --ansi --color bg+:1,hl+:-1:underline
+					// e.g. echo "\x1b[32;7mfoo\x1b[mbar" | fzf --ansi --color bg+:1,hl+:-1:underline
+					//      echo "\x1b[42mfoo\x1b[mbar" | fzf --ansi --color bg+:1,hl+:-1:underline
 					if color.Fg().IsDefault() && origColor.HasBg() {
 						color = origColor
 					} else {

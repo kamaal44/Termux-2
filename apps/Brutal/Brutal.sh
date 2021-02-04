@@ -28,12 +28,12 @@ BlueF='\e[1;34m'
 trap ctrl_c INT
 ctrl_c() {
 clear
-echo -e $red"[*] (Ctrl + C ) Detected, Trying To Exit ..."
+echo $red"[*] (Ctrl + C ) Detected, Trying To Exit ..."
 sleep 1
 echo ""
-echo -e $yellow"[*] Thank You For Using  =)."
+echo $yellow"[*] Thank You For Using  =)."
 echo ""
-echo -e $white"[*] We Live by The Code , and Was Raised by Ethics  "
+echo $white"[*] We Live by The Code , and Was Raised by Ethics  "
 read enter
 exit
 }
@@ -144,7 +144,7 @@ user='temp/user.txt'
 
 function mmanage() {
 	clear
-echo -e $white"	"
+echo $white"	"
 echo "  "
 echo "         _______________          |*\_/*|________ "
 echo "        |  ___________  |        ||_/-\_|______  | "
@@ -158,7 +158,7 @@ echo "          _|__|/ \|_|_.............._|________|_ "
 echo "         / ********** \            / ********** \ "
 echo "       /  ************  \        /  ************  \ "
 echo "      --------------------      -------------------- "
-echo -e $BlueF"    __   __  _______  __    _  _______  _______  _______ ";
+echo $BlueF"    __   __  _______  __    _  _______  _______  _______ ";
 echo "   |  |_|  ||   _   ||  |  | ||   _   ||       ||       |";
 echo "   |       ||  |_|  ||   |_| ||  |_|  ||    ___||    ___|";
 echo "   |       ||       ||       ||       ||   | __ |   |___ ";
@@ -167,21 +167,21 @@ echo "   | ||_|| ||   _   || | |   ||   _   ||   |_| ||   |___ ";
 echo "   |_|   |_||__| |__||_|  |__||__| |__||_______||_______|";
 echo "                                                      ";
 echo "                                                      ";
-	echo -e $BlueF"	[$white"01"$BlueF]$cyan  Add an Admin User  "
-	echo -e $BlueF"	[$white"02"$BlueF]$cyan  Add a User and Enbale RDP  "
-	echo -e $BlueF"	[$white"03"$BlueF]$cyan  Add a User and Enable Telnet   "
-	echo -e $BlueF"	[$white"04"$BlueF]$cyan  Add a User and Enable RDP + Telnet  "
-	echo -e $BlueF"	[$white"05"$BlueF]$cyan  Add a User and Enable Ps Remoting "
-	echo -e $BlueF"	[$white"06"$BlueF]$cyan  Bypass Admin Login Screen "
-	echo -e $BlueF"	[$white"07"$BlueF]$cyan  Back  "
-	echo -e " "
+	echo $BlueF"	[$white"01"$BlueF]$cyan  Add an Admin User  "
+	echo $BlueF"	[$white"02"$BlueF]$cyan  Add a User and Enbale RDP  "
+	echo $BlueF"	[$white"03"$BlueF]$cyan  Add a User and Enable Telnet   "
+	echo $BlueF"	[$white"04"$BlueF]$cyan  Add a User and Enable RDP + Telnet  "
+	echo $BlueF"	[$white"05"$BlueF]$cyan  Add a User and Enable Ps Remoting "
+	echo $BlueF"	[$white"06"$BlueF]$cyan  Bypass Admin Login Screen "
+	echo $BlueF"	[$white"07"$BlueF]$cyan  Back  "
+	echo " "
 	echo -n -e $red'  \033[4mScreetsec@Manage:\033[0m >> '; tput sgr0 #insert your choice
 	read manage
-	echo -e $white"  --------------------------------------------------------------   ";
+	echo $white"  --------------------------------------------------------------   ";
 	if test $manage == '1'
 		then
 			echo ""
-			echo -e $red"  Note : You can edit all the Payload In src folder "
+			echo $red"  Note : You can edit all the Payload In src folder "
 			echo ""
 			touch $user
 			echo -ne $okegreen"  Enter Username for the user to be added: " ; tput sgr0
@@ -197,15 +197,15 @@ echo "                                                      ";
 			sed s/PASSWORD_SCREETSEC/$s1/g $manage1opt > $manage1opt1
 			echo ""
 			sleep 1
-			echo -e $white " Succes Create Payload "
-			echo -e $white"  --------------------------------------------------------------   ";
+			echo $white " Succes Create Payload "
+			echo $white"  --------------------------------------------------------------   ";
 			echo ""
-			echo -e $yellow " Now Copy the generated $manage1opt1 to your HID "
+			echo $yellow " Now Copy the generated $manage1opt1 to your HID "
 
  elif test $manage == '2'
 		then
 			echo ""
-			echo -e $red"  Note : You can edit all the Payload In src folder "
+			echo $red"  Note : You can edit all the Payload In src folder "
 			echo ""
 			touch $user
 			echo -ne $okegreen"  Enter Username for the user to be added: " ; tput sgr0
@@ -221,14 +221,14 @@ echo "                                                      ";
 			sed s/PASSWORD_SCREETSEC/$s1/g $manage2opt > $manage2opt2
 			echo ""
 			sleep 1
-			echo -e $white " Succes Create Payload "
-			echo -e $white"  --------------------------------------------------------------   ";
+			echo $white " Succes Create Payload "
+			echo $white"  --------------------------------------------------------------   ";
 			echo ""
-			echo -e $yellow " Now Copy the generated $manage2opt2 to your HID "
+			echo $yellow " Now Copy the generated $manage2opt2 to your HID "
 	elif test $manage == '3'
 		then
 			echo ""
-			echo -e $red"  Note : You can edit all the Payload In src folder "
+			echo $red"  Note : You can edit all the Payload In src folder "
 			echo ""
 			touch $user
 			echo -ne $okegreen"  Enter Username for the user to be added: " ; tput sgr0
@@ -244,14 +244,14 @@ echo "                                                      ";
 			sed s/PASSWORD_SCREETSEC/$s1/g $manage3opt > $manage3opt3
 			echo ""
 			sleep 1
-			echo -e $white " Succes Create Payload "
-			echo -e $white"  --------------------------------------------------------------   ";
+			echo $white " Succes Create Payload "
+			echo $white"  --------------------------------------------------------------   ";
 			echo ""
-			echo -e $yellow " Now Copy the generated $manage3opt3 to your HID "
+			echo $yellow " Now Copy the generated $manage3opt3 to your HID "
 		elif test $manage == '4'
 			then
 				echo ""
-				echo -e $red"  Note : You can edit all the Payload In src folder "
+				echo $red"  Note : You can edit all the Payload In src folder "
 				echo ""
 				touch $user
 				echo -ne $okegreen"  Enter Username for the user to be added: " ; tput sgr0
@@ -267,14 +267,14 @@ echo "                                                      ";
 				sed s/PASSWORD_SCREETSEC/$s1/g $manage4opt > $manage4opt4
 				echo ""
 				sleep 1
-				echo -e $white " Succes Create Payload "
-				echo -e $white"  --------------------------------------------------------------   ";
+				echo $white " Succes Create Payload "
+				echo $white"  --------------------------------------------------------------   ";
 				echo ""
-				echo -e $yellow " Now Copy the generated $manage4opt4 to your HID "
+				echo $yellow " Now Copy the generated $manage4opt4 to your HID "
 		elif test $manage == '5'
 			then
 				echo ""
-				echo -e $red"  Note : You can edit all the Payload In src folder "
+				echo $red"  Note : You can edit all the Payload In src folder "
 				echo ""
 				touch $user
 				echo -ne $okegreen"  Enter Username for the user to be added: " ; tput sgr0
@@ -290,23 +290,23 @@ echo "                                                      ";
 				sed s/PASSWORD_SCREETSEC/$s1/g $manage5opt > $manage5opt5
 				echo ""
 				sleep 1
-				echo -e $white " Succes Create Payload "
-				echo -e $white"  --------------------------------------------------------------   ";
+				echo $white " Succes Create Payload "
+				echo $white"  --------------------------------------------------------------   ";
 				echo ""
-				echo -e $yellow " Now Copy the generated $manage5opt5 to your HID "
+				echo $yellow " Now Copy the generated $manage5opt5 to your HID "
 
 			elif test $manage == '6'
 				then
 					echo ""
-					echo -e $red"  Note : Press shift five times when on the pc on login screen "
-					echo -e $okegreen " Wait ............ "
+					echo $red"  Note : Press shift five times when on the pc on login screen "
+					echo $okegreen " Wait ............ "
 					echo ""
 					sleep 2
 					cp $manage6 $manage6opt
-					echo -e $okegreen " Succes Create Payload "
-					echo -e $white"  --------------------------------------------------------------   ";
+					echo $okegreen " Succes Create Payload "
+					echo $white"  --------------------------------------------------------------   ";
 					echo ""
-					echo -e $yellow " Now Copy the generated $manage6opt to your HID "
+					echo $yellow " Now Copy the generated $manage6opt to your HID "
 					echo ""
 
 			elif test $manage == '7'
@@ -314,7 +314,7 @@ echo "                                                      ";
 			      menu
 			    else
 			        echo ""
-			        echo -e $okegreen " Incorrect Number"
+			        echo $okegreen " Incorrect Number"
 			      fi
 			      echo ""
 			      echo ""
@@ -339,7 +339,7 @@ echo "                                                      ";
 
 function mprank() {
 	clear
-echo -e $red "	"
+echo $red "	"
 echo "	"
 echo "        		       _"
 echo "		--            / | "
@@ -355,7 +355,7 @@ echo "		  \..       / "
 echo "		     | ____/ "
 echo "		    (V) === "
 echo "		    (A)"
-echo -e $white"____________________    _____    _______   ____  __.";
+echo $white"____________________    _____    _______   ____  __.";
 echo "\______   \______   \  /  _  \   \      \ |    |/ _|";
 echo " |     ___/|       _/ /  /_\  \  /   |   \|      <  ";
 echo " |    |    |    |   \/    |    \/    |    \    |  \ ";
@@ -363,144 +363,144 @@ echo " |____|    |____|_  /\____|__  /\____|__  /____|__ \ ";
 echo "                  \/         \/         \/        \/ ";
 echo "                                                     ";
 echo "                                                     ";
-	echo -e $BlueF"	[$white"01"$BlueF]$cyan  Simple Payload Hellow World  "
-	echo -e $BlueF"	[$white"02"$BlueF]$cyan  Don't Fuck It Up  "
-	echo -e $BlueF"	[$white"03"$BlueF]$cyan  I Will Learn to Lock My Computer    "
-	echo -e $BlueF"	[$white"04"$BlueF]$cyan  Write a mesagge to notepad  "
-	echo -e $BlueF"	[$white"05"$BlueF]$cyan  Screen Rotation Prank "
-	echo -e $BlueF"	[$white"06"$BlueF]$cyan  Auto Shutdown prank  "
-	echo -e $BlueF"	[$white"07"$BlueF]$cyan  Play youtube Rick Roll "
-	echo -e $BlueF"	[$white"08"$BlueF]$cyan  Auto Facebook Post  "
-	echo -e $BlueF"	[$white"09"$BlueF]$cyan  Crashing Windows with Fork Bomb  "
-	echo -e $BlueF"	[$white"10"$BlueF]$cyan  Back  "
-	echo -e " "
+	echo $BlueF"	[$white"01"$BlueF]$cyan  Simple Payload Hellow World  "
+	echo $BlueF"	[$white"02"$BlueF]$cyan  Don't Fuck It Up  "
+	echo $BlueF"	[$white"03"$BlueF]$cyan  I Will Learn to Lock My Computer    "
+	echo $BlueF"	[$white"04"$BlueF]$cyan  Write a mesagge to notepad  "
+	echo $BlueF"	[$white"05"$BlueF]$cyan  Screen Rotation Prank "
+	echo $BlueF"	[$white"06"$BlueF]$cyan  Auto Shutdown prank  "
+	echo $BlueF"	[$white"07"$BlueF]$cyan  Play youtube Rick Roll "
+	echo $BlueF"	[$white"08"$BlueF]$cyan  Auto Facebook Post  "
+	echo $BlueF"	[$white"09"$BlueF]$cyan  Crashing Windows with Fork Bomb  "
+	echo $BlueF"	[$white"10"$BlueF]$cyan  Back  "
+	echo " "
 	echo -n -e $red'  \033[4mScreetsec@Prank:\033[0m >> '; tput sgr0 #insert your choice
 	read Prank
-	echo -e $white"  --------------------------------------------------------------   ";
+	echo $white"  --------------------------------------------------------------   ";
 	if test $Prank == '1'
 		then
 			echo ""
-			echo -e $red"  Note : You can edit all the Payload In src folder "
-			echo -e $okegreen " Wait ............ "
+			echo $red"  Note : You can edit all the Payload In src folder "
+			echo $okegreen " Wait ............ "
 			echo ""
 			sleep 2
 			cp $prank1 $prank1opt
-			echo -e $okegreen " Succes Create Payload "
-			echo -e $white"  --------------------------------------------------------------   ";
+			echo $okegreen " Succes Create Payload "
+			echo $white"  --------------------------------------------------------------   ";
 			echo ""
-			echo -e $yellow " Now Copy the generated $prank1opt to your HID "
+			echo $yellow " Now Copy the generated $prank1opt to your HID "
 			echo ""
 	elif test $Prank == '2'
 		then
 			echo ""
-			echo -e $yellow"  Note : You can edit all the Payload In src folder "
-			echo -e $okegreen " Wait ............ "
+			echo $yellow"  Note : You can edit all the Payload In src folder "
+			echo $okegreen " Wait ............ "
 			echo ""
 			sleep 2
 			cp $prank3 $prank3opt
-			echo -e $okegreen " Succes Create Payload "
-			echo -e $white"  --------------------------------------------------------------   ";
+			echo $okegreen " Succes Create Payload "
+			echo $white"  --------------------------------------------------------------   ";
 			echo ""
-			echo -e $yellow " Now Copy the generated $prank3opt to your HID "
+			echo $yellow " Now Copy the generated $prank3opt to your HID "
 			echo ""
 	elif test $Prank == '3'
 		then
 			echo ""
-			echo -e $red"  Note : You can edit all the Payload In src folder "
-			echo -e $okegreen " Wait ............ "
+			echo $red"  Note : You can edit all the Payload In src folder "
+			echo $okegreen " Wait ............ "
 			echo ""
 			sleep 2
 			cp $prank4 $prank4opt
-			echo -e $okegreen " Succes Create Payload "
-			echo -e $white"  --------------------------------------------------------------   ";
+			echo $okegreen " Succes Create Payload "
+			echo $white"  --------------------------------------------------------------   ";
 			echo ""
-			echo -e $yellow " Now Copy the generated $prank4opt to your HID "
+			echo $yellow " Now Copy the generated $prank4opt to your HID "
 			echo ""
 		elif test $Prank == '4'
 			then
 				echo ""
-				echo -e $red"  Note : You can edit all the Payload In src folder "
-				echo -e $okegreen " Wait ............ "
+				echo $red"  Note : You can edit all the Payload In src folder "
+				echo $okegreen " Wait ............ "
 				echo ""
 				sleep 2
 				cp $prank2 $prank2opt
-				echo -e $okegreen " Succes Create Payload "
-				echo -e $white"  --------------------------------------------------------------   ";
+				echo $okegreen " Succes Create Payload "
+				echo $white"  --------------------------------------------------------------   ";
 				echo ""
-				echo -e $yellow " Now Copy the generated $prank2opt to your HID "
+				echo $yellow " Now Copy the generated $prank2opt to your HID "
 				echo ""
 		elif test $Prank == '5'
 			then
 				echo ""
-				echo -e $red"  Note : You can edit all the Payload In src folder "
-				echo -e $okegreen " Wait ............ "
+				echo $red"  Note : You can edit all the Payload In src folder "
+				echo $okegreen " Wait ............ "
 				echo ""
 				sleep 2
 				cp $prank5 $prank5opt
-				echo -e $okegreen " Succes Create Payload "
-				echo -e $white"  --------------------------------------------------------------   ";
+				echo $okegreen " Succes Create Payload "
+				echo $white"  --------------------------------------------------------------   ";
 				echo ""
-				echo -e $yellow " Now Copy the generated $prank5opt to your HID "
+				echo $yellow " Now Copy the generated $prank5opt to your HID "
 				echo ""
 			elif test $Prank == '6'
 				then
 					echo ""
-					echo -e $red"  Note : You can edit all the Payload In src folder "
-					echo -e $okegreen " Wait ............ "
+					echo $red"  Note : You can edit all the Payload In src folder "
+					echo $okegreen " Wait ............ "
 					echo ""
 					sleep 2
 					cp $prank6 $prank6opt
-					echo -e $okegreen " Succes Create Payload "
-					echo -e $white"  --------------------------------------------------------------   ";
+					echo $okegreen " Succes Create Payload "
+					echo $white"  --------------------------------------------------------------   ";
 					echo ""
-					echo -e $yellow " Now Copy the generated $prank6opt to your HID "
+					echo $yellow " Now Copy the generated $prank6opt to your HID "
 					echo ""
 				elif test $Prank == '7'
 					then
 						echo ""
-						echo -e $red"  Note : You can edit all the Payload In src folder "
-						echo -e $okegreen " Wait ............ "
+						echo $red"  Note : You can edit all the Payload In src folder "
+						echo $okegreen " Wait ............ "
 						echo ""
 						sleep 2
 						cp $prank7 $prank7opt
-						echo -e $okegreen " Succes Create Payload "
-						echo -e $white"  --------------------------------------------------------------   ";
+						echo $okegreen " Succes Create Payload "
+						echo $white"  --------------------------------------------------------------   ";
 						echo ""
-						echo -e $yellow " Now Copy the generated $prank7opt to your HID "
+						echo $yellow " Now Copy the generated $prank7opt to your HID "
 						echo ""
 					elif test $Prank == '8'
 						then
 							echo ""
-							echo -e $red"  Note : You can edit all the Payload In src folder "
-							echo -e $okegreen " Wait ............ "
+							echo $red"  Note : You can edit all the Payload In src folder "
+							echo $okegreen " Wait ............ "
 							echo ""
 							sleep 2
 							cp $prank8 $prank8opt
-							echo -e $okegreen " Succes Create Payload "
-							echo -e $white"  --------------------------------------------------------------   ";
+							echo $okegreen " Succes Create Payload "
+							echo $white"  --------------------------------------------------------------   ";
 							echo ""
-							echo -e $yellow " Now Copy the generated $prank8opt to your HID "
+							echo $yellow " Now Copy the generated $prank8opt to your HID "
 							echo ""
 
 					elif test $Prank == '9'
 						then
 								echo ""
-								echo -e $red"  Note : You can edit all the Payload In src folder "
-								echo -e $okegreen " Wait ............ "
+								echo $red"  Note : You can edit all the Payload In src folder "
+								echo $okegreen " Wait ............ "
 								echo ""
 								sleep 2
 								cp $prank9 $prank9opt
-								echo -e $okegreen " Succes Create Payload "
-								echo -e $white"  --------------------------------------------------------------   ";
+								echo $okegreen " Succes Create Payload "
+								echo $white"  --------------------------------------------------------------   ";
 								echo ""
-								echo -e $yellow " Now Copy the generated $prank9opt to your HID "
+								echo $yellow " Now Copy the generated $prank9opt to your HID "
 								echo ""
 						elif test $Prank == '10'
 						then
 			      menu
 			    else
 			        echo ""
-			        echo -e $okegreen " Incorrect Number"
+			        echo $okegreen " Incorrect Number"
 			      fi
 			      echo ""
 			      echo ""
@@ -519,7 +519,7 @@ echo "                                                     ";
 
 function mattack() {
 	clear
-echo -e $white""
+echo $white""
 echo "	          |\         __  __   _          _                   "
 echo "	          | \       / / /\ \ (_)_ __  __| | _____      _____ "
 echo "	()########|  ===================================================> "
@@ -527,94 +527,94 @@ echo "	          | /       \  /\  /| | | | | (_| | (_) \ V  V /\__ \ "
 echo "	          |/         \/  \/ |_|_| |_|\__,_|\___/ \_/\_/ |___/ "
 echo "                                          ";
 echo "                                          ";
-	echo -e $BlueF"	[$white"01"$BlueF]$cyan  Crash Windows Forever lol  "
-	echo -e $BlueF"	[$white"02"$BlueF]$cyan  Delete All Drive  "
-	echo -e $BlueF"	[$white"03"$BlueF]$cyan  Delete All Registry    "
-	echo -e $BlueF"	[$white"04"$BlueF]$cyan  Delete System Drive  "
-	echo -e $BlueF"	[$white"05"$BlueF]$cyan  GoodBye Windows "
-	echo -e $BlueF"	[$white"06"$BlueF]$cyan  Rename All File to txt  "
-	echo -e $BlueF"	[$white"07"$BlueF]$cyan  Back  "
-	echo -e " "
+	echo $BlueF"	[$white"01"$BlueF]$cyan  Crash Windows Forever lol  "
+	echo $BlueF"	[$white"02"$BlueF]$cyan  Delete All Drive  "
+	echo $BlueF"	[$white"03"$BlueF]$cyan  Delete All Registry    "
+	echo $BlueF"	[$white"04"$BlueF]$cyan  Delete System Drive  "
+	echo $BlueF"	[$white"05"$BlueF]$cyan  GoodBye Windows "
+	echo $BlueF"	[$white"06"$BlueF]$cyan  Rename All File to txt  "
+	echo $BlueF"	[$white"07"$BlueF]$cyan  Back  "
+	echo " "
 	echo -n -e $red'  \033[4mScreetsec@Prank:\033[0m >> '; tput sgr0 #insert your choice
 	read atckwin
-	echo -e $white"  --------------------------------------------------------------   ";
+	echo $white"  --------------------------------------------------------------   ";
 	if test $atckwin == '1'
 		then
 			echo ""
-			echo -e $red"  Note : You can edit all the Payload In src folder "
-			echo -e $okegreen " Wait ............ "
+			echo $red"  Note : You can edit all the Payload In src folder "
+			echo $okegreen " Wait ............ "
 			echo ""
 			sleep 2
 			cp $attack1 $attack1opt
-			echo -e $okegreen " Succes Create Payload "
-			echo -e $white"  --------------------------------------------------------------   ";
+			echo $okegreen " Succes Create Payload "
+			echo $white"  --------------------------------------------------------------   ";
 			echo ""
-			echo -e $yellow " Now Copy the generated $attack1opt to your HID "
+			echo $yellow " Now Copy the generated $attack1opt to your HID "
 			echo ""
 	elif test $atckwin == '2'
 		then
 			echo ""
-			echo -e $yellow"  Note : You can edit all the Payload In src folder "
-			echo -e $okegreen " Wait ............ "
+			echo $yellow"  Note : You can edit all the Payload In src folder "
+			echo $okegreen " Wait ............ "
 			echo ""
 			sleep 2
 			cp $attack2 $attack2opt
-			echo -e $okegreen " Succes Create Payload "
-			echo -e $white"  --------------------------------------------------------------   ";
+			echo $okegreen " Succes Create Payload "
+			echo $white"  --------------------------------------------------------------   ";
 			echo ""
-			echo -e $yellow " Now Copy the generated $attack2opt to your HID "
+			echo $yellow " Now Copy the generated $attack2opt to your HID "
 			echo ""
 	elif test $atckwin == '3'
 		then
 			echo ""
-			echo -e $red"  Note : You can edit all the Payload In src folder "
-			echo -e $okegreen " Wait ............ "
+			echo $red"  Note : You can edit all the Payload In src folder "
+			echo $okegreen " Wait ............ "
 			echo ""
 			sleep 2
 			cp $attack3 $attack3opt
-			echo -e $okegreen " Succes Create Payload "
-			echo -e $white"  --------------------------------------------------------------   ";
+			echo $okegreen " Succes Create Payload "
+			echo $white"  --------------------------------------------------------------   ";
 			echo ""
-			echo -e $yellow " Now Copy the generated $attack3opt to your HID "
+			echo $yellow " Now Copy the generated $attack3opt to your HID "
 			echo ""
 		elif test $atckwin == '4'
 			then
 				echo ""
-				echo -e $red"  Note : You can edit all the Payload In src folder "
-				echo -e $okegreen " Wait ............ "
+				echo $red"  Note : You can edit all the Payload In src folder "
+				echo $okegreen " Wait ............ "
 				echo ""
 				sleep 2
 				cp $attack4 $attack4opt
-				echo -e $okegreen " Succes Create Payload "
-				echo -e $white"  --------------------------------------------------------------   ";
+				echo $okegreen " Succes Create Payload "
+				echo $white"  --------------------------------------------------------------   ";
 				echo ""
-				echo -e $yellow " Now Copy the generated $attack4opt to your HID "
+				echo $yellow " Now Copy the generated $attack4opt to your HID "
 				echo ""
 		elif test $atckwin == '5'
 			then
 				echo ""
-				echo -e $red"  Note : You can edit all the Payload In src folder "
-				echo -e $okegreen " Wait ............ "
+				echo $red"  Note : You can edit all the Payload In src folder "
+				echo $okegreen " Wait ............ "
 				echo ""
 				sleep 2
 				cp $attack5 $attack5opt
-				echo -e $okegreen " Succes Create Payload "
-				echo -e $white"  --------------------------------------------------------------   ";
+				echo $okegreen " Succes Create Payload "
+				echo $white"  --------------------------------------------------------------   ";
 				echo ""
-				echo -e $yellow " Now Copy the generated $attack5opt to your HID "
+				echo $yellow " Now Copy the generated $attack5opt to your HID "
 				echo ""
 			elif test $atckwin == '6'
 				then
 					echo ""
-					echo -e $red"  Note : You can edit all the Payload In src folder "
-					echo -e $okegreen " Wait ............ "
+					echo $red"  Note : You can edit all the Payload In src folder "
+					echo $okegreen " Wait ............ "
 					echo ""
 					sleep 2
 					cp $attack6 $attack6opt
-					echo -e $okegreen " Succes Create Payload "
-					echo -e $white"  --------------------------------------------------------------   ";
+					echo $okegreen " Succes Create Payload "
+					echo $white"  --------------------------------------------------------------   ";
 					echo ""
-					echo -e $yellow " Now Copy the generated $attack6opt to your HID "
+					echo $yellow " Now Copy the generated $attack6opt to your HID "
 					echo ""
 
 				elif test $atckwin == '7'
@@ -622,7 +622,7 @@ echo "                                          ";
 			      menu
 			    else
 			        echo ""
-			        echo -e $okegreen " Incorrect Number"
+			        echo $okegreen " Incorrect Number"
 			      fi
 			      echo ""
 			      echo ""
@@ -644,30 +644,30 @@ echo "                                          ";
 #######################################################
 function credits {
 clear
-echo -e "
+echo "
 \033[31m##########################################################################\033[m
 		             Credits To
 \033[31m##########################################################################\033[m"
 echo
-echo -e $white "Special thanks to:"
+echo $white "Special thanks to:"
 echo
-echo -e $red "Dracos Linux ( www.dracos-linux.org )"
+echo $red "Dracos Linux ( www.dracos-linux.org )"
 echo
-echo -e $okegreen "Offensive Security for the awesome OS"
+echo $okegreen "Offensive Security for the awesome OS"
 echo
-echo -e $green "http://www.offensive-security.com/"
+echo $green "http://www.offensive-security.com/"
 echo
-echo -e $yellow "http://www.kali.org/"
+echo $yellow "http://www.kali.org/"
 echo
-echo -e $cyan "http://www.kitploit.com/"
+echo $cyan "http://www.kitploit.com/"
 echo
-echo -e $white "http://www.linuxsec.org/"
+echo $white "http://www.linuxsec.org/"
 echo
-echo -e $okegreen "My Friend for helpme ( Boy Suganda )"
+echo $okegreen "My Friend for helpme ( Boy Suganda )"
 echo
-echo -e $red "Big Thanks to : http://www.github.com/"
+echo $red "Big Thanks to : http://www.github.com/"
 echo
-echo -e "
+echo "
 \033[31m##########################################################################\033[m
 		             Thanks Babe
 \033[31m##########################################################################\033[m"
@@ -678,50 +678,50 @@ echo -e "
 function menu()
 {
 clear
-echo -e $white""
+echo $white""
 echo "                                _________-----_____ "
 echo "                     _____------           __      ----_ "
 echo "             ___----             ___------              \ "
 echo "                ----________        ----                 \ "
-echo -e "                            -----__    |            "$red" _____$white) "
-echo -e "                                 __-                "$red"/#####$white\ "
-echo -e "                     _______-----    ___--          "$red"\####/$white)\ "
-echo -e "               ------_______      ---____            "$red"\##/  $white/ "
-echo -e "                            -----__    \ --    _      "$red"-- $white  /\   "
+echo "                            -----__    |            "$red" _____$white) "
+echo "                                 __-                "$red"/#####$white\ "
+echo "                     _______-----    ___--          "$red"\####/$white)\ "
+echo "               ------_______      ---____            "$red"\##/  $white/ "
+echo "                            -----__    \ --    _      "$red"-- $white  /\   "
 echo "                                   --__--__     \_____/   \_/\ "
 echo "                                          ----|   /          | "
-echo -e $BlueF"  __________                __         .__  "$white"  |  |___________| "
-echo -e $BlueF"  \______   \_______ __ ___/  |______  |  |   "$white"|  "$white"| ((_(_)| )_) "
-echo -e $BlueF"   |    |  _/\_  __ \  |  \   __\__  \ |  |   "$white"|  "$white"\_((_(_)|/(_) "
-echo -e $BlueF"   |    |   \ |  | \/  |  /|  |  / __ \|  |__ "$white"\             ( "
-echo -e $BlueF"   |______  / |__|  |____/ |__| (____  /____/  "$white"\_____________) "
-echo -e $BlueF"       \/                         \/                  "$BlueF"   /"
-echo -e $BlueF"   | "$cyan"Brutall Created By   "$white": "$red"Edo Maland ( Screetsec )   "$BlueF" /"
-echo -e $BlueF"   | "$cyan"Version              "$white": "$red"$version                       "$BlueF" /"
-echo -e $BlueF"   | "$cyan"Codename             "$white": "$red"$codename	             "$BlueF" /"
-echo -e $BlueF"   | "$cyan"Follow me on Github  "$white": "$red"@Screetsec               "$BlueF"/"
-echo -e $BlueF"   | "$cyan"Dracos Linux         "$white": "$red"dracos-linux.org        "$BlueF"/"
-echo -e "$BlueF""   ------------------------------------------------"
-echo -e $white " "
-echo -e $BlueF"	[$white"01"$BlueF]$cyan  Meterpreter Reverse TCP Injection using Powershell  "
-echo -e $BlueF"	[$white"02"$BlueF]$cyan  Download and Execute Backdoor  "
-echo -e $BlueF"	[$white"03"$BlueF]$cyan  Get Credential information With Mimikatz [ Send to gmail ]    "
-echo -e $BlueF"	[$white"04"$BlueF]$cyan  Retrieve lots of passwords stored on a local computer [ gmail ]  "
-echo -e $BlueF"	[$white"05"$BlueF]$cyan  Payload Prank for attack computer [ Fun with Windows ] "
-echo -e $BlueF"	[$white"06"$BlueF]$cyan  Payload to Manage Windows [ add user,rdp enable,telnet ] "
-echo -e $BlueF"	[$white"07"$BlueF]$cyan  Attacking Windows [ At your Own Risk ]"
-echo -e $BlueF"	[$white"08"$BlueF]$cyan  Help and Tutorials "
-echo -e $BlueF"	[$white"09"$BlueF]$cyan  Credits  "
-echo -e $BlueF"	[$white"10"$BlueF]$cyan  Exit  "
+echo $BlueF"  __________                __         .__  "$white"  |  |___________| "
+echo $BlueF"  \______   \_______ __ ___/  |______  |  |   "$white"|  "$white"| ((_(_)| )_) "
+echo $BlueF"   |    |  _/\_  __ \  |  \   __\__  \ |  |   "$white"|  "$white"\_((_(_)|/(_) "
+echo $BlueF"   |    |   \ |  | \/  |  /|  |  / __ \|  |__ "$white"\             ( "
+echo $BlueF"   |______  / |__|  |____/ |__| (____  /____/  "$white"\_____________) "
+echo $BlueF"       \/                         \/                  "$BlueF"   /"
+echo $BlueF"   | "$cyan"Brutall Created By   "$white": "$red"Edo Maland ( Screetsec )   "$BlueF" /"
+echo $BlueF"   | "$cyan"Version              "$white": "$red"$version                       "$BlueF" /"
+echo $BlueF"   | "$cyan"Codename             "$white": "$red"$codename	             "$BlueF" /"
+echo $BlueF"   | "$cyan"Follow me on Github  "$white": "$red"@Screetsec               "$BlueF"/"
+echo $BlueF"   | "$cyan"Dracos Linux         "$white": "$red"dracos-linux.org        "$BlueF"/"
+echo "$BlueF""   ------------------------------------------------"
+echo $white " "
+echo $BlueF"	[$white"01"$BlueF]$cyan  Meterpreter Reverse TCP Injection using Powershell  "
+echo $BlueF"	[$white"02"$BlueF]$cyan  Download and Execute Backdoor  "
+echo $BlueF"	[$white"03"$BlueF]$cyan  Get Credential information With Mimikatz [ Send to gmail ]    "
+echo $BlueF"	[$white"04"$BlueF]$cyan  Retrieve lots of passwords stored on a local computer [ gmail ]  "
+echo $BlueF"	[$white"05"$BlueF]$cyan  Payload Prank for attack computer [ Fun with Windows ] "
+echo $BlueF"	[$white"06"$BlueF]$cyan  Payload to Manage Windows [ add user,rdp enable,telnet ] "
+echo $BlueF"	[$white"07"$BlueF]$cyan  Attacking Windows [ At your Own Risk ]"
+echo $BlueF"	[$white"08"$BlueF]$cyan  Help and Tutorials "
+echo $BlueF"	[$white"09"$BlueF]$cyan  Credits  "
+echo $BlueF"	[$white"10"$BlueF]$cyan  Exit  "
 
-echo -e " "
+echo " "
 echo -n -e $red'  \033[4mScreetsec@Brutal:\033[0m >> '; tput sgr0 #insert your choice
 read Dracos
-echo -e $white"  --------------------------------------------------------------   ";
+echo $white"  --------------------------------------------------------------   ";
 		if test $Dracos == '1'
 				then
 					echo ""
-					echo -e $okegreen""
+					echo $okegreen""
 					echo -ne "  SET LHOST : ";tput sgr0
 					read yourip
 					echo ""
@@ -739,16 +739,16 @@ echo -e $white"  -------------------------------------------------------------- 
 					sleep 2
 					echo ""
 					rm powershell_attack.txt unicorn.rc
-					echo -e $okegreen " Succes Create Payload "
-					echo -e $white"  --------------------------------------------------------------   ";
+					echo $okegreen " Succes Create Payload "
+					echo $white"  --------------------------------------------------------------   ";
 					echo ""
-					echo -e $yellow " Now Copy the generated $meinjectopt to your HID "
+					echo $yellow " Now Copy the generated $meinjectopt to your HID "
 					echo ""
 		elif test $Dracos == '2'
 	 			then
 					echo ""
-					echo -e $red"  Note : You can upload your backdoor into your server "
-					echo -e $okegreen " Wait , starting apache server ...... "
+					echo $red"  Note : You can upload your backdoor into your server "
+					echo $okegreen " Wait , starting apache server ...... "
 					service apache2 start
 					echo ""
 					touch $temp
@@ -764,16 +764,16 @@ echo -e $white"  -------------------------------------------------------------- 
 					sed s#LOKASIBACKDOOR#$s1#g $doxecopt >$doxecopt1
 					echo ""
 					sleep 1
-					echo -e $white " Succes Create Payload "
-					echo -e $white"  --------------------------------------------------------------   ";
+					echo $white " Succes Create Payload "
+					echo $white"  --------------------------------------------------------------   ";
 					echo ""
-					echo -e $yellow " Now Copy the generated $doxecopt1 to your HID "
+					echo $yellow " Now Copy the generated $doxecopt1 to your HID "
 					echo ""
 			elif test $Dracos == '3'
 				then
 					echo ""
-					echo -e $red"  Note : You must setting your account gmail in : "
-					echo -e $yellow"  https://www.google.com/settings/security/lesssecureapps "
+					echo $red"  Note : You must setting your account gmail in : "
+					echo $yellow"  https://www.google.com/settings/security/lesssecureapps "
 					echo ""
 					echo -ne $okegreen " Input your email  :  "; tput sgr0
 					read put
@@ -796,16 +796,16 @@ echo -e $white"  -------------------------------------------------------------- 
 					rm $gathering1opt $gathering1opt1
 					echo ""
 					sleep 1
-					echo -e $white " Succes Create Payload "
-					echo -e $white"  --------------------------------------------------------------   ";
+					echo $white " Succes Create Payload "
+					echo $white"  --------------------------------------------------------------   ";
 					echo ""
-					echo -e $yellow " Now Copy the generated $gathering1opt2 to your HID "
+					echo $yellow " Now Copy the generated $gathering1opt2 to your HID "
 					echo ""
 				elif test $Dracos == '4'
 					then
 						echo ""
-						echo -e $red"  Note : You must setting your account gmail in : "
-						echo -e $yellow"  https://www.google.com/settings/security/lesssecureapps "
+						echo $red"  Note : You must setting your account gmail in : "
+						echo $yellow"  https://www.google.com/settings/security/lesssecureapps "
 						echo ""
 						echo -ne $okegreen " Input your email  :  "; tput sgr0
 						read put
@@ -828,10 +828,10 @@ echo -e $white"  -------------------------------------------------------------- 
 						rm $gathering2opt $gathering2opt1
 						echo ""
 						sleep 1
-						echo -e $white " Succes Create Payload "
-						echo -e $white"  --------------------------------------------------------------   ";
+						echo $white " Succes Create Payload "
+						echo $white"  --------------------------------------------------------------   ";
 						echo ""
-						echo -e $yellow " Now Copy the generated $gathering2opt2 to your HID "
+						echo $yellow " Now Copy the generated $gathering2opt2 to your HID "
 						echo ""
 
 					elif test $Dracos == '5'
@@ -859,7 +859,7 @@ echo -e $white"  -------------------------------------------------------------- 
 					        clear
 									exit
 				 		else
-							echo -e "  Incorrect Number"
+							echo "  Incorrect Number"
 							fi
 							echo -n -e $red"  Do you want exit? ( Yes / No ) :" ;tput sgr0
 							read back
@@ -881,50 +881,50 @@ echo -e $white"  -------------------------------------------------------------- 
 ################################################
 
 clear
-echo -e $white""
+echo $white""
 echo "                                _________-----_____ "
 echo "                     _____------           __      ----_ "
 echo "             ___----             ___------              \ "
 echo "                ----________        ----                 \ "
-echo -e "                            -----__    |            "$red" _____$white) "
-echo -e "                                 __-                "$red"/#####$white\ "
-echo -e "                     _______-----    ___--          "$red"\####/$white)\ "
-echo -e "               ------_______      ---____            "$red"\##/  $white/ "
-echo -e "                            -----__    \ --    _      "$red"-- $white  /\   "
+echo "                            -----__    |            "$red" _____$white) "
+echo "                                 __-                "$red"/#####$white\ "
+echo "                     _______-----    ___--          "$red"\####/$white)\ "
+echo "               ------_______      ---____            "$red"\##/  $white/ "
+echo "                            -----__    \ --    _      "$red"-- $white  /\   "
 echo "                                   --__--__     \_____/   \_/\ "
 echo "                                          ----|   /          | "
-echo -e $BlueF"  __________                __         .__  "$white"  |  |___________| "
-echo -e $BlueF"  \______   \_______ __ ___/  |______  |  |   "$white"|  "$white"| ((_(_)| )_) "
-echo -e $BlueF"   |    |  _/\_  __ \  |  \   __\__  \ |  |   "$white"|  "$white"\_((_(_)|/(_) "
-echo -e $BlueF"   |    |   \ |  | \/  |  /|  |  / __ \|  |__ "$white"\             ( "
-echo -e $BlueF"   |______  / |__|  |____/ |__| (____  /____/  "$white"\_____________) "
-echo -e $BlueF"       \/                         \/                  "$BlueF"   /"
-echo -e $BlueF"   | "$cyan"Brutall Created By   "$white": "$red"Edo Maland ( Screetsec )   "$BlueF" /"
-echo -e $BlueF"   | "$cyan"Version              "$white": "$red"$version                       "$BlueF" /"
-echo -e $BlueF"   | "$cyan"Codename             "$white": "$red"$codename	             "$BlueF" /"
-echo -e $BlueF"   | "$cyan"Follow me on Github  "$white": "$red"@Screetsec               "$BlueF"/"
-echo -e $BlueF"   | "$cyan"Dracos Linux         "$white": "$red"dracos-linux.org        "$BlueF"/"
-echo -e "$BlueF""   ------------------------------------------------"
-echo -e $white " "
-echo -e $BlueF"	[$white"01"$BlueF]$cyan  Meterpreter Reverse TCP Injection using Powershell  "
-echo -e $BlueF"	[$white"02"$BlueF]$cyan  Download and Execute Backdoor  "
-echo -e $BlueF"	[$white"03"$BlueF]$cyan  Get Credential information With Mimikatz [ Send to gmail ]    "
-echo -e $BlueF"	[$white"04"$BlueF]$cyan  Retrieve lots of passwords stored on a local computer [ gmail ]  "
-echo -e $BlueF"	[$white"05"$BlueF]$cyan  Payload Prank for attack computer [ Fun with Windows ] "
-echo -e $BlueF"	[$white"06"$BlueF]$cyan  Payload to Manage Windows [ add user,rdp enable,telnet ] "
-echo -e $BlueF"	[$white"07"$BlueF]$cyan  Attacking Windows [ At your Own Risk ]"
-echo -e $BlueF"	[$white"08"$BlueF]$cyan  Help and Tutorials "
-echo -e $BlueF"	[$white"09"$BlueF]$cyan  Credits  "
-echo -e $BlueF"	[$white"10"$BlueF]$cyan  Exit  "
+echo $BlueF"  __________                __         .__  "$white"  |  |___________| "
+echo $BlueF"  \______   \_______ __ ___/  |______  |  |   "$white"|  "$white"| ((_(_)| )_) "
+echo $BlueF"   |    |  _/\_  __ \  |  \   __\__  \ |  |   "$white"|  "$white"\_((_(_)|/(_) "
+echo $BlueF"   |    |   \ |  | \/  |  /|  |  / __ \|  |__ "$white"\             ( "
+echo $BlueF"   |______  / |__|  |____/ |__| (____  /____/  "$white"\_____________) "
+echo $BlueF"       \/                         \/                  "$BlueF"   /"
+echo $BlueF"   | "$cyan"Brutall Created By   "$white": "$red"Edo Maland ( Screetsec )   "$BlueF" /"
+echo $BlueF"   | "$cyan"Version              "$white": "$red"$version                       "$BlueF" /"
+echo $BlueF"   | "$cyan"Codename             "$white": "$red"$codename	             "$BlueF" /"
+echo $BlueF"   | "$cyan"Follow me on Github  "$white": "$red"@Screetsec               "$BlueF"/"
+echo $BlueF"   | "$cyan"Dracos Linux         "$white": "$red"dracos-linux.org        "$BlueF"/"
+echo "$BlueF""   ------------------------------------------------"
+echo $white " "
+echo $BlueF"	[$white"01"$BlueF]$cyan  Meterpreter Reverse TCP Injection using Powershell  "
+echo $BlueF"	[$white"02"$BlueF]$cyan  Download and Execute Backdoor  "
+echo $BlueF"	[$white"03"$BlueF]$cyan  Get Credential information With Mimikatz [ Send to gmail ]    "
+echo $BlueF"	[$white"04"$BlueF]$cyan  Retrieve lots of passwords stored on a local computer [ gmail ]  "
+echo $BlueF"	[$white"05"$BlueF]$cyan  Payload Prank for attack computer [ Fun with Windows ] "
+echo $BlueF"	[$white"06"$BlueF]$cyan  Payload to Manage Windows [ add user,rdp enable,telnet ] "
+echo $BlueF"	[$white"07"$BlueF]$cyan  Attacking Windows [ At your Own Risk ]"
+echo $BlueF"	[$white"08"$BlueF]$cyan  Help and Tutorials "
+echo $BlueF"	[$white"09"$BlueF]$cyan  Credits  "
+echo $BlueF"	[$white"10"$BlueF]$cyan  Exit  "
 
-echo -e " "
+echo " "
 echo -n -e $red'  \033[4mScreetsec@Brutal:\033[0m >> '; tput sgr0 #insert your choice
 read Dracos
-echo -e $white"  --------------------------------------------------------------   ";
+echo $white"  --------------------------------------------------------------   ";
 		if test $Dracos == '1'
 				then
 					echo ""
-					echo -e $okegreen""
+					echo $okegreen""
 					echo -ne "  SET LHOST : ";tput sgr0
 					read yourip
 					echo ""
@@ -942,16 +942,16 @@ echo -e $white"  -------------------------------------------------------------- 
 					sleep 2
 					echo ""
 					rm powershell_attack.txt unicorn.rc
-					echo -e $okegreen " Succes Create Payload "
-					echo -e $white"  --------------------------------------------------------------   ";
+					echo $okegreen " Succes Create Payload "
+					echo $white"  --------------------------------------------------------------   ";
 					echo ""
-					echo -e $yellow " Now Copy the generated $meinjectopt to your HID "
+					echo $yellow " Now Copy the generated $meinjectopt to your HID "
 					echo ""
 		elif test $Dracos == '2'
 	 			then
 					echo ""
-					echo -e $red"  Note : You can upload your backdoor into your server "
-					echo -e $okegreen " Wait , starting apache server ...... "
+					echo $red"  Note : You can upload your backdoor into your server "
+					echo $okegreen " Wait , starting apache server ...... "
 					service apache2 start
 					echo ""
 					touch $temp
@@ -967,16 +967,16 @@ echo -e $white"  -------------------------------------------------------------- 
 					sed s#LOKASIBACKDOOR#$s1#g $doxecopt >$doxecopt1
 					echo ""
 					sleep 1
-					echo -e $white " Succes Create Payload "
-					echo -e $white"  --------------------------------------------------------------   ";
+					echo $white " Succes Create Payload "
+					echo $white"  --------------------------------------------------------------   ";
 					echo ""
-					echo -e $yellow " Now Copy the generated $doxecopt1 to your HID "
+					echo $yellow " Now Copy the generated $doxecopt1 to your HID "
 					echo ""
 			elif test $Dracos == '3'
 				then
 					echo ""
-					echo -e $red"  Note : You must setting your account gmail in : "
-					echo -e $yellow"  https://www.google.com/settings/security/lesssecureapps "
+					echo $red"  Note : You must setting your account gmail in : "
+					echo $yellow"  https://www.google.com/settings/security/lesssecureapps "
 					echo ""
 					echo -ne $okegreen " Input your email  :  "; tput sgr0
 					read put
@@ -999,16 +999,16 @@ echo -e $white"  -------------------------------------------------------------- 
 					rm $gathering1opt $gathering1opt1
 					echo ""
 					sleep 1
-					echo -e $white " Succes Create Payload "
-					echo -e $white"  --------------------------------------------------------------   ";
+					echo $white " Succes Create Payload "
+					echo $white"  --------------------------------------------------------------   ";
 					echo ""
-					echo -e $yellow " Now Copy the generated $gathering1opt2 to your HID "
+					echo $yellow " Now Copy the generated $gathering1opt2 to your HID "
 					echo ""
 				elif test $Dracos == '4'
 					then
 						echo ""
-						echo -e $red"  Note : You must setting your account gmail in : "
-						echo -e $yellow"  https://www.google.com/settings/security/lesssecureapps "
+						echo $red"  Note : You must setting your account gmail in : "
+						echo $yellow"  https://www.google.com/settings/security/lesssecureapps "
 						echo ""
 						echo -ne $okegreen " Input your email  :  "; tput sgr0
 						read put
@@ -1031,10 +1031,10 @@ echo -e $white"  -------------------------------------------------------------- 
 						rm $gathering2opt $gathering2opt1
 						echo ""
 						sleep 1
-						echo -e $white " Succes Create Payload "
-						echo -e $white"  --------------------------------------------------------------   ";
+						echo $white " Succes Create Payload "
+						echo $white"  --------------------------------------------------------------   ";
 						echo ""
-						echo -e $yellow " Now Copy the generated $gathering2opt2 to your HID "
+						echo $yellow " Now Copy the generated $gathering2opt2 to your HID "
 						echo ""
 
 					elif test $Dracos == '5'
@@ -1062,7 +1062,7 @@ echo -e $white"  -------------------------------------------------------------- 
 					        clear
 									exit
 				 		else
-							echo -e "  Incorrect Number"
+							echo "  Incorrect Number"
 							fi
 							echo -n -e $red"  Do you want exit? ( Yes / No ) :" ;tput sgr0
 							read back

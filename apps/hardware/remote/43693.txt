@@ -121,7 +121,7 @@ querystr = 'TimeStamp=%3b'
 password = 'Welcome01'
    
 cmds = ['ngc --start sshd 2>&1',
-      'echo -e "%(s)s\n%(s)s"|passwd 2>&1' % {'s' : password}]
+      'echo "%(s)s\n%(s)s"|passwd 2>&1' % {'s' : password}]
    
 for cmd in cmds:
    print 'Running command', repr(cmd)

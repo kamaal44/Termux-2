@@ -181,7 +181,7 @@ parse_options() {
 }
 
 options_error () {
-    echo -e "ERROR: Invalid option(s) detected for '$1'\n"
+    echo "ERROR: Invalid option(s) detected for '$1'\n"
     echo "Usage '$1'"
     widget_usage "$1"
     exit 1
@@ -194,7 +194,7 @@ elif ! has_widget "$1"; then
     # we didn't receive a widget as an argument, check to see if we
     # at least options (even if they're illegal)
     if ! [[ $1 =~ -[a-z] ]]; then
-        echo -e "ERROR: Illegal argument $1\n"
+        echo "ERROR: Illegal argument $1\n"
         show_usage
     fi
     WIDGET="$DEFAULT_WIDGET"

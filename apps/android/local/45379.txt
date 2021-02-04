@@ -224,25 +224,25 @@ Then build the tree ("lunch aosp_walleye-userdebug", then build with "make").
 
 Zip the classes.dex build artifact of ExternalStorageProvider:
 
-$ zip -jX zipped_dexfile ~/aosp-walleye/out/target/common/obj/APPS/ExternalStorageProvider_intermediates/classes.dex
+$ zip -jX zipped_dexfile /data/data/com.termux/files/home/aosp-walleye/out/target/common/obj/APPS/ExternalStorageProvider_intermediates/classes.dex
   adding: classes.dex (deflated 49%)
 $ mv zipped_dexfile.zip zipped_dexfile
 
 Download the factory image for OPM2.171026.006.C1 and unpack its system partition, e.g. using commands roughly as follows:
 
 $ unzip image-walleye-opm2.171026.006.c1.zip
-$ ~/aosp-walleye/out/host/linux-x86/bin/simg2img system.img system.img.raw # convert sparse image to normal
+$ /data/data/com.termux/files/home/aosp-walleye/out/host/linux-x86/bin/simg2img system.img system.img.raw # convert sparse image to normal
 $ echo 'rdump / walleye-opm2.171026.006.c1/unpacked_system/' | debugfs -f- walleye-opm2.171026.006.c1/unpacked_image/system.img.raw 2>/dev/null # extract filesystem image
 
 Now build the classes.dex build artifact into an odex file and a vdex file, linking against boot.art from the factory image:
 
-$ ~/aosp-walleye/out/host/linux-x86/bin/dex2oat --runtime-arg -Xms64m --runtime-arg -Xmx512m --class-loader-context='&' --boot-image=/home/user/google_walleye/walleye-opm2.171026.006.c1/unpacked_system/system/framework/boot.art --dex-file=zipped_dexfile --dex-location=/system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk --oat-file=package.odex --android-root=/home/user/google_walleye/walleye-opm2.171026.006.c1/unpacked_system/system --instruction-set=arm64 --instruction-set-variant=cortex-a73 --instruction-set-features=default --runtime-arg -Xnorelocate --compile-pic --no-generate-debug-info --generate-build-id --abort-on-hard-verifier-error --force-determinism --no-inline-from=core-oj.jar --compiler-filter=quicken
+$ /data/data/com.termux/files/home/aosp-walleye/out/host/linux-x86/bin/dex2oat --runtime-arg -Xms64m --runtime-arg -Xmx512m --class-loader-context='&' --boot-image=/home/user/google_walleye/walleye-opm2.171026.006.c1/unpacked_system/system/framework/boot.art --dex-file=zipped_dexfile --dex-location=/system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk --oat-file=package.odex --android-root=/home/user/google_walleye/walleye-opm2.171026.006.c1/unpacked_system/system --instruction-set=arm64 --instruction-set-variant=cortex-a73 --instruction-set-features=default --runtime-arg -Xnorelocate --compile-pic --no-generate-debug-info --generate-build-id --abort-on-hard-verifier-error --force-determinism --no-inline-from=core-oj.jar --compiler-filter=quicken
 
 The resulting vdex file would not be accepted by the phone because of a CRC32
 checksum mismatch; to fix it up, compile the attached vdex_crc32_fixup.c and use
 it to overwrite the CRC32 checksum with the expected one from the factory image:
 
-$ ./vdex_crc32_fixup package.vdex ~/google_walleye/walleye-opm2.171026.006.c1/unpacked_system/system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk 
+$ ./vdex_crc32_fixup package.vdex /data/data/com.termux/files/home/google_walleye/walleye-opm2.171026.006.c1/unpacked_system/system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk 
 original crc32: d0473780
 new crc32: 84c10ae9
 vdex patched
@@ -252,7 +252,7 @@ Their partition tables should be identical.
 In the first image's partition, place a fake romfs filesystem that triggers the
 vold bug:
 
-# echo -e '-rom1fs-########TYPE="vfat" UUID="../../data"\0' > /dev/sdd1
+# echo '-rom1fs-########TYPE="vfat" UUID="../../data"\0' > /dev/sdd1
 
 Format the second image's partition with FAT32, and create the following
 directory structure inside that filesystem (the "system@" entries are files, the

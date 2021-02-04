@@ -20,9 +20,9 @@ printf '\x1b[\x34 q'
 # start chroot and goto pseudo-home directory
 if ! pgrep -f "proot" >/dev/null ; then termux-chroot; fi
 
-#echo -e '\e[2 q' # Change to block
-#echo -e '\e[4 q' # Change to underline
-echo -e '\e[6 q' # Change to bar
+#echo '\e[2 q' # Change to block
+#echo '\e[4 q' # Change to underline
+echo '\e[6 q' # Change to bar
 
 source /data/data/com.termux/files/home/functions
 

@@ -27,20 +27,20 @@ if test -z "$2"; then
 else
 	sql_script="$2"
 fi
-echo -e "\x1b[92msql query processor 1.0\x1b[0m"
-echo -e "\x1b[92mdatabase: \x1b[93m${user_db}\x1b[0m"
-echo -e "\x1b[92msql script: \x1b[93m${sql_script}\x1b[92m; $(cat ${sql_script} | wc -c)B\x1b[0m"
+echo "\x1b[92msql query processor 1.0\x1b[0m"
+echo "\x1b[92mdatabase: \x1b[93m${user_db}\x1b[0m"
+echo "\x1b[92msql script: \x1b[93m${sql_script}\x1b[92m; $(cat ${sql_script} | wc -c)B\x1b[0m"
 total_lines=$(cat ${sql_script} | wc -l)
 for((x = 0;x <= ${total_lines};x++)); do
 	sql_query=$(python -c "print(open('${sql_script}','r').read().split('\n')[${x}].strip())")
-	echo -e "\x1b[92m-- query: \x1b[93m${sql_query}\x1b[0m"
+	echo "\x1b[92m-- query: \x1b[93m${sql_query}\x1b[0m"
 	return_output=$(sqlite3 ${user_db} "${sql_query}")
 	if test "$(echo ${return_output} | grep Error)"; then
-		echo -e "\x1b[91m${return_output}\x1b[0m"
+		echo "\x1b[91m${return_output}\x1b[0m"
 	fi
 	if [[ "${return_output}" != "" ]]; then
-		echo -e "\x1b[92m-- output:\x1b[0m"
-		echo -e "\x1b[93m${return_output}\x1b[0m"
+		echo "\x1b[92m-- output:\x1b[0m"
+		echo "\x1b[93m${return_output}\x1b[0m"
 	fi
 done
 }

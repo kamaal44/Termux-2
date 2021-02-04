@@ -1,7 +1,6 @@
-termux-open [options] path-or-url
-=================================
+# termux-open [options] path-or-url
 
-Open a file or URL in an external app.
+# Open a file or URL in an external app.
 
   --send               if the file should be shared for sending
 

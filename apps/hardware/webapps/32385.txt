@@ -195,10 +195,10 @@ The sync user is able to run the /ca/bin/backend tool to execute CLI
 commands. Below how it's possible to turn the debug monitor off and on:
 
 Turn debug monitor off:
-/ca/bin/backend -c "debug monitor off"`echo -e "\0374"`
+/ca/bin/backend -c "debug monitor off"`echo "\0374"`
 
 Turn debug monitor on:
-/ca/bin/backend -c "debug monitor on"`echo -e "\0374"`
+/ca/bin/backend -c "debug monitor on"`echo "\0374"`
 
 Thus through combining the SSH private key issue and the world writable
 file + unrestricted backend tool it's possible to gain a remote root shell.

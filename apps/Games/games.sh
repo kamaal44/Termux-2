@@ -48,7 +48,7 @@ echo "[e]  EXIT "  | lolcat -as 1000
 
 # Select a Choice :
 
-echo -e "Enter a Choice : \c" | lolcat
+echo "Enter a Choice : \c" | lolcat
 read option
 
 case $option in 

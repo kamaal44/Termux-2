@@ -115,16 +115,16 @@ c=={:::::::::::::::> Black Hydra Console
 DOCUMENT
 )
 function bhydraLogWarn {
-	echo -e "[!] Warning: Dont leave the input empty!"
-	echo -e "[!] If input empty, it'll break the current iteration!"
+	echo "[!] Warning: Dont leave the input empty!"
+	echo "[!] If input empty, it'll break the current iteration!"
 }
 function inputIsEmpty {
 	bhydraUserInput="${#1}"
 	bhydraUInputLen=$(printf "%${bhydraUserInput}s" | tr "\n" " ")
 	if [[ "$1" == "" || "$1" == "${bhydraUInputLen}" ]]; then
-		echo -e "continue 1"
+		echo "continue 1"
 	else
-		echo -e "true"
+		echo "true"
 	fi
 }
 function main_c {
@@ -257,8 +257,8 @@ function main_c {
 	done
 }
 if test -z "$(which hydra)"; then
-	echo -e "[!] Warning: hydra package is not installed!"
-	echo -e "[+] Installing hydra ..."
+	echo "[!] Warning: hydra package is not installed!"
+	echo "[+] Installing hydra ..."
 	apt update -y && apt upgrade -y
 	apt install hydra -y
 else

