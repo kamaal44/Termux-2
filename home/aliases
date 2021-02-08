@@ -1,68 +1,68 @@
 #		Shortcuts
-alias cd1="cd ../; srca; l; pwd"
-alias cd2="cd ../../; srca; l; pwd"
-alias cd3="cd ../../../; srca; l; pwd"
-alias cd-="cd -; srca; l; pwd"
-alias ~="cd /data/data/com.termux/files/home/; srca; l; pwd"
-alias h="cd /data/data/com.termux/files/home/; srca; l; pwd"
-alias sd="cd /storage/emulated/0/; srca; l; pwd"
-alias ins="cd /storage/emulated/0/github/Termux/installs/; srca; l; pwd"
-alias pyt="cd /storage/emulated/0/github/Termux/python/; srca; l; pwd"
-alias scr="cd /storage/emulated/0/github/Termux/scripts/; srca; l; pwd"
-alias ven="cd /storage/emulated/0/github/Termux/python/venv/; srca; l; pwd"
-alias app="cd /storage/emulated/0/github/Termux/apps/; srca; l; pwd"
-alias d="cd /storage/emulated/0/Download/; srca; l; pwd"
-alias doc="cd /storage/emulated/0/github/Termux/Documents/; srca; l; pwd"
-alias gh="cd /storage/emulated/0/github/; srca; l; pwd"
-alias ter="cd /storage/emulated/0/github/Termux/; srca; l; pwd"
-alias res="cd /storage/emulated/0/github/Resources/; srca; l; pwd"
-alias gists="cd /storage/emulated/0/github/Gists/; srca; l; pwd"
-alias sdcard="cd /storage/4932-72CF/; srca; l; pwd"
-alias music="cd /storage/4932-72CF/Music; srca; l; pwd"
-alias terh="cd /storage/emulated/0/github/Termux/home/; srca; l; pwd"
-alias h2h="cd /storage/emulated/0/github/Termux/Documents/"how to & help/"; srca; l; pwd"
-alias syn="cd /storage/4932-72CF/Sync/; l"
+alias cd1='cd ../; srca; l; pwd'
+alias cd2='cd ../../; srca; l; pwd'
+alias cd3='cd ../../../; srca; l; pwd'
+alias cd-='cd -; srca; l; pwd'
+alias ~='cd /data/data/com.termux/files/home/; srca; l;; pwd'
+alias h='cd /data/data/com.termux/files/home/; srca; l; pwd'
+alias sd='cd /storage/emulated/0/; srca; l; pwd'
+alias ins='cd /storage/emulated/0/github/Termux/installs/; srca; l; pwd'
+alias pyt='cd /storage/emulated/0/github/Termux/python/; srca; l; pwd'
+alias scr='cd /storage/emulated/0/github/Termux/scripts/; srca; l; pwd'
+alias ven='cd /storage/emulated/0/github/Termux/python/venv/; srca; l; pwd'
+alias app='cd /storage/emulated/0/github/Termux/apps/; srca; l; pwd'
+alias d='cd /storage/emulated/0/Download/; srca; l; pwd'
+alias doc='cd /storage/emulated/0/github/Termux/Documents/; srca; l; pwd'
+alias gh='cd /storage/emulated/0/github/; srca; l; pwd'
+alias ter='cd /storage/emulated/0/github/Termux/; srca; l; pwd'
+alias terh='cd /storage/emulated/0/github/Termux/home/; srca; l; pwd'
+alias res='cd /storage/emulated/0/github/Termux/Resources/; srca; l; pwd'
+alias gists='cd /storage/emulated/0/github/Termux/Gists/; srca; l; pwd'
+alias sdcard='cd /storage/1054-F76A/; srca; l; pwd'
+alias music='cd /storage/1054-F76A/Music; l'
+alias h2h="cd /storage/emulated/0/github/Termux/Documents/'how to & help/'; l"
+alias syn="cd /storage/1054-F76A/Sync/; l"
 
 ######################################################
-#		Git
-alias faa="git add .; git add -Af; git commit -m "Add"; git push --force"
+#					Git
+alias faa="git add -Af; git commit -m 'Add'; git push --force"
 alias gurl="git remote show origin"
-alias g="git clone"
-alias gpl="git pull"
-alias gp="git push"
-alias gco="git checkout"
-alias gcm="git checkout master"
-alias gr="git remote -v"
-alias gb="git branch -a"
-alias gl="git log --pretty -n 2 --stat"
-alias gs="git status -u"
-alias ga="git add . && git add -A"
-alias gf="git fetch"
-alias gfl="git ls-files | grep"
-alias gk="gitk --all --branches"
-alias gl="git log --pretty -n 2 --stat --decorate --all"
-alias gc="git commit -m"
-alias gi="git init"
+alias g='git clone'
+alias gpl='git pull'
+alias gp='git push'
+alias gco='git checkout'
+alias gcm='git checkout master'
+alias gr='git remote -v'
+alias gb='git branch -a'
+alias gl='git log --pretty -n 2 --stat'
+alias gs='git status -u'
+alias ga='git add . && git add -A'
+alias gf='git fetch'
+alias gfl='git ls-files | grep'
+alias gk='gitk --all --branches'
+alias gl='git log --pretty -n 2 --stat --decorate --all'
+alias gc='git commit -m'
+alias gi='git init'
 
 ######################################################
-#		Python
-alias py="/data/data/com.termux/files/usr/bin/python3"
-alias py2="/data/data/com.termux/files/usr/bin/python2"
-alias python="/data/data/com.termux/files/usr/bin/python3"
-alias pip="/data/data/com.termux/files/usr/bin/python3 -m pip"
-alias pipi="/data/data/com.termux/files/usr/bin/python3 -m pip install"
-alias pipr="/data/data/com.termux/files/usr/bin/python3 -m pip install -r"
-alias pipu="/data/data/com.termux/files/usr/bin/python3 -m pip install --upgrade pip"
-alias pipur="/data/data/com.termux/files/usr/bin/python3 -m pip install --upgrade -r requirements.txt"
-alias pipurf="/data/data/com.termux/files/usr/bin/python3 -m pip install --upgrade --forse-reinstall -r requirements.txt"
-alias webserver="/data/data/com.termux/files/usr/bin/python3 -m http.server 8080"
-alias ve="virtualenv venv -p /data/data/com.termux/files/usr/bin/python3"
-alias va="source venv/bin/activate"
+#					Python
+alias py='/data/data/com.termux/files/usr/bin/python3'
+alias py2='/data/data/com.termux/files/usr/bin/python2'
+alias python='/data/data/com.termux/files/usr/bin/python3'
+alias pip='/data/data/com.termux/files/usr/bin/python3 -m pip'
+alias pipi='/data/data/com.termux/files/usr/bin/python3 -m pip install'
+alias pipr='/data/data/com.termux/files/usr/bin/python3 -m pip install -r'
+alias pipu='/data/data/com.termux/files/usr/bin/python3 -m pip install --upgrade pip'
+alias pipur='/data/data/com.termux/files/usr/bin/python3 -m pip install --upgrade -r requirements.txt'
+alias pipurf='/data/data/com.termux/files/usr/bin/python3 -m pip install --upgrade --forse-reinstall -r requirements.txt'
+alias webserver='/data/data/com.termux/files/usr/bin/python3 -m http.server 8080'
+alias ve='virtualenv venv -p /data/data/com.termux/files/usr/bin/python3'
+alias va='source venv/bin/activate'
 alias dea="deactivate"
 
 ######################################################
 #		YouTube-dl & Facebook-dl
-alias yt="youtube-dl -v -f"
+alias yt='youtube-dl -v -f'
 alias ytdl="youtube-dl -v -f"
 alias mp3="yt 'bestaudio[ext=mp3]/best' -ciw -o '%(title)s.%(ext)s' --extract-audio --audio-quality 0 --audio-format mp3"
 alias mp31="yt 'bestaudio[ext=mp3]/best' -ciw -o '%(title)s.%(ext)s' --extract-audio --audio-quality 0 --audio-format mp3 --yes-playlist --playlist-start 1"
@@ -71,60 +71,52 @@ alias mp41="yt 'ytsearch:mp4' 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp
 alias fbdl="py /storage/emulated/0/github/Termux/python/Facebook-Video-Downloader/downloader.py"
 
 ######################################################
-#		Rclone
-alias rcl="rclone"
-alias rclcp="rclone copy -P"
-
-######################################################
 #		Update
-alias src="source"
-alias srca="source /data/data/com.termux/files/home/aliases"
-alias pu="pkg update -y && pkg upgrade -y"
-alias au="apt update -y && apt upgrade -y"
-alias uu="au; pu; pip install upgrade pip; npm install -g npm"
+alias src='source'
+alias srca='source /data/data/com.termux/files/home/aliases'
+alias pu='pkg update -y && pkg upgrade -y'
+alias au='apt update -y && apt upgrade -y'
+alias uu='au; pu; pip install upgrade pip; npm install -g npm'
 
 ######################################################
 #		Documents
-alias nal="n /data/data/com.termux/files/home/aliases"
-alias pad="n /data/data/com.termux/files/home/pad.txt"
-alias padd="n +99999 /data/data/com.termux/files/home/pad.txt"
-alias gdoc="n /storage/emulated/0/github/Resources/Git/"Git Commands.txt""
-alias grdoc="n /storage/emulated/0/github/Resources/Git/"Git Repos.txt""
-alias pydoc="n /storage/emulated/0/github/Resources/Python/"Python Commands.txt""
+alias nal='n /data/data/com.termux/files/home/aliases'
+alias pad='n /data/data/com.termux/files/home/pad.txt'
+alias padd='n +99999 /data/data/com.termux/files/home/pad.txt'
+alias gdoc="n /storage/emulated/0/github/Termux/Resources/Git/'Git Commands.txt'"
+alias grdoc="n /storage/emulated/0/github/Termux/Resources/Git/'Git Repos.txt'"
+alias pydoc="n /storage/emulated/0/github/Termux/Resources/Python/'Python Commands.txt'"
 
 ######################################################
 #		Other OS's 
-alias slack="/data/data/com.termux/files/home/slackware/startSlackware"
-alias kali="bash /data/data/com.termux/files/home/start-kali.sh"
-alias fedora="startfedora"
-alias arch="startarch"
+alias slack='./slackware/startSlackware'
 
 ######################################################
 #		PHP
-alias pb="phpcs"
-alias pbf="phpcbf"
+alias pb='phpcs'
+alias pbf='phpcbf'
 
 ######################################################
 #	   Exploits
 alias wifite="py2 /storage/emulated/0/github/Termux/python/wifite.py"
 
 ######################################################
-#		Docker
-alias docker_start="systemctl start docker"
-alias docker_debian="docker run -it debian /bin/bash"
+#					Docker
+alias docker_start='systemctl start docker'
+alias docker_debian='docker run -it debian /bin/bash'
 
 ######################################################
-#		Config
-alias ip="curl ifconfig.me"
-alias ifc="ifconfig wlan0"
+#					Config
+alias ip='curl ifconfig.me'
+alias ifc='ifconfig wlan0'
 alias zshconfig="mate /data/data/com.termux/files/home/.zshrc"
 alias ohmyzsh="mate /data/data/com.termux/files/home/.oh-my-zsh"
-alias chcolor="/data/data/com.termux/files/home/.termux/colors.sh"
-alias chfont="/data/data/com.termux/files/home/.termux/fonts.sh"
+alias chcolor='/data/data/com.termux/files/home/.termux/colors.sh'
+alias chfont='/data/data/com.termux/files/home/.termux/fonts.sh'
 alias refresh="source /data/data/com.termux/files/home/.zshrc"
 
 ######################################################
-#					<-- WGET -->
+#					WGET
 
 #			Download Complete Directory
 alias wgd="wget -r –level=0 -E –ignore-length -x -k -p -e robots=off -np -N"
@@ -132,123 +124,126 @@ alias wgd="wget -r –level=0 -E –ignore-length -x -k -p -e robots=off -np -N"
 alias wgf="wget -r -A"
 
 ######################################################
-#			   <-- Find Commands -->
+#			   Find Commands
 
 # Find 50MB Files
-alias find50="find / -size 50M"
+alias find50='find / -size 50M'
 
 # Find Size between 50MB - 100MB
-alias find50-100="find / -size +50M -size -100M"
+alias find50-100='find / -size +50M -size -100M'
 
 ######################################################
 # Find and Delete 100MB Files
-alias rm100="find / -type f -size +100M -exec rm -rf {} \;"
+alias rm100='find / -type f -size +100M -exec rm -rf {} \;'
 
 # Rename all .git folders
-alias dot="find . -depth -type d | while read FNAME; do mv "$FNAME" "${FNAME//.git/DOTgit}"; done"
+alias dot='find . -depth -type d | while read FNAME; do mv "$FNAME" "${FNAME//.git/DOTgit}"; done'
 
 # Rename all DOTgit folders
-alias undot="find . -depth -type d | while read FNAME; do mv "$FNAME" "${FNAME//DOTgit/.git}"; done"
+alias undot='find . -depth -type d | while read FNAME; do mv "$FNAME" "${FNAME//DOTgit/.git}"; done'
 
 # To find and remove .git & .github.
-alias rm.="find . -depth -type d -name ".git" -exec rm -rf {} \; && find . -depth -type d -name ".github" -exec rm -rf {} \;"
+alias rm.='find . -depth -type d -name ".git" -exec rm -rf {} \; && find . -depth -type d -name ".github" -exec rm -rf {} \;'
 
 # To find and remove DOTgit & DOTgithub.
-alias rmdot="find . -depth -type d -name "DOTgit" -exec rm -rf {} \; && find . -depth -type d -name "DOTgithub" -exec rm -rf {} \;"
+alias rmdot='find . -depth -type d -name "DOTgit" -exec rm -rf {} \; && find . -depth -type d -name "DOTgithub" -exec rm -rf {} \;'
 
 ######################################################
 # Find empty directories
-alias empd="find . -type d -empty"
+alias empd='find . -type d -empty'
 
 # Find empty sized files
-alias rempf="find . -type f -empty"
+alias rempf='find . -type f -empty'
 
 # Removing 0 sized files
-alias rm0="find . -exec rm -rf {} +"
-alias rm01="find . -print0 | xargs -0 rm -rf"
-alias rm02="find . -delete"
+alias rm0='find . -exec rm -rf {} +'
+alias rm01='find . -print0 | xargs -0 rm -rf'
+alias rm02='find . -delete'
 
 ######################################################
-#          <-- Delete all Empty Folders -->
-alias remp="while [ -n "$(find . -depth -type d -empty -print -exec rm -rf {} +)" ]; do :; done"
-alias remp1="find . -depth -type d -exec rm -rf {} \; 2>/dev/null"
-alias remp2="find -empty -delete"
-alias remp3="find-empty -print0 | xargs -0 rmdir -p"
-alias remp4="find -empty -exec rmdir -p {} +"
+#          Delete all Empty Folders
+alias remp='while [ -n "$(find . -depth -type d -empty -print -exec rm -rf {} +)" ]; do :; done'
+alias remp1='find . -depth -type d -exec rm -rf {} \; 2>/dev/null'
+alias remp2='find -empty -delete'
+alias remp3='find-empty -print0 | xargs -0 rmdir -p'
+alias remp4='find -empty -exec rmdir -p {} +'
 
-######################################################
 # Find all the files whose permissions are 777.
-alias 777="find . -type f -perm 0777 -print"
-alias 777-1="find / -type f ! -perm 777"
+alias 777='find . -type f -perm 0777 -print'
+alias 777-1='find / -type f ! -perm 777'
 
 # Find all the SGID bit files whose
 # permissions set to 644.
-alias 644="find / -perm 2644"
+alias 644='find / -perm 2644'
 
 # Find all the Sticky Bit set files whose
 # permission are 551.
-alias 551="find / -perm 1551"
+alias 551='find / -perm 1551'
 
 # Find all SUID set files.
-alias suid="find / -perm /u=s"
+alias suid='find / -perm /u=s'
 
 # Find all SGID set files.
-alias sgid="find / -perm /g=s"
+alias sgid='find / -perm /g=s'
 
 # Find all Read Only files.
-alias readonly="find / -perm /u=r"
+alias readonly='find / -perm /u=r'
 
 # Find all Executable files.
-alias fexe="find / -perm /a=x"
+alias fexe='find / -perm /a=x'
 
 # Find all 777 permission files and use chmod
 # command to set permissions to 644.
-alias 777ch644="find / -type f -perm 0777 -print -exec chmod 644 {} \;"
+alias 777ch644='find / -type f -perm 0777 -print -exec chmod 644 {} \;'
 
 # Find all 777 permission directories and use
 # chmod command to set permissions to 755.
-alias 777ch755="find / -type d -perm 777 -print -exec chmod 755 {} \;"
+alias 777ch755='find / -type d -perm 777 -print -exec chmod 755 {} \;'
 
 ######################################################
-#			<-- Codecov Bash uploader -->
+#			Codecov Bash uploader
 alias cov="bash <(curl -s https://codecov.io/bash) -t 68672765-268f-44d0-8a4fa0e3e4de5248"
 
 ######################################################
-#					<-- ETC -->
-alias l="ls -AFph --color=always --show-control-chars"
-alias l1="ls -AFph1 --color=always --show-control-chars"
-alias ld="ls -d $PWD/*"
-alias lr="ls -AFRph --color=always --show-control-chars"
+#					ETC
+alias l='ls -AFph --color=always --show-control-chars'
+alias l1='ls -AFph1 --color=always --show-control-chars'
+alias ld='ls -d $PWD/*'
+alias lr='ls -AFRph --color=always --show-control-chars'
 alias la="git config -l | grep alias | cut -c 7-"
-alias n="nano -BLMacu -T 4 -C /data/data/com.termux/files/home/backups/"
-alias r="rm -rf"
-alias mv="mv -v"
-alias mvt="mv -t"
-alias mk="mkdir -p"
-alias cp="cp -R"
-alias c="cat"
-alias ch="chmod +x"
-alias to="termux-open"
-alias curl="curl --progress-bar"
-alias cpget="termux-clipboard-get"
-alias cpset="termux-clipboard-set"
+alias nano='nano -BLMacu -T 4 -C /data/data/com.termux/files/home/backups/'
+alias n='nano -BLMacu -T 4 -C /data/data/com.termux/files/home/backups/'
+alias r='rm -rf'
+alias mv='mv -v'
+alias mvt='mv -t'
+alias mk='mkdir -p'
+alias cp='cp -R'
+alias c='cat'
+alias ch='chmod +x'
+alias to='termux-open'
+alias curl='curl --progress-bar'
+alias cpget='termux-clipboard-get'
+alias cpset='termux-clipboard-set'
 alias mocp="mocp; mocp -x"
 alias clear_cache="paccache -rk0"
 alias inotify_increase="echo fs.inotify.max_user_watches=524288 | tee /etc/sysctl.d/40-max-user-watches.conf && sysctl --system"
 alias fixadb="adb kill-server && adb devices"
 alias dmenu_fixed="dmenu_run -fn '-xos4-terminus-medium-r-*-*-14-*' -h 26"
 alias cleanphoto="exiftool -all= $*"
-alias tree="tree -C"
-alias ip="ip -c"
+alias tree='tree -C'
+alias ip='ip -c'
 alias brew="termux-chroot /data/data/com.termux/files/home/.linuxbrew/Homebrew/bin/brew"
-alias anyfed="/data/data/com.termux/files/home/.anyfed/anyfed"
-alias call="termux-telephony-call"
-alias sms="termux-sms-send -n"
-alias google="w3m www.google.com"
+alias kali='bash /data/data/com.termux/files/home/start-kali.sh'
+alias fedora='startfedora'
+alias arch='startarch'
+alias anyfed='/data/data/com.termux/files/home/.anyfed/anyfed'
+alias call='termux-telephony-call'
+alias sms='termux-sms-send -n'
+alias google='w3m www.google.com'
 alias lynx="lynx www.google.com"
 alias mount="rclone mount"
 alias aria2="aria2c"
-alias x="exit"
+alias x='exit'
 
 clear
 

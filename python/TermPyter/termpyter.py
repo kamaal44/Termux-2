@@ -1,13 +1,9 @@
 '''
-Made By 3P1C
 This Tool For Termux in Installation Jupyter All Error Fixed.
-Team Cyber Knight
 '''
 import os, sys, time
 
 os.system("termux-wake-lock")
-os.system('echon "\033]0;TermPyter By 3P1C\a"')
-
 
 header = '\033[95m'
 blue = '\033[94m'
