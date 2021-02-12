@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/data/data/com.termux/files/usr/bin/env python
 
 """
 Copyright (c) 2006-2020 sqlmap developers (http://sqlmap.org/)

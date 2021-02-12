@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#!/data/data/com.termux/files/usr/bin/env python3
 import os, sys, re, subprocess
 
 from .initialize import initializer

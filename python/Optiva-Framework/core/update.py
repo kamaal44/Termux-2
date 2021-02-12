@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/data/data/com.termux/files/usr/bin/env python
 #
 # Optivaframework  Update Module
 # Created By Joker-Security (dev-labs)

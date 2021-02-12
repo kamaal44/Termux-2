@@ -53,7 +53,7 @@ stfu() {
 #   <-- Make Directory & cd into it -->
 function md
 {
-  command mkdir -p $1 && command cd $1 && echo "`pwd`"
+  mkdir -p $1 && cd $1 && echo "`pwd`"
 }
 
 #   <-- Webm -->

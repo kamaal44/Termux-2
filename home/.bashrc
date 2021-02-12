@@ -24,12 +24,12 @@ if ! pgrep -f "proot" >/dev/null ; then termux-chroot; fi
 #echo -e '\e[4 q' # Change to underline
 echo -e '\e[6 q' # Change to bar
 
+if [ -e  /data/data/com.termux/files/home/functions ]>
+    source  /data/data/com.termux/files/home/functions
+fi
+
+if [ -e  /data/data/com.termux/files/home/aliases ]; >
+    source  /data/data/com.termux/files/home/aliases
+fi
+
 sshd
-
-source /data/data/com.termux/files/home/functions
-
-source /data/data/com.termux/files/home/aliases
-
-bash -c zsh
-
-bash -c zsh

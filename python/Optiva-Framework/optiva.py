@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/data/data/com.termux/files/usr/bin/env python
 #
 # Author  : Joker-Security
 # Optiva-framework - Web application scanner

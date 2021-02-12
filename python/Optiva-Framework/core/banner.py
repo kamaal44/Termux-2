@@ -1,4 +1,4 @@
-#! /usr/bin/env python2.7
+#!/data/data/com.termux/files/usr/bin/env python2.7
 # core the Optivaframework  
 import os
 import sys

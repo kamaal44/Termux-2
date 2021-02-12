@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/data/data/com.termux/files/usr/bin/env python
 
 """
 safe2bin.py - Simple safe(hex) to binary format converter

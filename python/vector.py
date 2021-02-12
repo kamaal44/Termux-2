@@ -1,7 +1,8 @@
-#!/usr/bin/env python3
+#!/data/data/com.termux/files/usr/bin/env python3
 
 """
-A demonstration of classes and their special methods in Python.
+A demonstration of classes and their
+special methods in Python.
 """
 
 class Vec:

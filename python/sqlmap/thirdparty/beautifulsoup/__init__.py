@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/data/data/com.termux/files/usr/bin/env python2
 # 
 # Copyright (c) 2004-2010, Leonard Richardson
 # 

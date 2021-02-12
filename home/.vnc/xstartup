@@ -1,3 +1,6 @@
-#!/bin/bash
-xrdb $HOME/.Xresources
-startxfce4 &
+#!/data/data/com.termux/files/usr/bin/bash
+## This file is executed during VNC server
+## startup.
+
+# Launch Openbox Window Manager.
+openbox-session &

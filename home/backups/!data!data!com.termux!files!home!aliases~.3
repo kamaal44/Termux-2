@@ -1,29 +1,31 @@
 #		Shortcuts
-alias cd1='cd ../; l'
-alias cd2='cd ../../; l'
-alias cd3='cd ../../../; l'
-alias cd-='cd -; l'
-alias ~='cd; l'
-alias h='cd; l'
-alias sd='cd /sdcard/; l'
-alias ins='cd /sdcard/github/Termux/installs/; l'
-alias pyt='cd /sdcard/github/Termux/python/; l'
-alias scr='cd /sdcard/github/Termux/scripts/; l'
-alias ven='cd /sdcard/github/Termux/python/venv/; l'
-alias app='cd /sdcard/github/Termux/apps/; l'
-alias d='cd /sdcard/Download/; l'
-alias doc='cd /sdcard/github/Termux/Documents/; l'
-alias gh='cd /sdcard/github/; l'
-alias ter='cd /sdcard/github/Termux/; l'
-alias res='cd /sdcard/github/Resources/; l'
-alias gists='cd /sdcard/github/Gists/; l'
-alias sdcard='cd /storage/4932-72CF/; l'
-alias music='cd /storage/4932-72CF/Music; l'
-alias h2h="cd /sdcard/github/Termux/Documents/'how to & help/'; l"
-alias syn="cd /storage/4932-72CF/Sync/; l"
+alias cd1='cd ../; srca; l; pwd'
+alias cd2='cd ../../; srca; l; pwd'
+alias cd3='cd ../../../; srca; l; pwd'
+alias cd-='cd -; srca; l; pwd'
+alias ~='cd /data/data/com.termux/files/home/; srca; l;; pwd'
+alias h='cd /data/data/com.termux/files/home/; srca; l; pwd'
+alias sd='cd /storage/emulated/0/; srca; l; pwd'
+alias ins='cd /storage/emulated/0/github/Termux/installs/; srca; l; pwd'
+alias pyt='cd /storage/emulated/0/github/Termux/python/; srca; l; pwd'
+alias scr='cd /storage/emulated/0/github/Termux/scripts/; srca; l; pwd'
+alias ven='cd /storage/emulated/0/github/Termux/python/venv/; srca; l; pwd'
+alias app='cd /storage/emulated/0/github/Termux/apps/; srca; l; pwd'
+alias d='cd /storage/emulated/0/Download/; srca; l; pwd'
+alias doc='cd /storage/emulated/0/github/Termux/Documents/; srca; l; pwd'
+alias gh='cd /storage/emulated/0/github/; srca; l; pwd'
+alias ter='cd /storage/emulated/0/github/Termux/; srca; l; pwd'
+alias terh='cd /storage/emulated/0/github/Termux/home/; srca; l; pwd'
+alias res='cd /storage/emulated/0/github/Termux/Resources/; srca; l; pwd'
+alias gists='cd /storage/emulated/0/github/Termux/Gists/; srca; l; pwd'
+alias sdcard='cd /storage/1054-F76A/; srca; l; pwd'
+alias music='cd /storage/1054-F76A/Music; l'
+alias h2h="cd /storage/emulated/0/github/Termux/Documents/'how to & help/'; l"
+alias syn="cd /storage/1054-F76A/Sync/; l"
 
-#		Git
-alias faa="git add .; git add -Af; git commit -m 'Add'; git push --force"
+######################################################
+#					Git
+alias faa="git add -Af; git commit -m 'Add'; git push --force"
 alias gurl="git remote show origin"
 alias g='git clone'
 alias gpl='git pull'
@@ -42,7 +44,8 @@ alias gl='git log --pretty -n 2 --stat --decorate --all'
 alias gc='git commit -m'
 alias gi='git init'
 
-#		Python
+######################################################
+#					Python
 alias py='/data/data/com.termux/files/usr/bin/python3'
 alias py2='/data/data/com.termux/files/usr/bin/python2'
 alias python='/data/data/com.termux/files/usr/bin/python3'
@@ -57,6 +60,7 @@ alias ve='virtualenv venv -p /data/data/com.termux/files/usr/bin/python3'
 alias va='source venv/bin/activate'
 alias dea="deactivate"
 
+######################################################
 #		YouTube-dl & Facebook-dl
 alias yt='youtube-dl -v -f'
 alias ytdl="youtube-dl -v -f"
@@ -64,46 +68,55 @@ alias mp3="yt 'bestaudio[ext=mp3]/best' -ciw -o '%(title)s.%(ext)s' --extract-au
 alias mp31="yt 'bestaudio[ext=mp3]/best' -ciw -o '%(title)s.%(ext)s' --extract-audio --audio-quality 0 --audio-format mp3 --yes-playlist --playlist-start 1"
 alias mp4="yt 'ytsearch:mp4' 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' -ciw -o '%(title)s.%(ext)s' mp4"
 alias mp41="yt 'ytsearch:mp4' 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' -ciw -o '%(title)s.%(ext)s' mp4 --yes-playlist --playlist-start 1"
-alias fbdl="py /sdcard/github/Termux/python/Facebook-Video-Downloader/downloader.py"
+alias fbdl="py /storage/emulated/0/github/Termux/python/Facebook-Video-Downloader/downloader.py"
 
+######################################################
 #		Update
+alias src='source'
+alias srca='source /data/data/com.termux/files/home/aliases'
 alias pu='pkg update -y && pkg upgrade -y'
 alias au='apt update -y && apt upgrade -y'
 alias uu='au; pu; pip install upgrade pip; npm install -g npm'
 
+######################################################
 #		Documents
-alias nal='n ~/aliases'
-alias pad='n ~/pad.txt'
-alias padd='n +99999 ~/pad.txt'
-alias gdoc="n /sdcard/github/Resources/Git/'Git Commands.txt'"
-alias grdoc="n /sdcard/github/Resources/Git/'Git Repos.txt'"
-alias pydoc="n /sdcard/github/Resources/Python/'Python Commands.txt'"
+alias nal='n /data/data/com.termux/files/home/aliases'
+alias pad='n /data/data/com.termux/files/home/pad.txt'
+alias padd='n +99999 /data/data/com.termux/files/home/pad.txt'
+alias gdoc="n /storage/emulated/0/github/Termux/Resources/Git/'Git Commands.txt'"
+alias grdoc="n /storage/emulated/0/github/Termux/Resources/Git/'Git Repos.txt'"
+alias pydoc="n /storage/emulated/0/github/Termux/Resources/Python/'Python Commands.txt'"
 
+######################################################
 #		Other OS's 
 alias slack='./slackware/startSlackware'
 
+######################################################
 #		PHP
 alias pb='phpcs'
 alias pbf='phpcbf'
 
+######################################################
 #	   Exploits
-alias wifite="py2 /sdcard/github/Termux/python/wifite.py"
+alias wifite="py2 /storage/emulated/0/github/Termux/python/wifite.py"
 
-#		Docker
+######################################################
+#					Docker
 alias docker_start='systemctl start docker'
 alias docker_debian='docker run -it debian /bin/bash'
 
-#		Config
+######################################################
+#					Config
 alias ip='curl ifconfig.me'
 alias ifc='ifconfig wlan0'
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="mate /data/data/com.termux/files/home/.zshrc"
+alias ohmyzsh="mate /data/data/com.termux/files/home/.oh-my-zsh"
 alias chcolor='/data/data/com.termux/files/home/.termux/colors.sh'
 alias chfont='/data/data/com.termux/files/home/.termux/fonts.sh'
-alias refresh="source ~/.zshrc"
+alias refresh="source /data/data/com.termux/files/home/.zshrc"
 
 ######################################################
-#					<-- WGET -->
+#					WGET
 
 #			Download Complete Directory
 alias wgd="wget -r –level=0 -E –ignore-length -x -k -p -e robots=off -np -N"
@@ -111,7 +124,7 @@ alias wgd="wget -r –level=0 -E –ignore-length -x -k -p -e robots=off -np -N"
 alias wgf="wget -r -A"
 
 ######################################################
-#			   <-- Find Commands -->
+#			   Find Commands
 
 # Find 50MB Files
 alias find50='find / -size 50M'
@@ -148,7 +161,7 @@ alias rm01='find . -print0 | xargs -0 rm -rf'
 alias rm02='find . -delete'
 
 ######################################################
-#          <-- Delete all Empty Folders -->
+#          Delete all Empty Folders
 alias remp='while [ -n "$(find . -depth -type d -empty -print -exec rm -rf {} +)" ]; do :; done'
 alias remp1='find . -depth -type d -exec rm -rf {} \; 2>/dev/null'
 alias remp2='find -empty -delete'
@@ -188,11 +201,11 @@ alias 777ch644='find / -type f -perm 0777 -print -exec chmod 644 {} \;'
 alias 777ch755='find / -type d -perm 777 -print -exec chmod 755 {} \;'
 
 ######################################################
-#			<-- Codecov Bash uploader -->
+#			Codecov Bash uploader
 alias cov="bash <(curl -s https://codecov.io/bash) -t 68672765-268f-44d0-8a4fa0e3e4de5248"
 
 ######################################################
-#					<-- ETC -->
+#					ETC
 alias l='ls -AFph --color=always --show-control-chars'
 alias l1='ls -AFph1 --color=always --show-control-chars'
 alias ld='ls -d $PWD/*'
@@ -204,6 +217,7 @@ alias r='rm -rf'
 alias mv='mv -v'
 alias mvt='mv -t'
 alias mk='mkdir -p'
+alias mkcd='mkdir -p $1 && cd $1; pwd'
 alias cp='cp -R'
 alias c='cat'
 alias ch='chmod +x'
@@ -211,10 +225,6 @@ alias to='termux-open'
 alias curl='curl --progress-bar'
 alias cpget='termux-clipboard-get'
 alias cpset='termux-clipboard-set'
-alias dot='find . -maxdepth 100 -type d | while read FNAME; do mv "$FNAME" "${FNAME//.git/DOTgit}"; done'
-alias undot='find . -maxdepth 100 -type d | while read FNAME; do mv "$FNAME" "${FNAME//DOTgit/.git}"; done'
-alias rm.='find . -depth -type d -name "*.git" -exec rm -rf {} \;'
-alias rmdot='find . -depth -type d -name "*DOTgit" -exec rm -rf {} \;'
 alias mocp="mocp; mocp -x"
 alias clear_cache="paccache -rk0"
 alias inotify_increase="echo fs.inotify.max_user_watches=524288 | tee /etc/sysctl.d/40-max-user-watches.conf && sysctl --system"
@@ -223,11 +233,11 @@ alias dmenu_fixed="dmenu_run -fn '-xos4-terminus-medium-r-*-*-14-*' -h 26"
 alias cleanphoto="exiftool -all= $*"
 alias tree='tree -C'
 alias ip='ip -c'
-alias brew="termux-chroot ~/.linuxbrew/Homebrew/bin/brew"
-alias kali='bash ~/start-kali.sh'
+alias brew="termux-chroot /data/data/com.termux/files/home/.linuxbrew/Homebrew/bin/brew"
+alias kali='bash /data/data/com.termux/files/home/start-kali.sh'
 alias fedora='startfedora'
 alias arch='startarch'
-alias anyfed='~/.anyfed/anyfed'
+alias anyfed='/data/data/com.termux/files/home/.anyfed/anyfed'
 alias call='termux-telephony-call'
 alias sms='termux-sms-send -n'
 alias google='w3m www.google.com'

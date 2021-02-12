@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/data/data/com.termux/files/usr/bin/env python
 
 """
 Copyright (c) 2019-2020 Miroslav Stampar (@stamparm), MIT

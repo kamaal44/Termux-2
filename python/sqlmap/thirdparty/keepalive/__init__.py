@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/data/data/com.termux/files/usr/bin/env python
 #
 # Copyright 2002-2003 Michael D. Stenner
 #

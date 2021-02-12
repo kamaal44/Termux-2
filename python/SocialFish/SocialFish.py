@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/data/data/com.termux/files/usr/bin/env python3
 #
 from flask import Flask, request, render_template, jsonify, redirect, g, flash
 from core.config import *

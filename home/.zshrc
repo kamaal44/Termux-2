@@ -122,6 +122,10 @@ if [ -e  /data/data/com.termux/files/home/aliases ]; then
     source  /data/data/com.termux/files/home/aliases
 fi
 
+echo -e '\e[6 q' # Change to bar
+
+sshd
+
 #chsh -s /bin/zsh $USER
 
 #echo "\nbash -c zsh" >> .bashrc # This is used since for some cloud service changing the shell isn't permitted so a work around for it.

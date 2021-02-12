@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/data/data/com.termux/files/usr/bin/env python
 
 """
 dbgtool.py - Portable executable to ASCII debug script converter

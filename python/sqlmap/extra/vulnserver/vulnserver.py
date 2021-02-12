@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/data/data/com.termux/files/usr/bin/env python
 
 """
 vulnserver.py - Trivial SQLi vulnerable HTTP server (Note: for testing purposes)

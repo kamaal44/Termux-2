@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/data/data/com.termux/files/usr/bin/python
 
 # - Spammer v3.1
 # | Description: spams a phone number by sending it a lot of sms by using Grab API

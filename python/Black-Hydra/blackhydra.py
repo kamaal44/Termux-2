@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/data/data/com.termux/files/usr/bin/python
 """
 This program is just a small program to shorten brute force sessions on hydra :)
 But to be more satisfying results of the brute force. You better interact directly with hydra,

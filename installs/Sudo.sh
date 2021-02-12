@@ -1,24 +1,15 @@
 #!/data/data/com.termux/files/usr/bin/sh
 
-echo "\nTermux Sudo Install"
-
-cd /data/data/com.termux/files/home/
-
+echo "\nTermux Sudo Install\n"
 git clone https://gitlab.com/st42/termux-sudo
-
+rm -rf /data/data/com.termux/files/usr/bin/sudo
+cp termux-sudo/sudo /data/data/com.termux/files/usr/bin/
 cat termux-sudo/sudo > /data/data/com.termux/files/usr/bin/sudo
-
 chmod 700 /data/data/com.termux/files/usr/bin/sudo
-
-cd ..
-
-rm -rf termux-sudo/
-
-clear
-
+rm -rf termux-sudo
 echo "\nAndroid-Sudo v1.1 Install"
 
-echo "\n-------------------------"
+echo "-------------------------\n"
 
 if [ "`id | grep =0`" ]; then
     echo "\n[sudo] Installing sudo..."
@@ -80,8 +71,6 @@ su -c \"\$cmd\"" > /system/bin/sudo
         echo "\n[sudo] Mounting failed, exiting..."
         exit 1
     fi
-else
-    echo "\n[sudo] Installer should be ran as root, exiting..."
-    exit 1
 fi
 
+echo "####  Done  ####\n"

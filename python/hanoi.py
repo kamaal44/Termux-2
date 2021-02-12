@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/data/data/com.termux/files/usr/bin/env python3
 
 """
 Animated Towers of Hanoi using Tk with optional bitmap file in background.

@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/data/data/com.termux/files/usr/bin/python3
 import os, sys, time, datetime, signal, socket, argparse, urllib
 
 from urllib.parse import urlparse
