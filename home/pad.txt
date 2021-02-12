@@ -9,12 +9,18 @@
 #!/data/data/com.termux/files/usr/bin/python3
 #!/data/data/com.termux/files/usr/bin/env python3
 
-#                       Perl                          #!/data/data/com.termux/files/usr/bin/perl
-#!/data/data/com.termux/files/usr/bin/env perl
-
 #                   TypeScript
 #!/data/data/com.termux/files/usr/bin/ts
 #!/data/data/com.termux/files/usr/bin/env ts
+
+#                       Perl
+#!/data/data/com.termux/files/usr/bin/env perl
+
+#!/data/data/com.termux/files/usr/bin/perl
+
+# Modules used
+use strict;
+use warnings;
 
 ######################################################
 #     WGet & Downloading an entire remote directory
@@ -33,7 +39,7 @@ wget -r –level=0 -E –ignore-length -x -k -p -e robots=off -np -N --cut-dirs=
 #     Need a Username & Password
 wget -r --user=(put username here) --password='(put password here)' –level=0 -E –ignore-length -x -k -p -e robots=off -np -N https://gist.github.com/NateWeiler
 
-#     Add to ~/.bashrc or paste into terminal
+#     Add to /data/data/com.termux/files/home/.bashrc or paste into terminal
 wgetod() {
     NSLASH="$(echo "$1" | perl -pe 's|.*://[^/]+(.*?)/?$|\1|' | grep -o . | wc -l)"
     NCUT=$((NSLASH > 0 ? NSLASH-1 : 0))
@@ -54,7 +60,7 @@ find . -depth -type f -name "*.txt" -exec rm -rf {} \; && find . -depth -type f 
 #		Find all .txt files & remove them
 find . -depth -type f -name "*.txt" -exec rm -rf {} \;
 
-#	Find all the files under . directory with name some-file.txt.
+	Find all the files under . directory with name some-file.txt.
 find . -name some-file.txt ./some-file.txt
 
 # Find all .mp3 files +10MB & delete them in single command
@@ -242,6 +248,18 @@ rce origin master
 curl "https://api.github.com/orgs/#GHORG#/repos?p
 er_page=1000" | grep -o 'git@[^"]*' | xargs -L1 gi
 t clone
+
+#					Repos
+https://github.com/NateWeiler/Termux.git
+
+https://github.com/NateWeiler/Resources.git
+
+https://github.com/NateWeiler/Gists.git
+
+#					Config
+git config --global user.email "nateweiler84@gmail.com"
+git config --global user.name "NateWeiler"
+
 ######################################################
 #           Prompt for Yes/No
 
@@ -268,24 +286,25 @@ while true; do
 done
 
 ######################################################
-# NateWeiler
 
-# WeilerWebServices
+NateWeiler
 
-# MasonPaulWeiler11311
+WeilerWebServices
 
-# nateweiler84@gmail.com
+MasonPaulWeiler11311
 
-# $Hustle4The$
+nateweiler84@gmail.com
 
-# $Hustle4$
+$Hustle4The$
 
-# Hummel31
+$Hustle4$
 
-# OnThePaperChaseSince84
+Hummel31
 
-# $ServerHustle$
+OnThePaperChaseSince84
 
-# PaulEugeneWeiler
+$ServerHustle$
 
-# PaulEugeneWeiler11191953
+PaulEugeneWeiler
+
+PaulEugeneWeiler11191953
