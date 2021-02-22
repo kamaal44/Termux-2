@@ -1,6 +1,0 @@
-#!/data/data/com.termux/files/usr/bin/bash
-## This file is executed during VNC server
-## startup.
-
-# Launch Openbox Window Manager.
-openbox-session &

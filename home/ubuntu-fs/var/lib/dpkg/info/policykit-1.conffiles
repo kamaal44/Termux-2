@@ -1,3 +1,0 @@
-/etc/pam.d/polkit-1
-/etc/polkit-1/localauthority.conf.d/50-localauthority.conf
-/etc/polkit-1/localauthority.conf.d/51-ubuntu-admin.conf
