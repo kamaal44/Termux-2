@@ -1,4 +1,4 @@
-#!/system/bin/python
+#!/data/data/com.termux/files/usr/bin/python
 from os import *
 from socket import *
 from string import *

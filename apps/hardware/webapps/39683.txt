@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 Hikvision Digital Video Recorder Cross-Site Request Forgery
 
 

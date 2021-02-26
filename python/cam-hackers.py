@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/data/data/com.termux/files/usr/bin/env python3
 #-*- coding: utf-8 -*-
 #github.com/AngelSecurityTeam/Cam-Hackers
 import requests,re,os

@@ -1,0 +1,3893 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="defaultLanguage" content="en">
+    <meta name="availableLanguages" content="en, es, fr, ja, pt_BR, uk, el, de, zh_Hans, ru, he">
+
+    
+
+    <title>PyMuPDF · PyPI</title>
+    <meta name="description" content="Python bindings for the PDF rendering library MuPDF">
+
+    <link rel="stylesheet" href="/static/css/warehouse-ltr.e086470b.css">
+    <link rel="stylesheet" href="/static/css/fontawesome.6002a161.css">
+    <link rel="stylesheet" href="/static/css/regular.98fbf39a.css">
+    <link rel="stylesheet" href="/static/css/solid.c3b5f0b5.css">
+    <link rel="stylesheet" href="/static/css/brands.2c303be1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic%7CSource+Code+Pro:500">
+    <noscript>
+      <link rel="stylesheet" href="/static/css/noscript.d4ce1e76.css">
+    </noscript>
+
+    
+
+    <link rel="icon" href="/static/images/favicon.6a76275d.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 latest updates" href="/rss/updates.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 newest packages" href="/rss/packages.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS: latest releases for PyMuPDF" href="/rss/project/pymupdf/releases.xml">
+    
+    <link rel="canonical" href="https://pypi.org/project/PyMuPDF/">
+    
+
+    <meta property="og:url" content="https://pypi.org/project/PyMuPDF/">
+    <meta property="og:site_name" content="PyPI">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pypi.org/static/images/twitter.90915068.jpg">
+    <meta property="og:title" content="PyMuPDF">
+    <meta property="og:description" content="Python bindings for the PDF rendering library MuPDF">
+
+    <link rel="search" type="application/opensearchdescription+xml" title="PyPI" href="/opensearch.xml">
+
+    
+    <script
+      src="https://cdn.ravenjs.com/3.26.2/raven.min.js"
+      integrity="sha384-D6LXy67EIC102DTuqypxwQsTHgiatlbvg7q/1YAWFb6lRyZ1lIZ6bGDsX7jxHNKA"
+      crossorigin="anonymous">
+    </script>
+    
+    <script async
+            data-ga-id="UA-55961911-1"
+            data-sentry-frontend-dsn="https://3a67b35c9dc248a191d761410b095861@sentry.io/1231155"
+            src="/static/js/warehouse.910dcbc1.js">
+    </script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55961911-1"></script>
+    <script defer src="https://www.fastly-insights.com/insights.js?k=6a52360a-f306-421e-8ed5-7417d0d4a4e9&dnt=true"></script>
+  </head>
+
+  <body data-controller="viewport-toggle">
+    
+
+    <!-- Accessibility: this link should always be the first piece of content inside the body-->
+    <a href="#content" class="skip-to-content">Skip to main content</a>
+
+    <button type="button" class="button button--primary button--switch-to-mobile hidden" data-target="viewport-toggle.switchToMobile" data-action="viewport-toggle#switchToMobile">
+      Switch to mobile version
+    </button>
+
+    <div id="sticky-notifications" class="stick-to-top js-stick-to-top">
+      <!-- Add browser warning. Will show for ie9 and below -->
+      <!--[if IE]>
+      <div class="notification-bar notification-bar--warning" role="status">
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning</span>
+        </span>
+        <span class="notification-bar__message">You are using an unsupported browser, upgrade to a newer version.</span>
+      </div>
+      <![endif]-->
+      
+      <noscript>
+      <div class="notification-bar notification-bar--warning" role="status">
+        
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning</span>
+        </span>
+        <span class="notification-bar__message">Some features may not work without JavaScript. Please try enabling it if you encounter problems.</span>
+      </div>
+      </noscript>
+    </div>
+
+    
+      <div data-html-include="/_includes/flash-messages/">
+      </div>
+    
+
+    
+
+    
+      <div data-html-include="/_includes/session-notifications/">
+      </div>
+    
+
+    <header class="site-header ">
+      <div class="site-container">
+        <div class="split-layout">
+          
+          <div class="split-layout">
+            <div>
+              <a class="site-header__logo" href="/">
+                <img alt="PyPI" src="/static/images/logo-small.6eef541e.svg">
+              </a>
+            </div>
+
+            <form class="search-form search-form--primary" action="/search/" role="search">
+              <label for="search" class="sr-only">Search PyPI</label>
+              <input id="search" class="search-form__search" type="text" name="q" placeholder="Search projects" value="" autocomplete="off" autocapitalize="off" spellcheck="false">
+              
+              <button type="submit" class="search-form__button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <span class="sr-only">Search</span>
+              </button>
+            </form>
+          </div>
+          
+
+          <div data-html-include="/_includes/current-user-indicator/">
+            <div id="user-indicator" class="horizontal-menu horizontal-menu--light horizontal-menu--tall">
+  <nav class="horizontal-menu horizontal-menu--light horizontal-menu--tall hide-on-tablet" aria-label="Main navigation">
+    <ul>
+      <li class="horizontal-menu__item"><a href="/help/" class="horizontal-menu__link">Help</a></li>
+      <li class="horizontal-menu__item"><a href="/sponsor/" class="horizontal-menu__link">Sponsor</a></li>
+      <li class="horizontal-menu__item"><a href="/account/login/" class="horizontal-menu__link">Log in</a></li>
+      <li class="horizontal-menu__item"><a href="/account/register/" class="horizontal-menu__link">Register</a></li>
+    </ul>
+  </nav>
+  <nav class="dropdown dropdown--on-menu hidden show-on-tablet" aria-label="Main navigation">
+    <button type="button" class="horizontal-menu__link dropdown__trigger" aria-haspopup="true" aria-expanded="false" aria-label="View menu">
+      Menu
+      <span class="dropdown__trigger-caret">
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+      </span>
+    </button>
+    <ul class="dropdown__content" aria-hidden="true" aria-label="Main menu">
+      <li><a class="dropdown__link" href="/help/">Help</a></li>
+      <li><a class="dropdown__link" href="/sponsor/">Sponsor</a></li>
+      <li><a class="dropdown__link" href="/account/login/">Log in</a></li>
+      <li><a class="dropdown__link" href="/account/register/">Register</a></li>
+    </ul>
+  </nav>
+</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <div class="mobile-search">
+      <form class="search-form search-form--fullwidth" action="/search/" role="search">
+        <label for="mobile-search" class="sr-only">Search PyPI</label>
+        <input id="mobile-search" class="search-form__search" type="text" name="q" placeholder="Search projects" value="" autocomplete="off" autocapitalize="off" spellcheck="false">
+        
+        <button type="submit" class="search-form__button">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <span class="sr-only">Search</span>
+        </button>
+      </form>
+    </div>
+    
+
+    <main id="content">
+      
+<div class="banner">
+  <div class="package-header">
+    <div class="package-header__left">
+      <h1 class="package-header__name">
+        PyMuPDF 1.18.8
+      </h1>
+
+      
+      <p class="package-header__pip-instructions">
+        <span id="pip-command">pip install PyMuPDF</span>
+        <button type="button" class="copy-tooltip copy-tooltip-s" data-clipboard-target="#pip-command" data-tooltip-label="Copy to clipboard">
+          <i class="fa fa-copy" aria-hidden="true"></i>
+          <span class="sr-only">Copy PIP instructions</span>
+        </button>
+      </p>
+      
+    </div>
+
+    <div class="package-header__right">
+    
+      
+      <a class="status-badge status-badge--good" href="/project/PyMuPDF/">
+        <span>Latest version</span>
+      </a>
+      
+    
+      <p class="package-header__date">
+        Released: <time datetime="2021-02-04T21:41:28+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="horizontal-section horizontal-section--grey horizontal-section--thin">
+  <div class="site-container">
+    <div class="split-layout split-layout--middle package-description">
+    
+      <p class="package-description__summary">Python bindings for the PDF rendering library MuPDF</p>
+    
+    <div data-html-include="/_includes/edit-project-button/pymupdf">
+    </div>
+    </div>
+  </div>
+</div>
+
+<div data-controller="project-tabs">
+  <div class="tabs-container">
+    <div class="vertical-tabs">
+      <div class="vertical-tabs__tabs">
+        <div class="sidebar-section">
+          <h3 class="sidebar-section__title">Navigation</h3>
+          <nav aria-label="Navigation for PyMuPDF">
+            <ul class="vertical-tabs__list" role="tablist">
+              <li role="tab">
+                <a id="description-tab" href="#description" data-target="project-tabs.tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--is-active" aria-selected="true" aria-label="Project description. Focus will be moved to the description.">
+                  <i class="fa fa-align-left" aria-hidden="true"></i>
+                  Project description
+                </a>
+              </li>
+              <li role="tab">
+                <a id="history-tab" href="#history" data-target="project-tabs.tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" aria-label="Release history. Focus will be moved to the history panel.">
+                  <i class="fa fa-history" aria-hidden="true"></i>
+                  Release history
+                </a>
+              </li>
+              
+              <li role="tab">
+                <a id="files-tab" href="#files" data-target="project-tabs.tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" aria-label="Download files. Focus will be moved to the project files.">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  Download files
+                </a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+        
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Project links</h3>
+  <ul class="vertical-tabs__list">
+    
+    
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/pymupdf/PyMuPDF" rel="nofollow">
+        
+
+
+  
+
+
+<i class="fas fa-home" aria-hidden="true"></i>Homepage
+      </a>
+    </li>
+    
+    
+  </ul>
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Statistics</h3>
+  
+  <div class="github-repo-info hidden" data-url="https://api.github.com/repos/pymupdf/PyMuPDF">
+    GitHub statistics:
+    <ul class="vertical-tabs__list">
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item"
+           data-key="html_url" data-attr="href" data-supplement="/stargazers" rel="noopener">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <strong>Stars:</strong>
+          <span class="github-repo-info__item" data-key="stargazers_count"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item"
+           data-key="html_url" data-attr="href" data-supplement="/network/members" rel="noopener">
+          <i class="fa fa-code-branch" aria-hidden="true"></i>
+          <strong>Forks:</strong>
+          <span class="github-repo-info__item" data-key="forks_count"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item"
+           data-key="html_url" data-attr="href" data-supplement="/issues" rel="noopener">
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+          <strong>Open issues/PRs:</strong>
+          <span class="github-repo-info__item" data-key="open_issues_count"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <p>
+    View statistics for this project via <a href="https://libraries.io/pypi/PyMuPDF" title="External link" target="_blank" rel="noopener">Libraries.io</a>, or by using <a href="https://packaging.python.org/guides/analyzing-pypi-package-downloads/" target="_blank" rel="noopener">our public dataset on Google BigQuery</a>
+  </p>
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Meta</h3>
+  
+  <p><strong>License:</strong> GNU Affero General Public License v3 or later (AGPLv3+), GNU General Public License v3 or later (GPLv3+)</p>
+  
+  
+    <p><strong>Author:</strong> <a href="mailto:jorj.x.mckie@outlook.de">Jorj McKie</a></p>
+  
+  
+  
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Maintainers</h3>
+  
+    
+    <span class="sidebar-section__maintainer">
+      <a href="/user/jorjmckie/" aria-label="jorjmckie">
+        <span class="sidebar-section__user-gravatar">
+          <img src="https://warehouse-camo.ingress.cmh1.psfhosted.org/4b84e0ba42b5f824b6a03647d5436c48b0be7ac8/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f38656538616365383661623331623331316334663933363762616662313164313f73697a653d3530" height="50" width="50" alt="Avatar for jorjmckie from gravatar.com" title="Avatar for jorjmckie from gravatar.com">
+        </span>
+        <span class="sidebar-section__user-gravatar-text">
+          jorjmckie
+        </span>
+      </a>
+    </span>
+  
+    
+    <span class="sidebar-section__maintainer">
+      <a href="/user/rk700/" aria-label="rk700">
+        <span class="sidebar-section__user-gravatar">
+          <img src="https://warehouse-camo.ingress.cmh1.psfhosted.org/d7b4a2372ce2b8e10b9a97e48534841a6a3370de/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f30316136366230633163616363646266346330333465616334396531333564363f73697a653d3530" height="50" width="50" alt="Avatar for rk700 from gravatar.com" title="Avatar for rk700 from gravatar.com">
+        </span>
+        <span class="sidebar-section__user-gravatar-text">
+          rk700
+        </span>
+      </a>
+    </span>
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Classifiers</h3>
+  <ul class="sidebar-section__classifiers">
+    
+    <li>
+      <strong>Development Status</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=Development+Status+%3A%3A+5+-+Production%2FStable">
+            5 - Production/Stable
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Environment</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=Environment+%3A%3A+Console">
+            Console
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Intended Audience</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=Intended+Audience+%3A%3A+Developers">
+            Developers
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>License</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+GNU+Affero+General+Public+License+v3+or+later+%28AGPLv3%2B%29">
+            OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+          </a>
+        </li>
+        
+        <li>
+          <a href="/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+GNU+General+Public+License+v3+or+later+%28GPLv3%2B%29">
+            OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Operating System</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+MacOS">
+            MacOS
+          </a>
+        </li>
+        
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+Microsoft+%3A%3A+Windows">
+            Microsoft :: Windows
+          </a>
+        </li>
+        
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+POSIX+%3A%3A+Linux">
+            POSIX :: Linux
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Programming Language</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=Programming+Language+%3A%3A+C">
+            C
+          </a>
+        </li>
+        
+        <li>
+          <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3">
+            Python :: 3
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Topic</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=Topic+%3A%3A+Utilities">
+            Utilities
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+      <div class="vertical-tabs__panel">
+        <!-- mobile menu -->
+        <nav aria-label="Navigation for PyMuPDF">
+          <ul class="vertical-tabs__list" role="tablist">
+            <li role="tab">
+              <a id="mobile-description-tab" href="#description" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile vertical-tabs__tab--no-top-border vertical-tabs__tab--is-active" aria-selected="true" aria-label="Project description. Focus will be moved to the description.">
+                <i class="fa fa-align-left" aria-hidden="true"></i>
+                Project description
+              </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-data-tab" href="#data" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Project details. Focus will be moved to the project details.">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                Project details
+              </a>
+            </li>
+            <li role="tab">
+              <a id="mobile-history-tab" href="#history" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Release history. Focus will be moved to the history panel.">
+              <i class="fa fa-history" aria-hidden="true"></i>
+              Release history
+            </a>
+            </li>
+            
+            <li role="tab">
+              <a id="mobile-files-tab" href="#files" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" aria-label="Download files. Focus will be moved to the project files.">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                Download files
+              </a>
+            </li>
+            
+          </ul>
+        </nav>
+
+        
+        <div id="description" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="description-tab mobile-description-tab" tabindex="-1">
+          <h2 class="page-title">Project description</h2>
+          
+          <div class="project-description">
+            <p>Release date: February 3, 2021</p>
+<div id=authors>
+<h2>Authors</h2>
+<ul>
+<li>Jorj X. McKie</li>
+<li>Ruikai Liu</li>
+</ul>
+</div>
+<div id=introduction>
+<h2>Introduction</h2>
+<p>This is <strong>version 1.18.8 of PyMuPDF</strong>, a Python binding for <a href="http://mupdf.com/" rel=nofollow>MuPDF</a> - “a lightweight PDF and XPS viewer”.</p>
+<p>MuPDF can access files in PDF, XPS, OpenXPS, epub, comic and fiction book formats, and it is known for both, its top performance and high rendering quality.</p>
+<p>With PyMuPDF you therefore can access files with extensions <tt>*.pdf</tt>, <tt>*.xps</tt>, <tt>*.oxps</tt>, <tt>*.epub</tt>, <tt>*.cbz</tt> or <tt>*.fb2</tt> from your Python scripts. A number of popular image formats is supported as well, including multi-page TIFF images.</p>
+<p>PyMuPDF should run on all platforms that are supported by both, MuPDF and Python 3.6+. These include, but are not limited to, Windows, Mac OSX and Linux, 32-bit or 64-bit. If you can generate MuPDF on a Python supported platform, then also PyMuPDF can be used there.</p>
+<p>PyMuPDF is hosted on <a href="https://github.com/pymupdf/PyMuPDF" rel=nofollow>GitHub</a> where you find up-to-date information of its features, our <a href="https://github.com/pymupdf/PyMuPDF/issues" rel=nofollow>issue tracker</a>, <a href="https://github.com/pymupdf/PyMuPDF/wiki" rel=nofollow>Wikis</a> and much more.</p>
+</div>
+<div id=installation>
+<h2>Installation</h2>
+<p>For all MS Windows versions as well as popular Max OSX and Linux versions, we are providing Python wheels - see the download section of this site and the current <a href="https://github.com/pymupdf/PyMuPDF/releases/latest" rel=nofollow>release directory</a> of our home page. Other platforms need to download and generate the MuPDF library first and then set up PyMuPDF. Do visit our GitHub home, which has more details on this, including latest bugfixes, pre-releases, etc.</p>
+</div>
+<div id=usage-and-documentation>
+<h2>Usage and Documentation</h2>
+<p>For all document types you can render pages in raster (PNG) or vector (SVG) formats, extract text and access meta information, links, annotations and bookmarks, as well as decrypt the document. For PDF files, these objects can also be created, modified or deleted. Plus you can rotate, re-arrange, duplicate, create, or delete pages and join or split documents.</p>
+<p>PDF password protection is <strong>fully supported</strong>: owner and user passwords, encryption methods and permission levels can be set, changed or removed.</p>
+<p>Specifically for PDF files, PyMuPDF provides update access to low-level structure information, supports <strong>optional content</strong>, handling of <strong>embedded files</strong> and modification of page contents (like inserting images, fonts, text, annotations and drawings).</p>
+<p>Other features include embedding vector images (SVG, PDF) such as logos or watermarks, joining or splitting single PDF pages (including things like posterizing and 2-up / 4-up processing).</p>
+<p>You can also create <strong>PDF Form fields</strong> with support for text, checkbox, listbox and combobox widgets.</p>
+<p>Our home page provides many examples and How-Tos for all of this. At a minimum, read the <a href="https://pymupdf.readthedocs.io/en/latest/tutorial.html" rel=nofollow>tutorial</a> and the the <a href="https://pymupdf.readthedocs.io/en/latest/faq.html" rel=nofollow>recipes</a> sections of our documentation.</p>
+<p>Written using <strong>Sphinx</strong>, documentation is available here:</p>
+<ul>
+<li><a href="https://pymupdf.readthedocs.io/en/latest/" rel=nofollow>Read The Docs</a>.</li>
+<li><a href="https://github.com/JorjMcKie/PyMuPDF-optional-material/tree/master/doc/PyMuPDF.chm" rel=nofollow>Windows CHM</a></li>
+</ul>
+</div>
+
+          </div>
+          
+        </div>
+
+        
+        <div id="data" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="mobile-data-tab" tabindex="-1">
+          <h2 class="page-title">Project details</h2>
+          
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Project links</h3>
+  <ul class="vertical-tabs__list">
+    
+    
+    <li>
+      <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://github.com/pymupdf/PyMuPDF" rel="nofollow">
+        
+
+
+  
+
+
+<i class="fas fa-home" aria-hidden="true"></i>Homepage
+      </a>
+    </li>
+    
+    
+  </ul>
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Statistics</h3>
+  
+  <div class="github-repo-info hidden" data-url="https://api.github.com/repos/pymupdf/PyMuPDF">
+    GitHub statistics:
+    <ul class="vertical-tabs__list">
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item"
+           data-key="html_url" data-attr="href" data-supplement="/stargazers" rel="noopener">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <strong>Stars:</strong>
+          <span class="github-repo-info__item" data-key="stargazers_count"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item"
+           data-key="html_url" data-attr="href" data-supplement="/network/members" rel="noopener">
+          <i class="fa fa-code-branch" aria-hidden="true"></i>
+          <strong>Forks:</strong>
+          <span class="github-repo-info__item" data-key="forks_count"></span>
+        </a>
+      </li>
+      <li>
+        <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed github-repo-info__item"
+           data-key="html_url" data-attr="href" data-supplement="/issues" rel="noopener">
+          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+          <strong>Open issues/PRs:</strong>
+          <span class="github-repo-info__item" data-key="open_issues_count"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <p>
+    View statistics for this project via <a href="https://libraries.io/pypi/PyMuPDF" title="External link" target="_blank" rel="noopener">Libraries.io</a>, or by using <a href="https://packaging.python.org/guides/analyzing-pypi-package-downloads/" target="_blank" rel="noopener">our public dataset on Google BigQuery</a>
+  </p>
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Meta</h3>
+  
+  <p><strong>License:</strong> GNU Affero General Public License v3 or later (AGPLv3+), GNU General Public License v3 or later (GPLv3+)</p>
+  
+  
+    <p><strong>Author:</strong> <a href="mailto:jorj.x.mckie@outlook.de">Jorj McKie</a></p>
+  
+  
+  
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Maintainers</h3>
+  
+    
+    <span class="sidebar-section__maintainer">
+      <a href="/user/jorjmckie/" aria-label="jorjmckie">
+        <span class="sidebar-section__user-gravatar">
+          <img src="https://warehouse-camo.ingress.cmh1.psfhosted.org/4b84e0ba42b5f824b6a03647d5436c48b0be7ac8/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f38656538616365383661623331623331316334663933363762616662313164313f73697a653d3530" height="50" width="50" alt="Avatar for jorjmckie from gravatar.com" title="Avatar for jorjmckie from gravatar.com">
+        </span>
+        <span class="sidebar-section__user-gravatar-text">
+          jorjmckie
+        </span>
+      </a>
+    </span>
+  
+    
+    <span class="sidebar-section__maintainer">
+      <a href="/user/rk700/" aria-label="rk700">
+        <span class="sidebar-section__user-gravatar">
+          <img src="https://warehouse-camo.ingress.cmh1.psfhosted.org/d7b4a2372ce2b8e10b9a97e48534841a6a3370de/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f30316136366230633163616363646266346330333465616334396531333564363f73697a653d3530" height="50" width="50" alt="Avatar for rk700 from gravatar.com" title="Avatar for rk700 from gravatar.com">
+        </span>
+        <span class="sidebar-section__user-gravatar-text">
+          rk700
+        </span>
+      </a>
+    </span>
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Classifiers</h3>
+  <ul class="sidebar-section__classifiers">
+    
+    <li>
+      <strong>Development Status</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=Development+Status+%3A%3A+5+-+Production%2FStable">
+            5 - Production/Stable
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Environment</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=Environment+%3A%3A+Console">
+            Console
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Intended Audience</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=Intended+Audience+%3A%3A+Developers">
+            Developers
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>License</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+GNU+Affero+General+Public+License+v3+or+later+%28AGPLv3%2B%29">
+            OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+          </a>
+        </li>
+        
+        <li>
+          <a href="/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+GNU+General+Public+License+v3+or+later+%28GPLv3%2B%29">
+            OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Operating System</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+MacOS">
+            MacOS
+          </a>
+        </li>
+        
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+Microsoft+%3A%3A+Windows">
+            Microsoft :: Windows
+          </a>
+        </li>
+        
+        <li>
+          <a href="/search/?c=Operating+System+%3A%3A+POSIX+%3A%3A+Linux">
+            POSIX :: Linux
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Programming Language</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=Programming+Language+%3A%3A+C">
+            C
+          </a>
+        </li>
+        
+        <li>
+          <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3">
+            Python :: 3
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <strong>Topic</strong>
+      <ul>
+        
+        <li>
+          <a href="/search/?c=Topic+%3A%3A+Utilities">
+            Utilities
+          </a>
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+</div>
+
+          <br>
+        </div>
+
+        
+        <div id="history" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="history-tab mobile-history-tab" tabindex="-1">
+          <h2 class="page-title split-layout">
+            <span>Release history</span>
+            <span class="reset-text margin-top">
+              <a href="/help/#project-release-notifications">Release notifications</a> |
+              <a href="/rss/project/pymupdf/releases.xml">RSS feed <i class="fa fa-rss" aria-hidden="true"></i></a>
+            </span>
+          </h2>
+
+          <div class="release-timeline">
+            
+            
+            
+            
+            <div class="release release--latest release--current">
+              <div class="release__meta">
+                
+                <span class="badge">This version</span>
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/blue-cube.e6165d35.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.18.8/">
+                <p class="release__version">
+                  1.18.8
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-02-04T21:41:28+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.18.7/">
+                <p class="release__version">
+                  1.18.7
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-02-02T22:17:41+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 2, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.18.6/">
+                <p class="release__version">
+                  1.18.6
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2021-01-07T12:55:50+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jan 7, 2021
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.18.5/">
+                <p class="release__version">
+                  1.18.5
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-12-17T10:33:58+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Dec 17, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.18.4/">
+                <p class="release__version">
+                  1.18.4
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-11-20T16:40:26+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 20, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.18.3/">
+                <p class="release__version">
+                  1.18.3
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-11-09T12:21:38+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 9, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.18.2/">
+                <p class="release__version">
+                  1.18.2
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-10-27T11:56:31+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Oct 27, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.18.1/">
+                <p class="release__version">
+                  1.18.1
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-10-18T16:42:02+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Oct 18, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.18.0/">
+                <p class="release__version">
+                  1.18.0
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-10-08T07:38:18+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Oct 8, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.17.7/">
+                <p class="release__version">
+                  1.17.7
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-09-14T11:42:04+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 14, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.17.6/">
+                <p class="release__version">
+                  1.17.6
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-08-26T20:34:00+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 26, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.17.5/">
+                <p class="release__version">
+                  1.17.5
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-08-06T13:38:42+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 6, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.17.4/">
+                <p class="release__version">
+                  1.17.4
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-07-23T22:40:44+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 23, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.17.3/">
+                <p class="release__version">
+                  1.17.3
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-07-07T13:57:22+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 7, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.17.2/">
+                <p class="release__version">
+                  1.17.2
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-06-24T14:05:57+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 24, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.17.1/">
+                <p class="release__version">
+                  1.17.1
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-06-18T17:04:57+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jun 18, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.17.0/">
+                <p class="release__version">
+                  1.17.0
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-05-19T12:29:30+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  May 19, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.18/">
+                <p class="release__version">
+                  1.16.18
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-04-23T09:47:22+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 23, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.17/">
+                <p class="release__version">
+                  1.16.17
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-04-09T10:09:11+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Apr 9, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.16/">
+                <p class="release__version">
+                  1.16.16
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-03-29T14:48:32+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 29, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.15/">
+                <p class="release__version">
+                  1.16.15
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-03-27T10:28:37+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 27, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.14/">
+                <p class="release__version">
+                  1.16.14
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-03-25T17:57:11+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 25, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.13/">
+                <p class="release__version">
+                  1.16.13
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-03-15T22:28:32+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 15, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.12/">
+                <p class="release__version">
+                  1.16.12
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-03-12T12:58:35+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 12, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.11/">
+                <p class="release__version">
+                  1.16.11
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2020-02-23T12:31:48+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 23, 2020
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.10/">
+                <p class="release__version">
+                  1.16.10
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-12-21T16:13:11+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Dec 21, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.9/">
+                <p class="release__version">
+                  1.16.9
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-12-05T23:39:57+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Dec 5, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.8/">
+                <p class="release__version">
+                  1.16.8
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-11-18T23:27:50+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 18, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.7/">
+                <p class="release__version">
+                  1.16.7
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-11-08T17:19:25+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 8, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.6/">
+                <p class="release__version">
+                  1.16.6
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-11-02T19:50:22+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 2, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.5/">
+                <p class="release__version">
+                  1.16.5
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-10-14T11:28:17+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Oct 14, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.4/">
+                <p class="release__version">
+                  1.16.4
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-10-10T14:51:03+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Oct 10, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.3/">
+                <p class="release__version">
+                  1.16.3
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-10-01T14:28:00+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Oct 1, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.2/">
+                <p class="release__version">
+                  1.16.2
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-09-12T23:51:07+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 12, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.1/">
+                <p class="release__version">
+                  1.16.1
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-09-04T04:54:46+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 4, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.16.0/">
+                <p class="release__version">
+                  1.16.0
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-08-26T06:27:30+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 26, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.14.21/">
+                <p class="release__version">
+                  1.14.21
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-09-16T08:30:04+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 16, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.14.20/">
+                <p class="release__version">
+                  1.14.20
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-08-11T07:38:23+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 11, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.14.19/">
+                <p class="release__version">
+                  1.14.19
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2019-07-19T09:31:51+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Jul 19, 2019
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.13.20/">
+                <p class="release__version">
+                  1.13.20
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2018-09-11T16:00:14+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Sep 11, 2018
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.12.5/">
+                <p class="release__version">
+                  1.12.5
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2018-03-30T09:27:17+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Mar 30, 2018
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.11.2/">
+                <p class="release__version">
+                  1.11.2
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2017-11-27T18:53:13+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Nov 27, 2017
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.10.0/">
+                <p class="release__version">
+                  1.10.0
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2016-12-13T11:43:56+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Dec 13, 2016
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release release--oldest">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/PyMuPDF/1.9.2/">
+                <p class="release__version">
+                  1.9.2
+                  
+                  
+                </p>
+                <p class="release__version-date">
+                  <time datetime="2016-08-21T10:53:32+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Aug 21, 2016
+</time>
+                </p>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+
+        
+          
+          <div id="files" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="files-tab mobile-files-tab" tabindex="-1">
+            <h2 class="page-title">Download files</h2>
+            <p>Download the file for your platform. If you're not sure which to choose, learn more about <a href="https://packaging.python.org/installing/" title="External link" target="_blank" rel="noopener">installing packages</a>.</p>
+
+            <table class="table table--downloads">
+              <caption class="sr-only">Files for PyMuPDF, version 1.18.8</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Filename, size</th>
+                  <th scope="col">File type</th>
+                  <th scope="col">Python version</th>
+                  <th scope="col">Upload date</th>
+                  <th scope="col" class="table__align-right">Hashes</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/68/77/cc1ec6400200d3f3f274554f76eb3b1d437e67283d474f0d440403fea77a/PyMuPDF-1.18.8-cp36-cp36m-macosx_10_9_x86_64.whl">
+                      PyMuPDF-1.18.8-cp36-cp36m-macosx_10_9_x86_64.whl
+                    </a>
+                     (5.5 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp36
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T21:44:11+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-33ca55a7-466d-427c-b331-9e04def57240" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/1b/75/3c72f727c729522093264709629f0514993824c5d7cadc749e9ae68c2410/PyMuPDF-1.18.8-cp36-cp36m-manylinux2010_x86_64.whl">
+                      PyMuPDF-1.18.8-cp36-cp36m-manylinux2010_x86_64.whl
+                    </a>
+                     (6.3 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp36
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T21:47:02+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-f19c5a3a-ec42-4f21-b873-3f3881b76a88" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/27/97/4a8594d0b2df26d0a79e066e81665899bdd2191c5897bc1895a0198874b5/PyMuPDF-1.18.8-cp36-cp36m-win32.whl">
+                      PyMuPDF-1.18.8-cp36-cp36m-win32.whl
+                    </a>
+                     (4.9 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp36
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T21:49:17+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-c66b4a26-ae1d-4c6d-965a-d014b8f10f5b" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/e9/d0/4ed7a02afd9d11289b50f1628a6930a8bee6f49303019dcb5ecf70453ca3/PyMuPDF-1.18.8-cp36-cp36m-win_amd64.whl">
+                      PyMuPDF-1.18.8-cp36-cp36m-win_amd64.whl
+                    </a>
+                     (5.3 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp36
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T21:51:47+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-ca066759-7a3e-48ad-84ad-a59e07ec85ce" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/39/1b/aefed30071166a779d8e095487dd9d715fb23f10f45cd1f44e1370f80228/PyMuPDF-1.18.8-cp37-cp37m-macosx_10_9_x86_64.whl">
+                      PyMuPDF-1.18.8-cp37-cp37m-macosx_10_9_x86_64.whl
+                    </a>
+                     (5.5 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp37
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T21:54:19+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-bf1ebbaa-83e4-4209-adbd-bac7176a475c" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/a0/76/68625312a149915316f06acc505f941f8a12c866d86630d0d9bdfabe36e5/PyMuPDF-1.18.8-cp37-cp37m-manylinux2010_x86_64.whl">
+                      PyMuPDF-1.18.8-cp37-cp37m-manylinux2010_x86_64.whl
+                    </a>
+                     (6.3 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp37
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T21:57:09+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-7707823a-aef7-4dfc-b781-025274583c7c" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/a2/51/ce4c4266166592cfe119c22a7712465bce1131cf2cab5f45d1dce6008e65/PyMuPDF-1.18.8-cp37-cp37m-win32.whl">
+                      PyMuPDF-1.18.8-cp37-cp37m-win32.whl
+                    </a>
+                     (4.9 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp37
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T21:59:16+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-e7f6c0e3-6aa3-495c-9bfa-ad628fb8e2be" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/3f/00/8096e970ca7877249db150b49ff7df498e1a585678a41f9e4b812e925a06/PyMuPDF-1.18.8-cp37-cp37m-win_amd64.whl">
+                      PyMuPDF-1.18.8-cp37-cp37m-win_amd64.whl
+                    </a>
+                     (5.3 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp37
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T22:01:33+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-ea3d5f6d-5176-4237-8c06-fd6401298681" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/b3/a6/0b7421e6815d08db716e565dbf38afe9c39edc35074370211e72c14077b4/PyMuPDF-1.18.8-cp38-cp38-macosx_10_9_x86_64.whl">
+                      PyMuPDF-1.18.8-cp38-cp38-macosx_10_9_x86_64.whl
+                    </a>
+                     (5.5 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp38
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T22:04:05+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-96b30357-35cd-4232-9cb2-8ab55b9609bc" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/0f/e2/98766b37ba5df17907e6a7118c0853b8c5fe5c0ef038c051b518b952baa8/PyMuPDF-1.18.8-cp38-cp38-manylinux2010_x86_64.whl">
+                      PyMuPDF-1.18.8-cp38-cp38-manylinux2010_x86_64.whl
+                    </a>
+                     (6.4 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp38
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T22:06:52+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-8a9d4919-b2c8-4cc9-8adf-4f7236b349a4" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/eb/62/15391b16bd4f194393ec9c8cc56767158e08593714af1d9aba4f080a6ed6/PyMuPDF-1.18.8-cp38-cp38-win32.whl">
+                      PyMuPDF-1.18.8-cp38-cp38-win32.whl
+                    </a>
+                     (4.9 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp38
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T22:08:57+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-12cd1e9b-ff75-4d1a-ac20-cf0c89d5938f" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/fa/65/ea9a8c13b46e9b1d6747bd255e63de2d6d56b4153021255726a81b07fbb0/PyMuPDF-1.18.8-cp38-cp38-win_amd64.whl">
+                      PyMuPDF-1.18.8-cp38-cp38-win_amd64.whl
+                    </a>
+                     (5.3 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp38
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T22:11:16+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-4a60c5ba-5487-40e2-afaf-30abb60eb5e1" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/6c/52/c851dfa38fa0b11fb00a3764c4e91a0e353765bef9bfe4e74a2a2408750a/PyMuPDF-1.18.8-cp39-cp39-macosx_10_9_x86_64.whl">
+                      PyMuPDF-1.18.8-cp39-cp39-macosx_10_9_x86_64.whl
+                    </a>
+                     (5.5 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp39
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T22:13:38+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-3021e5d4-25fe-46ef-b4f5-8631a6ad35f3" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/f3/78/74627e60f0cf04a48e732b3da8fb5b960df33dcf2bac2dbbcdad4e1162c8/PyMuPDF-1.18.8-cp39-cp39-manylinux2010_x86_64.whl">
+                      PyMuPDF-1.18.8-cp39-cp39-manylinux2010_x86_64.whl
+                    </a>
+                     (6.4 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp39
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T22:16:20+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-f69202a7-efba-43cf-a743-18b7f2f1a24e" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/d8/24/490f4d268af4b4ad946c991c37249c11e25dd786fcfb9ee910e31f461dcf/PyMuPDF-1.18.8-cp39-cp39-win32.whl">
+                      PyMuPDF-1.18.8-cp39-cp39-win32.whl
+                    </a>
+                     (4.9 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp39
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T22:18:25+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-7f9fbaaf-114d-4946-a7b2-2e4bcb8d40dd" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/89/d4/de3b395d9d07b972d24ec7706cf1f4b29bfa3111e408e66e2e2c2a9c2b67/PyMuPDF-1.18.8-cp39-cp39-win_amd64.whl">
+                      PyMuPDF-1.18.8-cp39-cp39-win_amd64.whl
+                    </a>
+                     (5.3 MB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Wheel
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      cp39
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T22:20:39+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-01b67398-ceb8-4e97-abfd-bd6142e3d6d5" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    <span class="table__mobile-label">Filename, size</span>
+                    <a href="https://files.pythonhosted.org/packages/26/6c/34098cd963418e5122abd70f8d116300203aaeab086cc9c6bdaf1b39cbd0/PyMuPDF-1.18.8.tar.gz">
+                      PyMuPDF-1.18.8.tar.gz
+                    </a>
+                     (267.0 kB)
+                  </th>
+                  <td>
+                    <span class="table__mobile-label">File type</span>
+                    Source
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Python version</span>
+                    
+                      None
+                    
+                  </td>
+                  <td>
+                    <span class="table__mobile-label">Upload date</span>
+                    <time datetime="2021-02-04T21:41:28+0000" data-controller="localized-time" data-localized-time-relative="true" data-localized-time-show-time="false">
+  Feb 4, 2021
+</time>
+                  </td>
+                  <td class="table__align-right">
+                    <span class="table__mobile-label table__mobile-label--hashes">Hashes</span>
+                    <a href="#copy-hash-modal-f15a7e1c-51e1-4e2a-8589-e3845e872546" class="button button--small button--primary">
+                      View
+                    </a>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+
+          
+          <div id="copy-hash-modal-33ca55a7-466d-427c-b331-9e04def57240" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp36-cp36m-macosx_10_9_x86_64.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp36-cp36m-macosx_10_9_x86_64.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>9f57fd38e21e7f695f02b1081ba9a7a2a18f044404ac6987faf630d1823a3c4a</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="9f57fd38e21e7f695f02b1081ba9a7a2a18f044404ac6987faf630d1823a3c4a">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>9890726a51274b97ef10aff1c8401b54</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="9890726a51274b97ef10aff1c8401b54">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>6877cc1ec6400200d3f3f274554f76eb3b1d437e67283d474f0d440403fea77a</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="6877cc1ec6400200d3f3f274554f76eb3b1d437e67283d474f0d440403fea77a">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-f19c5a3a-ec42-4f21-b873-3f3881b76a88" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp36-cp36m-manylinux2010_x86_64.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp36-cp36m-manylinux2010_x86_64.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>5de86397a740a441c3d56e4986e7eac70847cc74836bcb1df055f50deb4abaa2</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="5de86397a740a441c3d56e4986e7eac70847cc74836bcb1df055f50deb4abaa2">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>be01c3a00e7e4aec18ce75f25b2b4121</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="be01c3a00e7e4aec18ce75f25b2b4121">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>1b753c72f727c729522093264709629f0514993824c5d7cadc749e9ae68c2410</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="1b753c72f727c729522093264709629f0514993824c5d7cadc749e9ae68c2410">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-c66b4a26-ae1d-4c6d-965a-d014b8f10f5b" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp36-cp36m-win32.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp36-cp36m-win32.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>7669da9b57c8d64ef58490c029840e5f745f1f4e5a78fd3f2b0219ee7f4da002</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="7669da9b57c8d64ef58490c029840e5f745f1f4e5a78fd3f2b0219ee7f4da002">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>05994dc367f5429e131314c9e886232f</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="05994dc367f5429e131314c9e886232f">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>27974a8594d0b2df26d0a79e066e81665899bdd2191c5897bc1895a0198874b5</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="27974a8594d0b2df26d0a79e066e81665899bdd2191c5897bc1895a0198874b5">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-ca066759-7a3e-48ad-84ad-a59e07ec85ce" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp36-cp36m-win_amd64.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp36-cp36m-win_amd64.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>46b0c7a4fad878bd182763e8947f7b2fbb6785a1820d8847a15dcee8ae62faaf</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="46b0c7a4fad878bd182763e8947f7b2fbb6785a1820d8847a15dcee8ae62faaf">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>0710d1ef322d45eb79443548aab92157</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="0710d1ef322d45eb79443548aab92157">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>e9d04ed7a02afd9d11289b50f1628a6930a8bee6f49303019dcb5ecf70453ca3</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="e9d04ed7a02afd9d11289b50f1628a6930a8bee6f49303019dcb5ecf70453ca3">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-bf1ebbaa-83e4-4209-adbd-bac7176a475c" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp37-cp37m-macosx_10_9_x86_64.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp37-cp37m-macosx_10_9_x86_64.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>c8925a29f606b3451dd95b576346fe87b54e12898ed9df318744ccfa65da2043</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="c8925a29f606b3451dd95b576346fe87b54e12898ed9df318744ccfa65da2043">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>874dac9d8fbc85844efb59f76a9a2209</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="874dac9d8fbc85844efb59f76a9a2209">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>391baefed30071166a779d8e095487dd9d715fb23f10f45cd1f44e1370f80228</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="391baefed30071166a779d8e095487dd9d715fb23f10f45cd1f44e1370f80228">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-7707823a-aef7-4dfc-b781-025274583c7c" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp37-cp37m-manylinux2010_x86_64.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp37-cp37m-manylinux2010_x86_64.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>fe3797a1154d8e4eeb416d539c84bc404930a6b57c2082d030f2d68e13eed9ed</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="fe3797a1154d8e4eeb416d539c84bc404930a6b57c2082d030f2d68e13eed9ed">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>9c63edbb6be7d25263111ad7bc64418b</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="9c63edbb6be7d25263111ad7bc64418b">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>a07668625312a149915316f06acc505f941f8a12c866d86630d0d9bdfabe36e5</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="a07668625312a149915316f06acc505f941f8a12c866d86630d0d9bdfabe36e5">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-e7f6c0e3-6aa3-495c-9bfa-ad628fb8e2be" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp37-cp37m-win32.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp37-cp37m-win32.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>f912a743ce5d134e8080b8ea1801f410bd74c62faccda64c4ea0ff3b4729bed0</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="f912a743ce5d134e8080b8ea1801f410bd74c62faccda64c4ea0ff3b4729bed0">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>50568ae70d3abc3c78052ca02a0ad1c9</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="50568ae70d3abc3c78052ca02a0ad1c9">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>a251ce4c4266166592cfe119c22a7712465bce1131cf2cab5f45d1dce6008e65</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="a251ce4c4266166592cfe119c22a7712465bce1131cf2cab5f45d1dce6008e65">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-ea3d5f6d-5176-4237-8c06-fd6401298681" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp37-cp37m-win_amd64.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp37-cp37m-win_amd64.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>f9b9ad59c711fd7e67961843c029eebccf08b2eeb190d0316b00285b74a4c30a</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="f9b9ad59c711fd7e67961843c029eebccf08b2eeb190d0316b00285b74a4c30a">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>55ccf1eed16b650391b8ff10b9ca1aa9</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="55ccf1eed16b650391b8ff10b9ca1aa9">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>3f008096e970ca7877249db150b49ff7df498e1a585678a41f9e4b812e925a06</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="3f008096e970ca7877249db150b49ff7df498e1a585678a41f9e4b812e925a06">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-96b30357-35cd-4232-9cb2-8ab55b9609bc" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp38-cp38-macosx_10_9_x86_64.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp38-cp38-macosx_10_9_x86_64.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>a1d12a8b8c1afac24fed6cb3a069132c8cdba354e665f496e5f7640d2d442d74</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="a1d12a8b8c1afac24fed6cb3a069132c8cdba354e665f496e5f7640d2d442d74">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>a1cbedf0f3fd87e86a1922b00a3be708</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="a1cbedf0f3fd87e86a1922b00a3be708">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>b3a60b7421e6815d08db716e565dbf38afe9c39edc35074370211e72c14077b4</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="b3a60b7421e6815d08db716e565dbf38afe9c39edc35074370211e72c14077b4">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-8a9d4919-b2c8-4cc9-8adf-4f7236b349a4" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp38-cp38-manylinux2010_x86_64.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp38-cp38-manylinux2010_x86_64.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>b34b34dc2e74347848cd6b36c218493a93723aa7873d84163b4b952d8a461f74</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="b34b34dc2e74347848cd6b36c218493a93723aa7873d84163b4b952d8a461f74">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>3e04bd68f6fd8de91f6d2329331cded0</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="3e04bd68f6fd8de91f6d2329331cded0">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>0fe298766b37ba5df17907e6a7118c0853b8c5fe5c0ef038c051b518b952baa8</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="0fe298766b37ba5df17907e6a7118c0853b8c5fe5c0ef038c051b518b952baa8">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-12cd1e9b-ff75-4d1a-ac20-cf0c89d5938f" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp38-cp38-win32.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp38-cp38-win32.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>157946f7d9a545fd84de6cd4051df3d1f0c8ebb1b4edd04e6c8552e40723f1ee</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="157946f7d9a545fd84de6cd4051df3d1f0c8ebb1b4edd04e6c8552e40723f1ee">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>eea3fbac8f6b80b46cc21a095610861c</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="eea3fbac8f6b80b46cc21a095610861c">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>eb6215391b16bd4f194393ec9c8cc56767158e08593714af1d9aba4f080a6ed6</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="eb6215391b16bd4f194393ec9c8cc56767158e08593714af1d9aba4f080a6ed6">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-4a60c5ba-5487-40e2-afaf-30abb60eb5e1" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp38-cp38-win_amd64.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp38-cp38-win_amd64.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>380bc336bcc80b229697229742ac00761fe22dab8af57288a16421cc99886178</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="380bc336bcc80b229697229742ac00761fe22dab8af57288a16421cc99886178">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>079b03e85e99faedcd51ed94b6a2fe40</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="079b03e85e99faedcd51ed94b6a2fe40">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>fa65ea9a8c13b46e9b1d6747bd255e63de2d6d56b4153021255726a81b07fbb0</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="fa65ea9a8c13b46e9b1d6747bd255e63de2d6d56b4153021255726a81b07fbb0">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-3021e5d4-25fe-46ef-b4f5-8631a6ad35f3" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp39-cp39-macosx_10_9_x86_64.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp39-cp39-macosx_10_9_x86_64.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>583a1da6661fe0ab6dbac2b22dacc472a31769f9d5cb54d3920e96d5f858ef1b</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="583a1da6661fe0ab6dbac2b22dacc472a31769f9d5cb54d3920e96d5f858ef1b">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>b414911402888014dc9636495607e632</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="b414911402888014dc9636495607e632">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>6c52c851dfa38fa0b11fb00a3764c4e91a0e353765bef9bfe4e74a2a2408750a</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="6c52c851dfa38fa0b11fb00a3764c4e91a0e353765bef9bfe4e74a2a2408750a">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-f69202a7-efba-43cf-a743-18b7f2f1a24e" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp39-cp39-manylinux2010_x86_64.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp39-cp39-manylinux2010_x86_64.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>c87e1224eee5d4bb8544ae320d878e4f16f1a681a4229db75a37be329c295a96</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="c87e1224eee5d4bb8544ae320d878e4f16f1a681a4229db75a37be329c295a96">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>fe7013a9368e08ef6663705826b0b88c</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="fe7013a9368e08ef6663705826b0b88c">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>f37874627e60f0cf04a48e732b3da8fb5b960df33dcf2bac2dbbcdad4e1162c8</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="f37874627e60f0cf04a48e732b3da8fb5b960df33dcf2bac2dbbcdad4e1162c8">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-7f9fbaaf-114d-4946-a7b2-2e4bcb8d40dd" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp39-cp39-win32.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp39-cp39-win32.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>c70d28046fa115e795f59f94085c89f25183072c65e5d9ee0337cc6000cf38d5</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="c70d28046fa115e795f59f94085c89f25183072c65e5d9ee0337cc6000cf38d5">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>aa7b5f8e4a0e7836903fde3a5e74905e</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="aa7b5f8e4a0e7836903fde3a5e74905e">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>d824490f4d268af4b4ad946c991c37249c11e25dd786fcfb9ee910e31f461dcf</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="d824490f4d268af4b4ad946c991c37249c11e25dd786fcfb9ee910e31f461dcf">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-01b67398-ceb8-4e97-abfd-bd6142e3d6d5" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8-cp39-cp39-win_amd64.whl
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8-cp39-cp39-win_amd64.whl</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>d72e5e86bd2aa9a18e58d12cdf6eda81af0f1f8f2904d3d0defe7c5c5928380e</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="d72e5e86bd2aa9a18e58d12cdf6eda81af0f1f8f2904d3d0defe7c5c5928380e">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>cb5c8bce6cab18a832f939c2c5ac974b</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="cb5c8bce6cab18a832f939c2c5ac974b">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>89d4de3b395d9d07b972d24ec7706cf1f4b29bfa3111e408e66e2e2c2a9c2b67</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="89d4de3b395d9d07b972d24ec7706cf1f4b29bfa3111e408e66e2e2c2a9c2b67">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+          <div id="copy-hash-modal-f15a7e1c-51e1-4e2a-8589-e3845e872546" class="modal modal--wide">
+  <div class="modal__content" role="dialog">
+    <a href="#modal-close" title="Close" class="modal__close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+      <span class="sr-only">Close</span>
+    </a>
+    <div class="modal__body">
+      <h3 class="modal__title">
+        <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" title="External link" target="_blank" rel="noopener">Hashes</a> for PyMuPDF-1.18.8.tar.gz
+      </h3>
+      <table class="table table--hashes">
+        <caption class="sr-only">Hashes for PyMuPDF-1.18.8.tar.gz</caption>
+        <thead>
+          <tr>
+            <th scope="col">Algorithm</th>
+            <th scope="col">Hash digest</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SHA256</th>
+            <td><code>1947ddcb32fa2eec6d3e562bdd55a1f28642909e40203f0b5d112da003a51af0</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="1947ddcb32fa2eec6d3e562bdd55a1f28642909e40203f0b5d112da003a51af0">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MD5</th>
+            <td><code>319c7fcffa68fc0cb43bb95a093f9106</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="319c7fcffa68fc0cb43bb95a093f9106">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">BLAKE2-256</th>
+            <td><code>266c34098cd963418e5122abd70f8d116300203aaeab086cc9c6bdaf1b39cbd0</code></td>
+            <td class="table__align-right">
+              <button type="button" class="button button--small copy-tooltip copy-tooltip-w" data-tooltip-label="Copy to clipboard" data-clipboard-text="266c34098cd963418e5122abd70f8d116300203aaeab086cc9c6bdaf1b39cbd0">
+                Copy
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal__footer">
+      <a href="#modal-close" class="button button--primary modal__action">Close</a>
+    </div>
+  </div>
+</div>
+          
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="/static/images/white-cube.8c3a6fe9.svg" alt="" class="-js-white-cube">
+      </div>
+
+      <div class="footer__menus">
+        <div class="footer__menu">
+          <h2>Help</h2>
+          <nav aria-label="Help navigation">
+            <ul>
+              <li><a href="https://packaging.python.org/installing/" title="External link" target="_blank" rel="noopener">Installing packages</a></li>
+              <li><a href="https://packaging.python.org/tutorials/packaging-projects/" title="External link" target="_blank" rel="noopener">Uploading packages</a></li>
+              <li><a href="https://packaging.python.org/" title="External link" target="_blank" rel="noopener">User guide</a></li>
+              <li><a href="/help/">FAQs</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>About PyPI</h2>
+          <nav aria-label="About PyPI navigation">
+            <ul>
+              <li><a href="https://twitter.com/PyPI" title="External link" target="_blank" rel="noopener">PyPI on Twitter</a></li>
+              <li><a href="https://dtdg.co/pypi" title="External link" target="_blank" rel="noopener">Infrastructure dashboard</a></li>
+              <li><a href="https://www.python.org/dev/peps/pep-0541/" title="External link" target="_blank" rel="noopener">Package index name retention</a></li>
+              <li><a href="/sponsors/">Our sponsors</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>Contributing to PyPI</h2>
+          <nav aria-label="How to contribute navigation">
+            <ul>
+              <li><a href="/help/#feedback">Bugs and feedback</a></li>
+              <li><a href="https://github.com/pypa/warehouse" title="External link" target="_blank" rel="noopener">Contribute on GitHub</a></li>
+              <li><a href="https://hosted.weblate.org/projects/pypa/warehouse/" title="External link" target="_blank" rel="noopener">Translate PyPI</a></li>
+              <li><a href="https://github.com/pypa/warehouse/graphs/contributors" title="External link" target="_blank" rel="noopener">Development credits</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__menu">
+          <h2>Using PyPI</h2>
+          <nav aria-label="Using PyPI navigation">
+            <ul>
+              <li><a href="https://github.com/pypa/.github/blob/main/CODE_OF_CONDUCT.md" title="External link" target="_blank" rel="noopener">Code of conduct</a></li>
+              <li><a href="/security/">Report security issue</a></li>
+              <li><a href="https://www.python.org/privacy/" title="External link" target="_blank" rel="noopener">Privacy policy</a></li>
+              <li><a href="/policy/terms-of-use/">Terms of use</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <hr class="footer__divider">
+
+      <div class="footer__text">
+        
+        <p>Status: <a href="https://status.python.org/" title="External link" target="_blank" rel="noopener">
+          <span data-statuspage-domain="https://2p66nmmycsj3.statuspage.io">all systems operational</span></a>
+        </p>
+        
+        <p>
+          Developed and maintained by the Python community, for the Python community.
+          <br>
+          <a href="https://donate.pypi.org">Donate today!</a>
+        </p>
+        <p>© 2021 <a href="https://www.python.org/psf/" title="External link" target="_blank" rel="noopener">Python Software Foundation</a><br>
+          <a href="/sitemap/">Site map</a>
+        </p>
+      </div>
+
+      <div class="centered hide-on-desktop">
+        <button type="button" class="button button--switch-to-desktop hidden" data-target="viewport-toggle.switchToDesktop" data-action="viewport-toggle#switchToDesktop">
+          Switch to desktop version
+        </button>
+      </div>
+    </footer>
+
+
+    <div class="language-switcher">
+      <form action="/locale/">
+        <ul>
+          
+          <li>
+            <button
+              
+              class="language-switcher__selected"
+              
+              name="locale_id" value="en" type="submit"
+            >
+              English
+            </button>
+          </li>
+          
+          <li>
+            <button
+              
+              name="locale_id" value="es" type="submit"
+            >
+              español
+            </button>
+          </li>
+          
+          <li>
+            <button
+              
+              name="locale_id" value="fr" type="submit"
+            >
+              français
+            </button>
+          </li>
+          
+          <li>
+            <button
+              
+              name="locale_id" value="ja" type="submit"
+            >
+              日本語
+            </button>
+          </li>
+          
+          <li>
+            <button
+              
+              name="locale_id" value="pt_BR" type="submit"
+            >
+              português (Brasil)
+            </button>
+          </li>
+          
+          <li>
+            <button
+              
+              name="locale_id" value="uk" type="submit"
+            >
+              українська
+            </button>
+          </li>
+          
+          <li>
+            <button
+              
+              name="locale_id" value="el" type="submit"
+            >
+              Ελληνικά
+            </button>
+          </li>
+          
+          <li>
+            <button
+              
+              name="locale_id" value="de" type="submit"
+            >
+              Deutsch
+            </button>
+          </li>
+          
+          <li>
+            <button
+              
+              name="locale_id" value="zh_Hans" type="submit"
+            >
+              中文 (简体)
+            </button>
+          </li>
+          
+          <li>
+            <button
+              
+              name="locale_id" value="ru" type="submit"
+            >
+              русский
+            </button>
+          </li>
+          
+          <li>
+            <button
+              
+              name="locale_id" value="he" type="submit"
+            >
+              עברית
+            </button>
+          </li>
+          
+        </ul>
+      </form>
+    </div>
+
+
+    
+
+<div class="sponsors">
+  <p class="sponsors__title">Supported by</p>
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.pingdom.com/">
+        <img class="sponsors__image" alt="Pingdom" src="/static/images/sponsors/white/pingdom.277dedc4.png">
+        <span class="sponsors__name">Pingdom</span>
+        <span class="sponsors__service">Monitoring</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://cloud.google.com/">
+        <img class="sponsors__image" alt="Google" src="/static/images/sponsors/white/google.32d8a2de.png">
+        <span class="sponsors__name">Google</span>
+        <span class="sponsors__service">Object Storage and Download Analytics</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://getsentry.com/for/python">
+        <img class="sponsors__image" alt="Sentry" src="/static/images/sponsors/white/sentry.55260f07.png">
+        <span class="sponsors__name">Sentry</span>
+        <span class="sponsors__service">Error logging</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://aws.amazon.com/">
+        <img class="sponsors__image" alt="AWS" src="/static/images/sponsors/white/aws.9f9c77f7.png">
+        <span class="sponsors__name">AWS</span>
+        <span class="sponsors__service">Cloud computing</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.datadoghq.com/">
+        <img class="sponsors__image" alt="DataDog" src="/static/images/sponsors/white/datadog.d16bd2ef.png">
+        <span class="sponsors__name">DataDog</span>
+        <span class="sponsors__service">Monitoring</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.fastly.com/">
+        <img class="sponsors__image" alt="Fastly" src="/static/images/sponsors/white/fastly.dc317a48.png">
+        <span class="sponsors__name">Fastly</span>
+        <span class="sponsors__service">CDN</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.digicert.com/">
+        <img class="sponsors__image" alt="DigiCert" src="/static/images/sponsors/white/digicert.7d655136.png">
+        <span class="sponsors__name">DigiCert</span>
+        <span class="sponsors__service">EV certificate</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://statuspage.io">
+        <img class="sponsors__image" alt="StatusPage" src="/static/images/sponsors/white/statuspage.62f130cc.png">
+        <span class="sponsors__name">StatusPage</span>
+        <span class="sponsors__service">Status page</span>
+      </a>
+    
+  
+</div>
+
+    
+  </body>
+
+</html>

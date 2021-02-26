@@ -5,6 +5,7 @@ echo "Termux Fresh Install"
 echo "Grant Storage Permission"
 termux-setup-storage
 echo "Updating Everything"
+termux-upgrade-repo
 apt update -y
 apt upgrade -y
 pkg update -y
@@ -34,6 +35,26 @@ pkg install -y mc
 pkg install -y autoconf
 pkg install -y uucp
 pkg install -y automake
+pkg install -y blackbox
+pkg install -y dcraw
+pkg install -y gh
+pkg install -y git
+pkg install -y git-crypt
+pkg install -y git-delta
+pkg install -y git-gitk
+pkg install -y git-gui
+pkg install -y git-lfs
+pkg install -y gitea
+pkg install -y gitflow-avh
+pkg install -y gogs
+pkg install -y hub
+pkg install -y lazygit
+pkg install -y libgit2
+pkg install -y qgit
+pkg install -y sleuthkit
+pkg install -y texlive-langitalian
+pkg install -y tig
+pkg install -y vcsh
 pkg install -y bison bzip2
 pkg install -y clang
 pkg install -y cmake
@@ -59,6 +80,20 @@ pkg install -y ffmpeg
 pkg install -y tmux
 pkg install -y build-essential
 pkg install -y m4
+pkg install -y coreutils
+pkg install -y dropbear
+pkg install -y graphviz
+pkg install -y nmap
+pkg install -y nmh
+pkg install -y openssh
+pkg install -y procps
+pkg install -y psutils
+pkg install -y secure-delete
+pkg install -y sharutils
+pkg install -y snake
+pkg install -y stag
+pkg install -y tin-summer
+pkg install -y gap
 pkg install -y libcurl
 pkg install -y termux-tools
 pkg install -y proot
@@ -185,38 +220,105 @@ pkg install -y lxc-autostart
 pkg install -y init.lxc
 pkg update -y
 pkg upgrade -y
-apt update -y
-apt upgrade -y
-pip install upgrade pip
-npm install -g npm
-curl -sL https://gist.githubusercontent.com/mskian/6ea9c2b32d5f41867e7cafc88d1b26d5/raw/youtube-dl.sh | bash
-pkg install php nano zsh
-curl -sS https://getcomposer.org/installer | php -- --install-dir=/data/data/com.termux/files/usr/bin --filename=composer
-pip install --upgrade pip setuptools
-pip install --upgrade httpie
-pip install -U requests[socks]
-pip install requests
-pkg install clang python-dev libffi-dev openssl-dev
-pip install ddgr
-pkg install screenfetch w3m termux-exec termux-api
-pkg update -y && pkg upgrade -y
-apt update -y && apt upgrade -y
+pkg install -y php
+pkg install -y zsh
+pkg install -y clang
+pkg install -y python-dev
+pkg install -y libffi-dev
+pkg install -y openssl-dev
+pkg install -y mlocate && updatedb
+pkg install -y aalib
+pkg install -y aapt
+pkg install -y abduco
+pkg install -y abook
+pkg install -y ack-grep
+pkg install -y adwaita-icon-theme
+pkg install -y age
+pkg install -y aircrack-ng
+pkg install -y aircrack-ng-static algernon
+pkg install -y angband
+pkg install -y antibody
+pkg install -y apksigner
+pkg install -y apt
+pkg install -y apt-ftparchive
+pkg install -y apt-transport-tor
+pkg install -y aptly
+pkg install -y argp
+pkg install -y aria2
+pkg install -y arp-scan
+pkg install -y asciidoc
+pkg install -y asciinema
+pkg install -y aspell
+pkg install -y aspell-en
+pkg install -y at
+pkg install -y atomicparsley
+pkg install -y atomvm
+pkg install -y attr
+pkg install -y autoconf
+pkg install -y autoconf213
+pkg install -y automake
+pkg install -y axel
+pkg install -y azpainter
+pkg install -y barcode
+pkg install -y bash-completion
+pkg install -y bastet
+pkg install -y bat
+pkg install -y bc
+pkg install -y beanshell
+pkg install -y bftpd
+pkg install -y bgrep
+pkg install -y binutils
+pkg install -y binutils-gold
+pkg install -y bison
+pkg install -y blackbox
+pkg install -y blogc
+pkg install -y bochs
+pkg install -y boinc
+pkg install -y boinctui
+pkg install -y borgbackup
+pkg install -y brogue
+pkg install -y brook
+pkg install -y brotli
+pkg install -y bsdtar
+pkg install -y build-essential
+pkg install -y busybox
+pkg install -y byobu
+pkg install -y bzip2
+pkg install -y c-ares
+pkg install -y cabextract
+pkg install -y caddy
+pkg install -y calcurse
+pkg install -y capnproto
+pkg install -y capstone
+pkg install -y cavez-of-phear
+pkg install -y cboard
+pkg install -y ccls
+pkg install -y ccnet
+pkg install -y cfengine
+pkg install -y screenfetch
+pkg install -y w3m
+pkg install -y termux-exec
+pkg install -y termux-api
+pkg update -y
+pkg upgrade -y
 pip install upgrade pip; npm install -g npm
 termux-setup-storage
-cd .termux
-nano termux.properties
-=extra-keys = [ \
- ['ESC','|','/','HOME','UP','END','PGUP','DEL'], \
- ['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN','BKSP'] \
-]
-termux-upgrade-repo
-cd $HOME
-ls
-curl -sL https://gist.githubusercontent.com/mskian/4278fed4a206f4ec440f0dd512d4540b/raw/package.sh | bash
-pkg list-installed > /storage/emulated/0/Download/pkgs.txt
-hash -r
-clear
-echo "Installing All Applications"
+cd /data/data/com.termux/files/home/.termux
+echo "\n=extra-keys = [ \
+echo " ['ESC','|','/','HOME','UP','END','PGUP','DEL'], \"
+echo " ['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN','BKSP'] \"
+echo "]\n"
+echo -e "\n${RED}"Are you sure?${NORMAL}"
+read -p "y/n:
+" prompt
+if [[ $prompt == "y" || $prompt == "Y" || $prompt ==
+"yes" || $prompt == "Yes" ]]
+then
+  nano termux.properties
+else
+  echo -e "\ntouch termux.properties"
+fi
+cle$HOMEions"
 apt install -y ruby
 apt install -y zip
 apt install -y unzip
@@ -290,22 +392,33 @@ apt-get install -y tightvncserver
 apt-get install -y xfe
 apt update > /dev/null 2>&1
 apt --assumees install wget > /dev/null 2>&1
+apt update -y
+apt upgrade -y
 apt autoremove
 apt-get clean
 clear
+cd /data/data/com.termux/files/home
+ls
+curl -sL https://gist.githubusercontent.com/mskian/4278fed4a206f4ec440f0dd512d4540b/raw/package.sh | bash
+pkg list-installed > /storage/emulated/0/Download/pkgs.txt
+hash -r
+clear
+pip install --upgrade pip
+pip install setuptools
+pip install httpie
+pip install -U requests[socks]
+pip install requests
+pip install ddgr
+clear
+npm install -g npm
+curl -sL https://gist.githubusercontent.com/mskian/6ea9c2b32d5f41867e7cafc88d1b26d5/raw/youtube-dl.sh | bash
+curl -sS https://getcomposer.org/installer | php -- --install-dir=/data/data/com.termux/files/usr/bin --filename=composer
 mkdir -p /data/data/com.termux/files/home/backups/
 mkdir -p /storage/emulated/0/github/
 cd /storage/emulated/0/github/
+clear
 git clone https://github.com/NateWeiler/Termux.git
-cp -R /storage/emulated/0/github/Termux/home/.bashrc /data/data/com.termux/files/home/
-cp -R /storage/emulated/0/github/Termux/home/.zshrc /data/data/com.termux/files/home/
-cp -R /storage/emulated/0/github/Termux/home/.profile /data/data/com.termux/files/home/
-cp -R /storage/emulated/0/github/Termux/home/aliases /data/data/com.termux/files/home/
-cp -R /storage/emulated/0/github/Termux/home/functions /data/data/com.termux/files/home/
-cp -R /storage/emulated/0/github/Termux/home/pad.txt /data/data/com.termux/files/home/
-cp -R /storage/emulated/0/github/Termux/home/.gitconfig /data/data/com.termux/files/home/
-cp -R /storage/emulated/0/github/Termux/home/etc /data/data/com.termux/files/home/
-cp -R /storage/emulated/0/github/Termux/home/bin /data/data/com.termux/files/home/
+mv -t -f /storage/emulated/0/github/Termux/home/ /data/data/com.termux/files/home/ /data/data/com.termux/files/home/
 clear
 source /data/data/com.termux/files/home/aliases
 cd /storage/emulated/0/github/Termux/installs/
@@ -315,90 +428,98 @@ apt upgrade -y
 pkg update -y
 pkg upgrade -y
 python3 -m pip install --upgrade pip
+clear;sh /storage/emulated/0/github/Termux/installs/android.sh
+clear;sh /storage/emulated/0/github/Termux/installs/ansible.sh
+clear;sh /storage/emulated/0/github/Termux/installs/API.sh
+clear;sh /storage/emulated/0/github/Termux/installs/AutoPixie-WPS-Scan-Tool.sh
+clear;sh /storage/emulated/0/github/Termux/installs/busybox.sh
+clear;sh /storage/emulated/0/github/Termux/installs/caddy.sh
+clear;sh /storage/emulated/0/github/Termux/installs/CMSmap.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Codiad.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Compiling-and-setting-up-OCaml.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Crontab.sh
+clear;sh /storage/emulated/0/github/Termux/installs/DarkFly-Tool.sh
+clear;sh /storage/emulated/0/github/Termux/installs/debian_on_termux_10.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Debian-Install.sh
+clear;sh /storage/emulated/0/github/Termux/installs/debian-on-termux.sh
+clear;sh /storage/emulated/0/github/Termux/installs/desktop.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Docker.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Dorks-Eye.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Dropbear.sh
+clear;sh /storage/emulated/0/github/Termux/installs/DVR.sh
+clear;sh /storage/emulated/0/github/Termux/installs/EasY-HaCk.sh
+clear;sh /storage/emulated/0/github/Termux/installs/emacs.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Fish.sh
+clear;sh /storage/emulated/0/github/Termux/installs/FTP.sh
+clear;sh /storage/emulated/0/github/Termux/installs/FZF.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Games.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Graphical-Environment.sh
+clear;sh /storage/emulated/0/github/Termux/installs/gTTS.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Heroku.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Homebrew.sh
+clear;sh /storage/emulated/0/github/Termux/installs/HPomb.sh
+clear;sh /storage/emulated/0/github/Termux/installs/java.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Kali.sh
+clear;sh /storage/emulated/0/github/Termux/installs/KickThemOut.sh
+clear;sh /storage/emulated/0/github/Termux/installs/MariaDB.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Metasploit.sh
+clear;sh /storage/emulated/0/github/Termux/installs/MOSH.sh
+clear;sh /storage/emulated/0/github/Termux/installs/mpd.sh
+clear;sh /storage/emulated/0/github/Termux/installs/myserver.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Neofetch.sh
+clear;sh /storage/emulated/0/github/Termux/installs/oh-my-termux.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Oh-My-Zsh.sh
+clear;sh /storage/emulated/0/github/Termux/installs/OpenSSH.sh
+clear;sh /storage/emulated/0/github/Termux/installs/p10k-Font.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Postgresql.sh
+clear;sh /storage/emulated/0/github/Termux/installs/PRoot.sh
+clear;sh /storage/emulated/0/github/Termux/installs/pyter.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Python.sh
+clear;sh /storage/emulated/0/github/Termux/installs/pyttsx3.sh
+clear;sh /storage/emulated/0/github/Termux/installs/rbenv.sh
+clear;sh /storage/emulated/0/github/Termux/installs/rclone.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Rsync.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Ruby.sh
+clear;sh /storage/emulated/0/github/Termux/installs/RVM.sh
+clear;sh /storage/emulated/0/github/Termux/installs/services.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Setting-up-HTTP-Server.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Setting-up-Public-Key-Authentication.sh
+clear;sh /storage/emulated/0/github/Termux/installs/setup-pointless-repo.sh
+clear;sh /storage/emulated/0/github/Termux/installs/shells.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Slack.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Snoop.sh
+clear;sh /storage/emulated/0/github/Termux/installs/sms.sh
+clear;sh /storage/emulated/0/github/Termux/installs/SocialFish.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Speak.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Speak-Engine.sh
+clear;sh /storage/emulated/0/github/Termux/installs/sqlscan.sh
+clear;sh /storage/emulated/0/github/Termux/installs/ssh-apt.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Sudo.sh
+clear;sh /storage/emulated/0/github/Termux/installs/Tool-X.sh
+clear;sh /storage/emulated/0/github/Termux/installs/TBomb.sh
 clear
-sh /storage/emulated/0/github/Termux/installs/android.sh
-sh /storage/emulated/0/github/Termux/installs/ansible.sh
-sh /storage/emulated/0/github/Termux/installs/API.sh
-sh /storage/emulated/0/github/Termux/installs/AutoPixie-WPS-Scan-Tool.sh
-sh /storage/emulated/0/github/Termux/installs/busybox.sh
-sh /storage/emulated/0/github/Termux/installs/caddy.sh
-sh /storage/emulated/0/github/Termux/installs/CMSmap.sh
-sh /storage/emulated/0/github/Termux/installs/Codiad.sh
-sh /storage/emulated/0/github/Termux/installs/Compiling-and-setting-up-OCaml.sh
-sh /storage/emulated/0/github/Termux/installs/Crontab.sh
-sh /storage/emulated/0/github/Termux/installs/DarkFly-Tool.sh
-sh /storage/emulated/0/github/Termux/installs/debian_on_termux_10.sh
-sh /storage/emulated/0/github/Termux/installs/Debian-Install.sh
-sh /storage/emulated/0/github/Termux/installs/debian-on-termux.sh
-sh /storage/emulated/0/github/Termux/installs/desktop.sh
-sh /storage/emulated/0/github/Termux/installs/Docker.sh
-sh /storage/emulated/0/github/Termux/installs/Dorks-Eye.sh
-sh /storage/emulated/0/github/Termux/installs/Dropbear.sh
-sh /storage/emulated/0/github/Termux/installs/DVR.sh
-sh /storage/emulated/0/github/Termux/installs/EasY-HaCk.sh
-sh /storage/emulated/0/github/Termux/installs/emacs.sh
-sh /storage/emulated/0/github/Termux/installs/Fish.sh
-sh /storage/emulated/0/github/Termux/installs/FTP.sh
-sh /storage/emulated/0/github/Termux/installs/FZF.sh
-sh /storage/emulated/0/github/Termux/installs/Games.sh
-sh /storage/emulated/0/github/Termux/installs/Graphical-Environment.sh
-sh /storage/emulated/0/github/Termux/installs/gTTS.sh
-sh /storage/emulated/0/github/Termux/installs/Heroku.sh
-sh /storage/emulated/0/github/Termux/installs/Homebrew.sh
-sh /storage/emulated/0/github/Termux/installs/HPomb.sh
-sh /storage/emulated/0/github/Termux/installs/java.sh
-sh /storage/emulated/0/github/Termux/installs/Kali.sh
-sh /storage/emulated/0/github/Termux/installs/KickThemOut.sh
-sh /storage/emulated/0/github/Termux/installs/MariaDB.sh
-sh /storage/emulated/0/github/Termux/installs/Metasploit.sh
-sh /storage/emulated/0/github/Termux/installs/MOSH.sh
-sh /storage/emulated/0/github/Termux/installs/mpd.sh
-sh /storage/emulated/0/github/Termux/installs/myserver.sh
-sh /storage/emulated/0/github/Termux/installs/Neofetch.sh
-sh /storage/emulated/0/github/Termux/installs/oh-my-termux.sh
-sh /storage/emulated/0/github/Termux/installs/Oh-My-Zsh.sh
-sh /storage/emulated/0/github/Termux/installs/OpenSSH.sh
-sh /storage/emulated/0/github/Termux/installs/p10k-Font.sh
-sh /storage/emulated/0/github/Termux/installs/Postgresql.sh
-sh /storage/emulated/0/github/Termux/installs/PRoot.sh
-sh /storage/emulated/0/github/Termux/installs/pyter.sh
-sh /storage/emulated/0/github/Termux/installs/Python.sh
-sh /storage/emulated/0/github/Termux/installs/pyttsx3.sh
-sh /storage/emulated/0/github/Termux/installs/rbenv.sh
-sh /storage/emulated/0/github/Termux/installs/rclone.sh
-sh /storage/emulated/0/github/Termux/installs/Rsync.sh
-sh /storage/emulated/0/github/Termux/installs/Ruby.sh
-sh /storage/emulated/0/github/Termux/installs/RVM.sh
-sh /storage/emulated/0/github/Termux/installs/services.sh
-sh /storage/emulated/0/github/Termux/installs/Setting-up-HTTP-Server.sh
-sh /storage/emulated/0/github/Termux/installs/Setting-up-Public-Key-Authentication.sh
-sh /storage/emulated/0/github/Termux/installs/setup-pointless-repo.sh
-sh /storage/emulated/0/github/Termux/installs/shells.sh
-sh /storage/emulated/0/github/Termux/installs/Slack.sh
-sh /storage/emulated/0/github/Termux/installs/Snoop.sh
-sh /storage/emulated/0/github/Termux/installs/sms.sh
-sh /storage/emulated/0/github/Termux/installs/SocialFish.sh
-sh /storage/emulated/0/github/Termux/installs/Speak.sh
-sh /storage/emulated/0/github/Termux/installs/Speak-Engine.sh
-sh /storage/emulated/0/github/Termux/installs/sqlscan.sh
-sh /storage/emulated/0/github/Termux/installs/ssh-apt.sh
-sh /storage/emulated/0/github/Termux/installs/Sudo.sh
-sh /storage/emulated/0/github/Termux/installs/Tool-X.sh
-sh /storage/emulated/0/github/Termux/installs/TBomb.sh
 sh /storage/emulated/0/github/Termux/installs/Terminal-Look-Awesome-Color-Font-Style.sh
+clear
 sh /storage/emulated/0/github/Termux/installs/termux-fedora.sh
+clear
 sh /storage/emulated/0/github/Termux/installs/termux-sms.sh
+clear
 sh /storage/emulated/0/github/Termux/installs/tor.sh
+clear
 sh /storage/emulated/0/github/Termux/installs/transmission.sh
+clear
 sh /storage/emulated/0/github/Termux/installs/ubuntu.sh
+clear
 sh /storage/emulated/0/github/Termux/installs/xfce4.sh
+clear
 sh /storage/emulated/0/github/Termux/installs/youtube-dl.sh
+clear
 sh /storage/emulated/0/github/Termux/installs/Zip.sh
 unzip /storage/emulated/0/github/Termux/home/.ssh.zip /data/data/com.termux/files/home/.ssh
 cd /storage/emulated/0/github/Termux/
-mv -v .git DOTgit
+mv -f .git DOTgit
 find . -depth -type d -name ".git" -exec rm -rf {} \; && find . -depth -type d -name ".github" -exec rm -rf {} \;
-mv -v DOTgit .git
+rm -rf /storage/emulated/0/github/Termux/home
 cd /data/data/com.termux/files/home/
 bash <(curl -fsSL https://git.io/JvMD6)
 bash <(curl -fsSL https://git.io/JTgsU)

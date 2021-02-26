@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/data/data/com.termux/files/usr/bin/python
  # autopixiewps 
  #
  # Special thanks to: wiire and anyone working on the pixiedust attack

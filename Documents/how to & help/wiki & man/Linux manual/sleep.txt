@@ -1,0 +1,22 @@
+sleep
+
+Delay for a specified time, pause for an amount of time specified by the sum of the values of the command line arguments.
+
+Syntax
+      sleep [NUMBER [smhd]]...
+
+Key:
+
+   s  :  seconds (default)
+
+   m  :  minutes
+
+   h  :  hours
+
+   d  :  days
+
+An alternative to sleep is setting the variable TMOUT, setting TMOUT=1200 will exit the shell if nothing is typed for 20 minutes. This can be a useful security fallback to ensure you don't remain logged on to a production server for too long.
+
+“O sleep, O gentle sleep, nature's soft nurse, how have I frighted thee, that thou no more wilt weigh my eyelids down, and steep my senses in forgetfulness” ~ Shakespeare (Henry IV)
+
+Equivalent Windows commands: SLEEP - Wait for x seconds.

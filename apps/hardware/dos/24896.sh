@@ -1,4 +1,4 @@
-﻿#!/usr/local/bin/perl
+#!/usr/local/bin/perl
 #
 #
 # TP-Link TL-WR740N Wireless Router Remote Denial Of Service Exploit

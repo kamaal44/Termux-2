@@ -1,0 +1,25 @@
+crontab: usage error: file name or - (for stdin) must be specified for replace
+
+Usage:
+======
+
+ crontab [options] file
+
+ crontab [options]
+
+Options:
+========
+
+ -e         edit user's crontab
+
+ -l         list user's crontab
+
+ -r         delete user's crontab
+
+ -i         prompt before deleting
+
+ -V         print version and exit
+
+ -x <mask>  enable debugging
+
+Default operation is replace, per 1003.2

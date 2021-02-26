@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/data/data/com.termux/files/usr/bin/env python
 #
 # Hi There!
 # You may be wondering what this giant blob of binary data here is, you might

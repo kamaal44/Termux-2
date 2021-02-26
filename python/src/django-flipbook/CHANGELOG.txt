@@ -1,0 +1,45 @@
+=== (ongoing) ===
+
+=== 0.3.7 ===
+
+- Added new setting to disable list views
+
+=== 0.3.6 ===
+
+- Added url and email fields to flipbook.
+
+=== 0.3.5 ===
+
+- Made slugs unique and added image field to flipbook model.
+
+=== 0.3.4 ===
+
+- Improved urls.
+
+=== 0.3.3 ===
+
+- Added book type to flipbooks.
+
+=== 0.3.2 ===
+
+- Added page type to flipbook pages.
+
+=== 0.3.1 ===
+
+- Added image to page model.
+
+=== 0.3 ===
+
+- Added flipbook html pages.
+
+=== 0.2.1 ===
+
+- Transformed category field from many2many to foreign key.
+
+=== 0.2 ===
+
+- Added flipbook categories.
+
+=== 0.1 ===
+
+- Initial commit.

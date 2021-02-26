@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/data/data/com.termux/files/usr/bin/python
 #Fl00d 2.0 27-06-2017 (1:42)
 #Tool for UDP Flood
 #Authorized by DedSecTL

@@ -1,4 +1,4 @@
-﻿
+
 Option CloudGate Insecure Direct Object References Authorization Bypass
 
 

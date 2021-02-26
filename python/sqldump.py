@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/data/data/com.termux/files/usr/bin/python
 """
 SQLdump v1.0
 Date: 06-12-2017 (18:19)

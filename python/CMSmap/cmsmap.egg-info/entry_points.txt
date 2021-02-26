@@ -1,0 +1,3 @@
+[console_scripts]
+cmsmap = cmsmap.main:main
+
