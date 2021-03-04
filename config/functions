@@ -1,0 +1,88 @@
+# Clone all GitHub Orgs Repositories
+CloneAll() {
+    # Make the url to the input GitHub Orgs Repos page
+    ORG_URL="https://api.github.com/orgs/${1}/repos?per_page=1000";
+
+    # List of all repositories of that organization (seperated by newline-eol).
+    ALL_REPOS=$(curl -s ${ORG_URL} | grep html_url | awk 'NR%2 == 0' \ | cut -d ':' -f 2-3 | tr -d '",');
+
+    # Clone all the repositories.
+    for ORG_REPO in ${ALL_REPOS}; do
+        git clone ${ORG_REPO}.git;
+    done
+}
+
+
+# <-- Copy -->
+function cpy {
+while read data; do
+    echo "$data" | cat > termux-clipboard-get
+done
+tr -d '\n' < termux-clipboard-get > termux-clipboard-get    
+}
+
+
+# <-- Paste -->
+function paste() {
+    printf $(</dev/stdin) | termux-clipboard-set
+}
+export -f termux-clipboard-set
+
+
+#   <-- Sprunge -->
+sprunge() {
+        if [[ $1 ]]; then
+        curl -F 'sprunge<-' "http://sprunge.us" <"$1"
+        else
+        curl -F 'sprunge<-' "http://sprunge.us"
+        fi
+}
+
+
+#   <-- Linx -->
+linx(){
+        curl -T "$@" -H "Linx-Randomize: yes"
+https://linx.li/upload/
+}
+
+
+#   <-- Make Directory -->
+stfu() {
+        exec "$@" 1>/dev/null 2>/dev/null &
+}
+
+
+#   <-- Make Directory & cd into it -->
+md () {
+  mkdir "$1"
+  cd "$1"
+}
+
+
+#   <-- Webm -->
+webm(){
+        ffmpeg -i $i -c:v libvpx -b:v 1M -c:a libvorbis $o
+}
+
+#   <-- YouTube URL Fix -->
+yturlfix(){
+        url$1;
+        echo $url | sed 's/.be\//be.com\/watch?v/g'
+}
+
+#   <-- Parse Git Branch -->
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+#   <-- Update Git Fork -->
+update_fork() {
+git fetch upstream
+git rebase upstream/master
+git push -f origin master
+}
+
+
+[ -f /data/data/com.termux/files/home/.fzf.bash ] && source /data/data/com.termux/files/home/.fzf.bash
+
+clear

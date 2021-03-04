@@ -1,0 +1,673 @@
+#####################################################
+#
+#                      WGET
+#
+#####################################################
+#	         Download Complete Directory
+alias wgd="wget -r –level=0 -E –ignore-length -x -k -p -e robots=off -np -N"
+#             mirror website 1 file
+alias wgd1='wget –mirror –convert-links –html-extension –wait=1'
+#              Download all files
+alias wgf="wget -r -A"
+
+#####################################################
+#
+#		          Find Commands
+#
+#####################################################
+
+#          Find all files in directory
+
+alias shf='find . -type f -name "*.sh"'
+
+#       Find all python files in directory
+alias pyf='find . -type f -name "*.py"'
+
+#        Find all txt files in directory
+alias txtf='find . -type f -name "*.txt"'
+
+#####################################################
+#              Find files by size
+#####################################################
+
+#               Find 50MB Files
+alias find50='find . -size 50M'
+
+#      Find Size between 50MB - 100MB
+alias find50-100='find . -size +50M -size -100M'
+
+#####################################################
+#         Find and Delete Files by Size
+#####################################################
+# Find and Delete 100MB Files
+alias rm100='find . -type f -size +100M -exec rm -rf {} \;'
+
+#####################################################
+#       Rename all .git or DOTgit folders
+#####################################################
+
+alias dot='find . -depth -type d | while read mFNAME;do mv "$FNAME" "${FNAME//.git/DOTgit}";done'
+
+alias undot='find . -depth -type d | while read FNAME;do mv "$FNAME" "${FNAME//DOTgit/.git}";done'
+
+#####################################################
+#	Remove .git, .github, DOTGOT, & DOTgithub
+#####################################################
+alias rm.='find . -depth -type d -name ".git" -exec rm -rf {} \; && find . -depth -type d -name ".github" -exec rm -rf {} \;'
+
+alias rmdot='find . -depth -type d -name "DOTgit" -exec rm -rf {} \; && find . -depth -type d -name "DOTgithub" -exec rm -rf {} \;'
+
+#####################################################
+#              Find Empty Directories
+#####################################################
+
+alias empd='find . -type d -empty'
+
+#####################################################
+#             Delete Empty Directories
+#####################################################
+
+alias rempf='find . -type f -empty'
+
+#####################################################
+#              Removing 0 sized files
+#####################################################
+alias rm0='find . -exec rm -rf {} +'
+alias rm01='find . -print0 | xargs -0 rm -rf'
+alias rm02='find . -delete'
+
+#####################################################
+#              Find empty sized files
+#####################################################
+alias femp='find . -empty -type f'
+
+#####################################################
+#            Delete all Empty Folders
+#####################################################
+
+alias remp='while [ -n "$(find . -depth -type d -empty -print -exec rm -rf {} +)" ];do :;done'
+
+alias remp1='find . -depth -type d -exec rm -rf {} \;2>/dev/null'
+
+alias remp2='find . -empty -delete'
+
+alias remp3='find . -empty -print0 | xargs -0 rmdir -p'
+
+alias remp4='find . -empty -exec rmdir -p {} +'
+
+#####################################################
+#        Find all files with permissions
+#####################################################
+
+#       Find all the files that are 777
+alias 777='find . -type f -perm 0777 -print'
+alias 777-1='find . -type f ! -perm 777'
+
+#       SGID bit files whose set to 644
+alias 644='find . -perm 2644'
+
+#   Sticky Bit set files with permission are 551
+alias 551='find . -perm 1551'
+
+#             Find all SUID set files
+alias suid='find . -perm /u=s'
+
+#            Find all SGID set files
+alias sgid='find . -perm /g=s'
+
+#           Find all Read Only files
+alias readonly='find . -perm /u=r'
+
+#           Find all Executable files
+alias fexe='find . -perm /a=x'
+
+
+#####################################################
+#       Permission Directories and chmod
+#####################################################
+
+#           777 files chmod to 644
+alias 777ch644='find . -type f -perm 0777 -print
+-exec chmod 644 {} \;'
+
+alias 777ch755='find . -type d -perm 777 -print -exec chmod 755 {} \;'
+
+#####################################################
+#		Convert CRLF line endings to LF
+#####################################################
+
+alias fcrlf='find ./ -type f -exec dos2unix {} \;'
+
+#####################################################
+#					Urls
+#####################################################
+
+#                Termux Open RRTA Page
+alias rrta='to http://busfinder.redrosetransit.com/Infopoint'
+
+#        Termux Open NateWeiler Repositories Page
+alias nwgh='to https://github.com/NateWeiler?tab=repositories'
+
+#   Termux Open WeilerWebServices Repositories Page
+alias wwsgh='to https://github.com/WeilerWebServices?tab=repositories'
+
+#         Termux Open NateWeiler Termux Page
+alias tergh='to https://github.com/NateWeiler/Termux'
+
+#          Termux Open NateWeiler Gists Page    
+alias gistgh='to https://github.com/NateWeiler/Gists'
+
+#             Termux Open Resources Page
+alias resgh='to https://github.com/NateWeiler/Resources'
+
+#             Termux Open New Gist Page
+alias newgist='to https://gist.github.com/'
+
+#####################################################
+#                   Shortcuts
+#####################################################
+
+#                cd back 1 Directory
+alias cd1='cd ../;srca;l;pwd'
+
+#                cd back 2 Directory
+alias cd2='cd ../../;srca;l;pwd'
+
+#                cd back 3 Directory
+alias cd3='cd ../../../;srca;l;pwd'
+
+#              cd Most recent Directory
+alias cd-='cd -;srca;l;pwd'
+
+#                cd Home Directory
+alias ~='cd
+ /data/data/com.termux/files/home/;srca;l;pwd' # Home
+alias h='cd /data/data/com.termux/files/home/;srca;l;pwd'
+
+#          cd Internal SDCARD Directory
+alias sd='cd /sdcard/;srca;l;pwd'
+
+#          cd Termux Installs Directory
+alias ins='cd /sdcard/github/Termux/installs/;srca;l;pwd'
+
+#           cd Termux Python Directory
+alias pyt='cd /sdcard/github/Termux/python/;srca;l;pwd'
+
+#           cd Termux Ruby Directory
+alias rub='cd /sdcard/github/Termux/ruby/;srca;l;pwd'
+
+#           cd Termux Perl Directory
+alias per='cd /sdcard/github/Termux/ruby/perl/;srca;l;pwd'
+
+#          cd Termux Scripts Directory
+alias scr='cd /sdcard/github/Termux/scripts/;srca;l;pwd'
+
+#           cd Termux Apps Directory
+alias app='cd /sdcard/github/Termux/apps/;srca;l;pwd'
+
+#             cd Download Directory
+alias d='cd /sdcard/Download/;srca;l;pwd'
+
+#          cd Termux Documents Directory
+alias doc='cd /sdcard/github/Termux/Documents/;srca;l;pwd'
+
+#               cd GitHub Directory
+alias gh='cd /sdcard/github/;srca;l;pwd'
+
+#              cd Termux Directory
+alias ter='cd /sdcard/github/Termux/;srca;l;pwd'
+
+#              cd Resources Directory
+alias res='cd /sdcard/github/Termux/Resources/;srca;l;pwd'
+
+#                   cd dotfiles
+alias cdot='cd /sdcard/github/dotfiles/;srca;l;pwd'
+
+#               cd Gists Directory
+alias gists='cd /sdcard/github/Gists/;srca;l;pwd'
+
+#          cd External SDCARD Directory
+alias sdc='cd /storage/1054-F76A/;srca;l;pwd'
+
+#               cd Music Directory
+alias music='cd /storage/1054-F76A/Music;l'
+
+#      cd Documents how to & help Directory
+alias h2h='cd /sdcard/github/Termux/Documents/"how to & help"/;srca;l;pwd'
+
+#              cd Sync Directory
+alias syn='cd /storage/1054-F76A/Sync/;srca;l;pwd'
+
+#              cd RRTA Directory
+alias rrta='cd /sdcard/github/RRTA/;srca;l;pwd'
+
+#             Replace Text Script
+alias replacetext="n
+/sdcard/github/Termux/scripts/'replace text in a file
+with bash for loop.sh';sh
+/sdcard/github/Termux/scripts/'replace text in a file
+with bash for loop.sh'"
+
+#####################################################
+#             Config, Update, & Install
+#####################################################
+
+#                       IP
+alias ip='curl ifconfig.me/all'
+
+#                      WLAN
+alias ifc='ifconfig wlan0'
+
+alias zshconfig="mate
+/data/data/com.termux/files/home/.zshrc"
+
+alias ohmyzsh="mate
+/data/data/com.termux/files/home/.oh-my-zsh"
+
+#                   Change Color
+alias
+chcolor='/data/data/com.termux/files/home/.termux/colors.sh'
+
+#                   Change Font
+alias
+chfont='/data/data/com.termux/files/home/.termux/fonts.sh'
+
+#                 Refresh .zshrc
+alias refresh="source
+/data/data/com.termux/files/home/.zshrc"
+
+#               termux-fix-shebang
+alias fixbang='termux-fix-shebang'
+
+#                   Source
+alias src='source'
+
+#               Source Aliases
+alias srca='source /data/data/com.termux/files/home/aliases'
+
+#          pkg update & upgrade
+alias pu='pkg update -y;pkg upgrade -y'
+
+#          apt update & upgrade
+alias au='apt update -y;apt upgrade -y'
+
+#            Update Everything
+alias uu='au;pu;pipu;gug;nun;pipu;pipurf'
+
+#               pkg Install
+alias pkgi='pkg install -y'
+
+#                pkg Search
+alias pkgs='pkg search'
+
+#                apt install
+alias apti='apt install -y'
+
+#                 Zip Termux
+alias bkt='sh /sdcard/github/Termux/scripts/zip-termux.sh'
+
+#                Backup Home
+alias bkh='sh /sdcard/github/Termux/scripts/home-backup.sh'
+
+#               Backup dotfiles
+alias bkdot='sh /sdcard/github/Termux/scripts/backup-dotfiles.sh'
+
+#####################################################
+#                  Documents
+#####################################################
+
+#                 Nano aliases
+alias nal='n /data/data/com.termux/files/home/aliases'
+#                 Nano pad.txt
+alias pad='n /data/data/com.termux/files/home/pad.txt'
+#              Nano end of pad.txt
+alias padd='n +99999 /data/data/com.termux/files/home/pad.txt'
+
+#              Nano Git Commands.txt
+alias gdoc="n '/sdcard/github/Termux/Documents/how to & help'/commands/Git Commands.txt'"
+
+#              Nano Python Repos.txt
+alias grdoc="n '/sdcard/github/Termux/Documents/how to & help/git/Git Repos.txt'"
+
+#              Nano Python Commands.txt
+alias pydoc="n '/sdcard/github/Termux/Documents/how to & help/commands/Python Commands.txt'"
+
+#                 Nano Home Backup
+alias nhup='n /sdcard/github/Termux/scripts/home-backup.sh'
+
+#                 Nano Zip Termux
+alias ntup='n /sdcard/github/Termux/scripts/zip-termux.sh'
+
+#####################################################
+#               Clone Git Repos
+#####################################################
+
+#                Clone Termux
+alias gter='cd /sdcard/github/;git clone https://github.com/NateWeiler/Termux.git'
+
+#               Clone Resources
+alias gres='cd /sdcard/github/;git clone https://github.com/NateWeiler/Resources.git'
+
+#                 Clone Gists
+alias ggist='cd /sdcard/github/;git clone https://github.com/NateWeiler/Gists.git'
+
+#                  Clone RRTA
+alias grrta='cd /sdcard/github/;git clone
+https://github.com/NateWeiler/RRTA.git'
+
+#                Clone dotfiles
+alias gdot='cd /sdcard/github/;git clone https://github.com/NateWeiler/dotfiles.git'
+
+#####################################################
+#					Python
+#####################################################
+
+#                  Python 2
+python2='/data/data/com.termux/files/usr/bin/python2'
+py2='/data/data/com.termux/files/usr/bin/python2'
+
+#                  Python 3
+alias py='/data/data/com.termux/files/usr/bin/python3'
+alias
+python='/data/data/com.termux/files/usr/bin/python3'
+alias python3='/data/data/com.termux/files/usr/bin/python3'
+
+#                     Pip
+alias pip='py -m pip'
+
+#                  Pip Search
+alias pips='pip search'
+
+#                   Pip List
+alias pipl='pip list'
+
+#                  Pip Install
+alias pipi='pip install'
+
+#                Pip Install -r
+alias pipr='pipi -r'
+
+#                Pip Upgrade Pip
+alias pipu='pipi --upgrade pip'
+
+#          Pip Upgrade requirements.txt
+alias pipur='pipi --upgrade -r requirements.txt'
+
+#      Pip Forse Reinstall requirements.txt
+alias pipurf='pipi --upgrade --forse-reinstall -r requirements.txt'
+
+#          Pip Freeze requirements.txt
+alias pipf='pip freeze > requirements.txt'
+
+#              Python Webserver
+alias webserver='py -m http.server 8080'
+
+#                 Create Venv
+alias ve='virtualenv venv -p python3'
+
+#                Activat Venv
+alias va='source venv/bin/activate'
+
+#               Deactivat Venv
+alias dva='deactivate'
+
+#####################################################
+#					Ruby & Perl
+#####################################################
+
+#                    Gem List
+alias geml='gem list'
+
+#                  Gem Install
+alias gemi='gem install'
+
+#                  Gem Update
+alias gemu='gem update'
+
+#                 Gem Outdated
+alias gemo='gem outdated'
+
+#              Gem Update System
+alias gug='gemu --system'
+
+#####################################################
+#                NodeJS & NPM
+#####################################################
+
+#                  NPM List
+alias npml='npm list -g'
+
+#                 NPM Install
+alias npmi='npm install -g'
+
+#                 NPM Update
+alias npmu='npm update -g'
+
+#                NPM Outdated
+alias npmo='npm outdated'
+
+# #              NPM Update NPM
+alias nun='npmi npm@latest;npm fund'
+
+#####################################################
+#           YouTube-dl & Facebook-dl
+#####################################################
+
+#                  YouTube-dl
+alias youtube-dl='youtube-dl --default-search "ytsearch" -v -f'
+alias yt='youtube-dl'
+
+#               YouTube-dl MP3
+alias mp3="yt 'ytsearch:mp3''bestaudio/best' -ciw -o
+'%(title)s.%(ext)s' --extract-audio --audio-quality 0"
+#           YouTube-dl MP3 Playlist
+alias mp31="yt 'ytsearch:mp3' 'bestaudio[ext=mp3]/best' -ciw -o '%(title)s.%(ext)s' --extract-audio --audio-quality 0 --audio-format mp3 --yes-playlist --playlist-start 1"
+
+#                YouTube-dl MP4
+alias mp4="yt 'ytsearch:mp4' 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' -ciw -o '%(title)s.%(ext)s' mp4"
+
+#           YouTube-dl MP4 Playlist
+alias mp41="yt 'ytsearch:mp4' 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best' -ciw -o '%(title)s.%(ext)s' mp4 --yes-playlist --playlist-start 1"
+
+#            Facebook Video Downloader
+alias fbdl="py /sdcard/github/Termux/python/Facebook-Video-Downloader/downloader.py"
+
+#####################################################
+#                  Exploits
+#####################################################
+
+#                   Wifite
+alias wifite="py2 /sdcard/github/Termux/python/wifite.py"
+
+#####################################################
+#                   Other OS
+#####################################################
+
+#                     Slack
+alias slack='bash
+/data/data/com.termux/files/home/slackware/startSlackware'
+
+#                      Kali
+alias kali='bash /data/data/com.termux/files/home/start-kali.sh'
+
+#                     Fedora
+alias fedora='startfedora'
+
+#                      Arch
+alias arch='startarch'
+
+#####################################################
+#                      ETC
+#####################################################
+
+#                       ls
+alias l='ls -AFph --color=always --show-control-chars'
+
+#                   ls oneline
+alias l1='ls -AFph1 --color=always --show-control-chars'
+
+#                ls Recursively
+alias lr='ls -AR --color=always'
+
+#           ls Print Working Directory
+alias ld='ls -d $PWD/*'
+
+#     ls Print Working Directory Recursively
+alias ldr='ls -dr $PWD/*'
+
+#             Show All Git Aliases
+alias la='git config -l | grep alias | cut -c 7-'
+
+#             Nano without Word Wrap
+alias nano='nano -BLMacu -T 4 -C /data/data/com.termux/files/home/backups/'
+
+#              Nano with Word Wrap
+alias n='nano -BLMSwacu -T 4 -C /data/data/com.termux/files/home/backups/'
+
+#
+alias r='rm -rf'
+
+#
+alias mv='mv -f -v'
+
+#
+alias mvt='mv -f -t'
+
+#
+alias mk='mkdir -p'
+
+#
+alias cp='cp -R'
+
+#
+alias c='cat'
+
+#
+alias ch='chmod +x'
+
+#
+alias to='termux-open'
+
+#
+alias curl='curl --progress-bar'
+
+#
+alias mocp="mocp;mocp -x"
+
+#
+alias clr='clear'
+
+#
+alias clear_cache="paccache -rk0"
+
+#
+alias inotify_increase="echo fs.inotify.max_user_watches=524288 | tee /etc/sysctl.d/40-max-user-watches.conf && sysctl --system"
+
+#
+alias fixadb="adb kill-server && adb devices"
+
+#
+alias dmenu_fixed="dmenu_run -fn '-xos4-terminus-medium-r-*-*-14-*' -h 26"
+
+#
+alias cleanphoto="exiftool -all= $*"
+
+#
+alias tree='tree -C'
+
+#
+alias ip='ip -c'
+
+#
+alias brew="termux-chroot /data/data/com.termux/files/home/.linuxbrew/Homebrew/bin/brew"
+
+#
+alias zip='zip -r -9 -ll'
+
+#
+alias google='w3m www.google.com'
+
+#
+alias lynx="lynx www.google.com"
+
+#
+alias mount="rclone mount"
+
+#
+alias aria2="aria2c"
+
+#
+alias play='termux-media-player play'
+
+
+#                     
+alias playaudio='play-audio'
+
+#                     Exit
+alias x='exit'
+
+#####################################################
+#                   Other OS
+#####################################################
+
+#                     Slack
+alias slack='bash
+/data/data/com.termux/files/home/slackware/startSlackare'
+
+#                      Kali
+alias kali='bash
+/data/data/com.termux/files/home/start-kali.sh'
+
+#                     Fedora
+alias fedora='startfedora'
+
+#                      Arch
+alias arch='startarch'
+
+#####################################################
+#                      Git
+#####################################################
+
+alias faa='git add -Af;git commit -m "Add";git push --force'
+alias gurl='git remote show origin'
+alias g='git clone'
+alias gpl='git pull'
+alias gp='git push'
+alias gco='git checkout'
+alias gcm='git checkout master'
+alias gr='git remote -v'
+alias gb='git branch -a'
+alias gl='git log --pretty -n 2 --stat'
+alias gs='git status -u'
+alias ga='git add . && git add -A'
+alias gf='git fetch'
+alias gfl='git ls-files | grep'
+alias gk='gitk --all --branches'
+alias gl='git log --pretty -n 2 --stat --decorate --all'
+alias gc='git commit -m'
+alias gi='git init'
+
+#####################################################
+#                       PHP
+#####################################################
+
+alias pb='phpcs'
+alias pbf='phpcbf'
+
+#####################################################
+#                   Docker
+#####################################################
+
+alias docker_start='systemctl start docker'
+alias docker_debian='docker run -it debian /bin/bash'
+
+#####################################################
+#           Codecov Bash uploader
+#####################################################
+
+alias cov="bash <(curl -s https://codecov.io/bash) -t
+68672765-268f-44d0-8a4fa0e3e4de5248"
+
+clear
+
+cat /data/data/com.termux/files/home/etc/motd
