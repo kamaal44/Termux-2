@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 # get your local address
 echo $(ip -f inet -o addr show enp3s0|cut -d\  -f 7 | cut -d/ -f 1)

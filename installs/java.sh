@@ -64,3 +64,7 @@ else
 	echo "\nEnjoy your new, tasty Java :D (and a coffee, if you didn't drink it yet)"
 	echo
 fi
+
+pkg install -y wget
+wget https://raw.githubusercontent.com/MasterDevX/java/master/installjava && bash installjava
+wget https://raw.githubusercontent.com/MasterDevX/java/master/installjava && bash installjava

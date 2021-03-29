@@ -20,18 +20,6 @@ Library Dependancies
 --------------------
 * None
 
-Contributing
--------------
-
-Want to contribute? Great!
-
-1. Fork it
-2. Create a branch (git checkout -b my_copy)
-3. Commit your changes (git commit -am "added some more regex to the text
-cleaner")
-4. Push to the branch (git push origin my_copy)
-5. Create an Issue with a link to your branch
-
 Instalation using Eclipse
 -------------------------
 * Download the source code
@@ -46,6 +34,3 @@ and VoiceRecognition are enabled
 * Open the file manager, browse to your pdf, click on it and a menu will appear
 allowing you to register the pdf into your audio book list
 * Alternatively, you can open the application and listen to the instructions 
-
-
-PDFtoAudioBook is released under the Apache License.

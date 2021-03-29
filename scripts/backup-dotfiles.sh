@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/data/data/com.termux/files/usr/bin/sh
 
 cd /sdcard/github/
 echo "\nCloning dotfiles Repo\n"
