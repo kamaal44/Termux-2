@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/sh
 
-echo "\n "Termux API Install"
+echo "\nTermux API Install"
 
 pkg install termux-api
 

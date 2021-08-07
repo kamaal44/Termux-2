@@ -1,0 +1,26 @@
+Arguments: 
+  /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/share/yarn/bin/yarn.js add global heroku-cli@latest
+
+PATH: 
+  /home/u0_a738/.local/bin:/data/data/com.termux/files/home/bin:/usr/local/bin:/usr/local/bin:/usr/local/sbin:/data/data/com.termux/files/home/bin:/data/data/com.termux/files/usr/bin:/data/data/com.termux/files/usr/bin/applets:/data/data/com.termux/files/home/buildAPKs/bin/:/data/data/com.termux/files/usr/bin/texlive:/data/data/com.termux/files/home/buildAPKs/bin/:/data/data/com.termux/files/usr/bin/texlive:/data/data/com.termux/files/home/buildAPKs/bin/:/data/data/com.termux/files/usr/bin/texlive
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.4
+
+Platform: 
+  android arm64
+
+Trace: 
+  Error: EPERM: operation not permitted, symlink '../uuid/dist/bin/uuid' -> '/storage/emulated/0/github/Termux/installs/node_modules/@heroku-cli/command/node_modules/.bin/uuid'
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

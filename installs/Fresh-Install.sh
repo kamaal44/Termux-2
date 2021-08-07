@@ -301,9 +301,10 @@ pkg install -y termux-exec
 pkg install -y termux-api
 pkg update -y
 pkg upgrade -y
+pkg autoclean
 pip install upgrade pip; npm install -g npm
 termux-setup-storage
-cd /data/data/com.termux/files/home/.termux
+cd $HOME/.termux
 echo "\n=extra-keys = [ \
 echo " ['ESC','|','/','HOME','UP','END','PGUP','DEL'], \"
 echo " ['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN','BKSP'] \"
@@ -413,14 +414,14 @@ clear
 npm install -g npm
 curl -sL https://gist.githubusercontent.com/mskian/6ea9c2b32d5f41867e7cafc88d1b26d5/raw/youtube-dl.sh | bash
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/data/data/com.termux/files/usr/bin --filename=composer
-mkdir -p /data/data/com.termux/files/home/backups/
+mkdir -p $HOME/backups/
 mkdir -p /storage/emulated/0/github/
 cd /storage/emulated/0/github/
 clear
 git clone https://github.com/NateWeiler/Termux.git
-mv -t -f /storage/emulated/0/github/Termux/home/ /data/data/com.termux/files/home/ /data/data/com.termux/files/home/
+mv -t -f /storage/emulated/0/github/Termux/home/ $HOME/ $HOME/
 clear
-source /data/data/com.termux/files/home/aliases
+source $HOME/aliases
 cd /storage/emulated/0/github/Termux/installs/
 echo "Updating Everything Again"
 apt update -y
@@ -515,12 +516,12 @@ clear
 sh /storage/emulated/0/github/Termux/installs/youtube-dl.sh
 clear
 sh /storage/emulated/0/github/Termux/installs/Zip.sh
-unzip /storage/emulated/0/github/Termux/home/.ssh.zip /data/data/com.termux/files/home/.ssh
+unzip /storage/emulated/0/github/Termux/home/.ssh.zip $HOME/.ssh
 cd /storage/emulated/0/github/Termux/
 mv -f .git DOTgit
 find . -depth -type d -name ".git" -exec rm -rf {} \; && find . -depth -type d -name ".github" -exec rm -rf {} \;
 rm -rf /storage/emulated/0/github/Termux/home
-cd /data/data/com.termux/files/home/
+cd $HOME/
 bash <(curl -fsSL https://git.io/JvMD6)
 bash <(curl -fsSL https://git.io/JTgsU)
 exit
